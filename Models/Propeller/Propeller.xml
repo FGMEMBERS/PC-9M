@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+<path>Propeller.ac</path>
+
+<animation>
+<type>blend</type>
+<object-name>prop_disk</object-name>
+<property>engines/engine[0]/n2</property>
+<factor>0.01</factor>
+<min>0.3</min>
+</animation>
+
+<animation>
+<type>spin</type>
+<object-name>prop_disk</object-name>
+<property>engines/engine[0]/n2</property>
+<factor>-0.079</factor>
+<center>
+<x-m>-3.22</x-m>
+<y-m> 0.00</y-m>
+<z-m> 0.58</z-m>
+</center>
+<axis>
+<x>1.0</x>
+<y>0.0</y>
+<z>0.0</z>
+</axis>
+</animation>
+
+</PropertyList>

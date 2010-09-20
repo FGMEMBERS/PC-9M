@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+
+A light "cone" effect, written by Lauri Peltonen (Zan)
+
+With this effect, any object (most likely a cone) will 
+light up everything inside of it. Usefull for 
+landing lights etc.
+
+Note: This is an dev version and should be modified
+to use stencil buffer instead of blending whenever
+those are implemented!
+
+-->
+
+
+<PropertyList>
+  <name>Effects/light-cone</name>
+  <inherits-from>Effects/model-default</inherits-from>
+  <parameters>
+    <texture n ="0">
+      <type>white</type>
+    </texture>
+
+<!--    <render-bin>
+      <bin-number>10</bin-number>
+      <bin-name>RenderBin</bin-name>
+    </render-bin>
+-->
+
+  </parameters>
+  <technique n="6">
+
+    <!-- First pass, lighten up everything behind the front side of the cone -->
+    <pass>
+      <lighting>false</lighting>
+      <material>
+        <active>true</active>
+        <ambient type="vec4d">0.5 0.5 0.5 0.5</ambient>
+        <diffuse type="vec4d">0.5 0.5 0.5 0.5</diffuse>
+        <specular type="vec4d">0.5 0.5 0.5 0.5</specular>
+        <emissive type="vec4d">0.0 0.0 0.0 0.0</emissive>
+        <shininess>0.0</shininess>
+        <color-mode>off</color-mode> 
+      </material>
+      <blend>
+        <active>true</active>
+        <source>dst-color</source>
+        <destination>one</destination>
+      </blend>
+      <shade-model><use>shade-model</use></shade-model>
+      <cull-face>back</cull-face>
+      <rendering-hint>transparent</rendering-hint>
+      <depth>
+        <write-mask>false</write-mask>
+      </depth>
+
+      <program>
+        <vertex-shader>Shaders/light-cone.vert</vertex-shader>
+        <fragment-shader>Shaders/light-cone.frag</fragment-shader>
+      </program>
+    </pass>
+
+    <!-- Second pass, darken everything in front of the back side -->
+    <pass>
+      <lighting>false</lighting>
+      <material>
+        <active>true</active>
+        <ambient type="vec4d">0.6667 0.6667 0.6667 0.6667</ambient>
+        <diffuse type="vec4d">0.6667 0.6667 0.6667 0.6667</diffuse>
+        <specular type="vec4d">0.6667 0.6667 0.6667 0.6667</specular>
+        <emissive type="vec4d">0.0 0.0 0.0 1.0</emissive>
+        <shininess>0.0</shininess>
+        <color-mode>off</color-mode>
+      </material>
+      <blend>
+        <active>true</active>
+        <source>dst-color</source>
+        <destination>zero</destination>
+      </blend>
+      <shade-model><use>shade-model</use></shade-model>
+      <cull-face>front</cull-face>
+      <rendering-hint>transparent</rendering-hint>
+      <depth>
+        <write-mask>false</write-mask>
+      </depth>
+      <program>
+        <vertex-shader>Shaders/light-cone.vert</vertex-shader>
+        <fragment-shader>Shaders/light-cone.frag</fragment-shader>
+      </program>
+    </pass>
+
+  </technique>
+</PropertyList>

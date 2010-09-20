@@ -1,0 +1,240 @@
+<PropertyList>
+
+<sim>
+
+<!--Info -->
+
+<description>Pilatus PC-9/A</description>
+<author>Petar Jedvaj, Ernest Teuscher (based on David Culp's PC-7)</author>
+<status>beta</status>
+
+<flight-model>jsb</flight-model>
+<aero>PC-9</aero>
+
+<startup>
+<splash-texture>Aircraft/PC-9M/splash.png</splash-texture>
+<splash-title>100 years of aviation in Croatia</splash-title>
+</startup>
+
+<!--Systems -->
+
+<systems>
+<electrical>
+<path>Aircraft/PC-9M/PC-9M-electrical.xml</path>
+</electrical>
+
+
+<pitot>
+<name>pitot</name>
+<number>0</number>
+</pitot>
+
+<static>
+<name>static</name>
+<number>0</number>
+</static>
+
+<vacuum>
+<name>vacuum</name>
+<number>0</number>
+<rpm>/engines/engine[0]/rpm</rpm>
+<scale>1.0</scale>
+</vacuum>
+
+</systems> 
+
+<sound>
+<path>Aircraft/PC-9M/Sounds/PC-9M-sound.xml</path>
+</sound>
+
+<model>
+<path archive="y">Aircraft/PC-9M/Models/PC-9.xml</path>
+<livery>
+<file type="string"/>
+</livery>
+</model>
+
+<virtual-cockpit archive="y">true</virtual-cockpit>
+<allow-toggle-cockpit archive="y">false</allow-toggle-cockpit>
+
+<panel>
+<path>Aircraft/PC-9M/Panels/PC-9M-panel.xml</path>
+<visibility archive="y">true</visibility>
+</panel>
+
+<!--Views -->
+
+<view n="0">
+<internal archive="y">true</internal>
+<config>
+<pitch-offset-deg>-17.0</pitch-offset-deg>
+<default-field-of-view-deg type="double">77.0</default-field-of-view-deg>
+<x-offset-m archive="y"> 0.00</x-offset-m>
+<y-offset-m archive="y"> 1.20</y-offset-m>
+<z-offset-m archive="y">-0.30</z-offset-m>
+</config>
+</view>
+
+<view n="100">
+<name>Instructor</name>
+<enabled type="bool">true</enabled>
+<type>lookfrom</type>
+<internal type="bool">true</internal>
+<internal archive="y">true</internal>
+<config>
+<from-model type="bool">true</from-model>
+<from-model-idx type="int">0</from-model-idx>
+<default-field-of-view-deg type="double">66.0</default-field-of-view-deg>
+<default-pitch-deg type="double">0</default-pitch-deg>
+<default-heading-deg type="double">0</default-heading-deg>
+<x-offset-m archive="y"> 0.00 </x-offset-m>	
+<y-offset-m archive="y"> 1.33 </y-offset-m>
+<z-offset-m archive="y"> 1.06 </z-offset-m>
+<pitch-offset-deg> -10.0</pitch-offset-deg>
+<dynamic-view type="bool">true</dynamic-view>
+</config>
+</view>
+
+<chase-distance-m type="double" archive="y">-20.0</chase-distance-m>
+
+<menubar>
+<default>
+<menu n="100">
+<label>Pilatus PC-9/A</label>
+<enabled type="bool">true</enabled>
+<item>
+<label>Select Livery</label>
+<binding>
+<command>nasal</command>
+<script>aircraft.livery.dialog.toggle()</script>
+</binding>
+</item>
+</menu>
+</default>
+</menubar>
+
+<help>
+<line>Max. speed: 320 KEAS</line>
+<line>Max. cruise speed: 271 KTAS</line>
+<line>Stall speed: 69 KCAS</line>
+</help>
+
+</sim>
+
+<!--Engine -->
+
+<engines>
+<engine n="0">
+<running>true</running>
+<rpm>2200</rpm>
+</engine>
+</engines>
+
+<controls>
+<engines>
+<engine n="0">
+<condition>0</condition>
+<propeller-pitch>0</propeller-pitch>
+</engine>
+</engines>
+  
+<gear>
+<brake-parking type="double">1</brake-parking>
+</gear>
+</controls>
+
+<systems>
+<electrical>
+<outputs>
+<comm n="0" type="float">28</comm>
+<comm n="1" type="float">28</comm>
+</outputs>
+</electrical>
+	
+<vacuum>
+<name>vacuum</name>
+<number>0</number>
+<suction-inhg type="double">1000</suction-inhg>
+</vacuum>	
+</systems>
+
+<consumables>
+<fuel>
+<tank n="0">
+<level-gal_us archive="y">118</level-gal_us>
+</tank>
+<tank n="1">
+<level-gal_us archive="y">118</level-gal_us>
+</tank>
+</fuel>
+</consumables>
+
+<!--Instruments -->
+
+<instrumentation>
+<transponder>
+<inputs>
+<serviceable type="bool">true</serviceable>
+</inputs>
+</transponder>
+<nav n="0">
+<serviceable type="bool">1</serviceable>
+</nav>
+<nav n="1">
+<serviceable type="bool">1</serviceable>
+</nav>
+<comm n="0">
+<serviceable type="bool">1</serviceable>
+</comm>
+<comm n="1">
+<serviceable type="bool">1</serviceable>
+</comm>
+    
+<airspeed-indicator>
+<limit-indicated-speed-kt type="double">280</limit-indicated-speed-kt>	
+<index n="0" type="double">95</index>
+<index n="1" type="double">145</index>
+</airspeed-indicator>
+    
+<g-meter>
+<g-max archive="y" type="double">1</g-max>
+<g-min archive="y" type="double">1</g-min>
+</g-meter>
+</instrumentation>
+
+<!--Effects -->
+
+<gear>
+<gear n="0">
+<tyre-smoke type="int">0</tyre-smoke>
+<sprayspeed-ms type="double">0</sprayspeed-ms>
+<spray-density type="double">0</spray-density>
+<caster-angle-deg-damped type="double">0</caster-angle-deg-damped>
+</gear>
+<gear n="1">
+<tyre-smoke type="int">0</tyre-smoke>
+<sprayspeed-ms type="double">0</sprayspeed-ms>
+<spray-density type="double">0</spray-density>
+</gear>
+<gear n="2">
+<tyre-smoke type="int">0</tyre-smoke>
+<sprayspeed-ms type="double">0</sprayspeed-ms>
+<spray-density type="double">0</spray-density>
+</gear>
+</gear>
+
+<!--Nasal -->
+
+<nasal>
+<PC-9M>
+<file>Aircraft/PC-9M/Nasal/liveries.nas</file>
+<file>Aircraft/PC-9M/Nasal/light.nas</file>
+<file>Aircraft/PC-9M/Nasal/vhf22.nas</file>
+<file>Aircraft/PC-9M/Nasal/vir32.nas</file>
+<tyresmoke>
+<file>Aircraft/PC-9M/Nasal/tyresmoke.nas</file>
+</tyresmoke>
+</PC-9M>
+</nasal>
+
+</PropertyList>
