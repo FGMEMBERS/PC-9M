@@ -1120,7 +1120,7 @@ livery_update.stop();
 <object-name>left_wheel</object-name>
 <property-base>sim/model/livery</property-base>
 <texture-prop>texture</texture-prop>
-<texture>/Models/Liveries/PC-7/SAR.png</texture>
+<texture>Liveries/PC-7/SAR.png</texture>
 </animation>
 
 </PropertyList>
