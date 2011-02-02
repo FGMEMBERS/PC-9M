@@ -1,18 +1,18 @@
 <?xml version="1.0"?>
 <!--
-  File:     PT6A-25C.xml
+  File:     PT6A-25C-2.xml
   Author:   Aero-Matic v 0.81
 
   Inputs:
-    name:           PT6A-25C
+    name:           PT6A-25C-2
     type:           turboprop
-    power:          700.0 hp
+    power:          950.0 hp
     augmented?      no
     injected?       no
 -->
 
-<turbine_engine name="PT6A-25C">
-  <milthrust>  1568.0 </milthrust>
+<turbine_engine name="PT6A-25C-2">
+  <milthrust>  2128.0 </milthrust>
   <bypassratio>     0.0  </bypassratio>
   <tsfc>            0.55 </tsfc>
   <bleed>           0.03 </bleed>

@@ -1,0 +1,97 @@
+<?xml version="1.0"?>
+
+<!-- Pc engine switch  -->
+
+<PropertyList>
+
+ <path>engine_switch1.ac</path> 
+ 
+ <!--***Engine_Switch***-->
+ 
+<animation>
+	<type>pick</type>
+		<object-name>eng_start</object-name>
+			<action>
+				<button>0</button>
+				<repeatable>false</repeatable>
+				 <binding>
+   				 <command>property-assign</command>
+   				 <property>controls/engines/start1</property>
+   				 <value>true</value>
+ 				 </binding>
+  				 <binding>
+  				 <command>property-assign</command>
+   				 <property>controls/engines/run1</property>
+   				 <value>false</value>
+  				 </binding>
+  				 <binding>
+   				 <command>property-assign</command>
+   				 <property>controls/engines/abort1</property>
+   				 <value>false</value>
+  				 </binding>
+  			</action>
+</animation>
+ 
+
+<animation>
+	<type>pick</type>
+		<object-name>eng_stop</object-name>
+			<action>
+				<button>0</button>
+				<repeatable>false</repeatable>
+				 <binding>
+   				 <command>property-assign</command>
+   				 <property>controls/engines/start1</property>
+   				 <value>false</value>
+ 				 </binding>
+  				 <binding>
+  				 <command>property-assign</command>
+   				 <property>controls/engines/run1</property>
+   				 <value>false</value>
+  				 </binding>
+  				 <binding>
+   				 <command>property-assign</command>
+   				 <property>controls/engines/abort1</property>
+   				 <value>true</value>
+  				 </binding>
+  			</action>
+</animation>
+ 
+ 
+ <!-- *** Switch animation *** -->
+ <animation> 
+   <type>select</type>
+    <object-name>ENG_RUN</object-name>
+    <condition>
+     <property>controls/engines/run1</property>
+    </condition>
+ </animation>
+ 
+ <animation> 
+   <type>select</type>
+    <object-name>ENG_START</object-name>
+    <condition>
+     <property>controls/engines/start1</property>
+    </condition>
+ </animation>
+ 
+
+ <animation> 
+   <type>select</type>
+    <object-name>ENG_ABORT</object-name>
+    <condition>
+     <property>controls/engines/abort1</property>
+    </condition>
+ </animation>
+
+
+
+ 
+ <!-- *** LoD *** -->
+ <animation>
+  <type>range</type>
+  <min-m>0</min-m>
+  <max-m>5</max-m>
+ </animation>
+
+</PropertyList>

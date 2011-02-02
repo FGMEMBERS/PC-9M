@@ -4,7 +4,7 @@ OBJECT world
 kids 1
 OBJECT poly
 name "Light"
-loc -0.128945 0.585856 -4.79192
+loc -0.474309 0.687278 -5.16728
 texture "Halos.rgb"
 crease 45.000000
 numvert 12

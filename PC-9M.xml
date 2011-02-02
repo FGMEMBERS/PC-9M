@@ -2,13 +2,13 @@
 
 <?xml-stylesheet type="text/xsl" href="http://jsbsim.sourceforge.net/JSBSim.xsl"?>
 
-<fdm_config name="PC-9M" version="2.0" release="BETA"
+<fdm_config name="PC-9M" version="1.9" release="BETA"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:noNamespaceSchemaLocation="http://jsbsim.sourceforge.net/JSBSim.xsd">
 
     <fileheader>
         <author> Ernest Teuscher, Petar Jedvaj </author>
-        <filecreationdate> 2010-09-18 </filecreationdate>
+        <filecreationdate> 2011-1-1 </filecreationdate>
         <version> $Revision: 1.9 $ </version>
         <description> PC-9M </description>
     </fileheader>
@@ -52,6 +52,17 @@
     </mass_balance>
 
     <ground_reactions>
+       <contact type="STRUCTURE" name="NOSE">
+           <location unit="IN">
+             <x> 50.1 </x>
+             <y> 0 </y>
+             <z> -10.26 </z>
+           </location>
+           <static_friction>  0.80 </static_friction>
+           <dynamic_friction> 0.50 </dynamic_friction>
+           <spring_coeff unit="LBS/FT">       5940.00 </spring_coeff>
+           <damping_coeff unit="LBS/FT/SEC">  1188.00 </damping_coeff>
+        </contact>
         <contact type="BOGEY" name="NOSE_LG">
             <location unit="IN">
                 <x> 50.1 </x>
@@ -124,7 +135,7 @@
     </ground_reactions>
     
     <propulsion>
-        <engine file="PT6A-25C-2">
+        <engine file="PT6A-25C">
             <location unit="IN">
                 <x> 36 </x>
                 <y> 0 </y>
@@ -171,7 +182,10 @@
         </tank>
     </propulsion>
     
-    <flight_control name="FCS: pc7-Mkll">
+     <system file="speedbrakes"/>
+     <system file="canopy"/>
+    
+    <flight_control name="FCS: PC-9M">
 
         <channel name="Pitch">
             <summer name="Pitch Trim Sum">
@@ -370,6 +384,17 @@
                     <value>0.0360</value>
                 </product>
             </function>
+            
+                <function name="aero/coefficient/CDsb">
+       <description>Drag_due_to_speedbrakes</description>
+         <product>
+           <property>aero/qbar-psf</property>
+           <property>metrics/Sw-sqft</property>
+           <property>fcs/speedbrake-pos-norm</property>
+           <value>0.03</value>
+         </product>
+    </function>
+
             
             <function name="aero/coefficient/CDbeta">
                 <description>Drag_due_to_sideslip</description>

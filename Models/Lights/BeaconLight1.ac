@@ -4,8 +4,8 @@ OBJECT world
 kids 1
 OBJECT poly
 name "Light"
-loc -1.74463 -1.42728 -0.000562221
-texture "Halos.rgb"
+loc -0.691417 -1.29007 -0.206667
+texture "/Applications/FlightGear.app/Contents/Resources/data/Aircraft/PC-9M/Models/Lights/Halos.rgb"
 crease 45.000000
 numvert 12
 2.4766 1.32413 0.0500002
@@ -16,10 +16,10 @@ numvert 12
 2.4266 1.37413 0.0500002
 2.4266 1.27413 0.0500002
 2.4266 1.27413 -0.0500002
-2.4766 1.27413 1.08266e-008
-2.3766 1.27413 1.08266e-008
-2.3766 1.37413 1.08266e-008
-2.4766 1.37413 1.08266e-008
+2.4766 1.27413 1.49012e-08
+2.3766 1.27413 1.49012e-08
+2.3766 1.37413 1.49012e-08
+2.4766 1.37413 1.49012e-08
 numsurf 3
 SURF 0x20
 mat 0
