@@ -244,7 +244,7 @@ livery_update.stop();
 
 <model>
 <name>Comm2</name>
-<path>AIrcraft/PC-9M/Instruments/COMM/comm2.xml</path>
+<path>Aircraft/PC-9M/Instruments/COMM/comm2.xml</path>
 <offsets>
 <x-m>-0.877</x-m>
 <y-m>0.325</y-m>
@@ -602,7 +602,7 @@ livery_update.stop();
 
 <model>
 <name>Comm2</name>
-<path>AIrcraft/PC-9M/Instruments/COMM/comm2.xml</path>
+<path>Aircraft/PC-9M/Instruments/COMM/comm2.xml</path>
 <offsets>
 <x-m>0.503</x-m>
 <y-m>0.32</y-m>
@@ -862,7 +862,7 @@ livery_update.stop();
 
 <model>
 <name>Engine</name>
-<path>Aircraft/PC-9M/Models/fire.xml</path>
+<path>Aircraft/PC-9M/Models/Fire.xml</path>
 <condition>
 <equals>
 <property>sim/crashed</property>
@@ -881,7 +881,7 @@ livery_update.stop();
 
 <model>
 <name>Cockpit</name>
-<path>Aircraft/PC-9M/Models/fire.xml</path>
+<path>Aircraft/PC-9M/Models/Fire.xml</path>
 <condition>
 <equals>
 <property>sim/crashed</property>
