@@ -191,6 +191,14 @@
     <factor>0.05</factor>
    </pitch>
   </buffet>
+  
+  <crash>
+   <name>crash</name>
+   <condition>
+    <property>sim/crashed</property>
+   </condition>
+   <path>Sounds/crash.wav</path>
+  </crash>
 
 </fx>
 

@@ -62,7 +62,7 @@
 <pitch-offset-deg>-14.0</pitch-offset-deg>
 <default-field-of-view-deg type="double">84.9</default-field-of-view-deg>
 <x-offset-m archive="y"> 0.00</x-offset-m>
-<y-offset-m archive="y"> 1.33</y-offset-m>
+<y-offset-m archive="y"> 1.18</y-offset-m>
 <z-offset-m archive="y">-0.37</z-offset-m>
 </config>
 </view>
@@ -80,7 +80,7 @@
 <default-pitch-deg type="double">0</default-pitch-deg>
 <default-heading-deg type="double">0</default-heading-deg>
 <x-offset-m archive="y"> 0.00 </x-offset-m>	
-<y-offset-m archive="y"> 1.43 </y-offset-m>
+<y-offset-m archive="y"> 1.34 </y-offset-m>
 <z-offset-m archive="y"> 1.12 </z-offset-m>
 <pitch-offset-deg> -10.0</pitch-offset-deg>
 <dynamic-view type="bool">true</dynamic-view>
@@ -139,19 +139,19 @@
 <help>
 <title>Pilatus PC-9M</title>
 <key>
-<name>C</name>
+<name>c</name>
 <desc>Open/close canopy</desc>
 </key>
 <key>
-<name>D</name>
+<name>d</name>
 <desc>Taxi light on/off</desc>
 </key>
 <key>
-<name>W</name>
+<name>Shift+w+Arrow Keys</name>
 <desc>Walk</desc>
 </key>
 <key>
-<name>Ctrl+B</name>
+<name>Ctrl+b</name>
 <desc>Toggle speedbrake</desc>
 </key>
 <line>Click on engine panel to START/RUN/ABORT or use Autostart</line>

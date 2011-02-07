@@ -4,8 +4,12 @@
 
 <path>PC-9M.ac</path>
 <offsets>
-<pitch-deg>-4.00</pitch-deg>
-<z-offset-m>-0.30</z-offset-m>
+<pitch-deg>-4.50</pitch-deg>   
+<heading-deg>0</heading-deg>
+<roll-deg>0</roll-deg>
+<x-m>0</x-m>
+<y-m>0</y-m>
+<z-m>-0.155</z-m>
 </offsets>
 
 <nasal>
@@ -1139,7 +1143,7 @@ livery_update.stop();
 <object-name>ftyre</object-name>
 <object-name>fgear</object-name>
 <property>surface-positions/rudder-pos-norm</property>
-<factor>20</factor>
+<factor>-20</factor>
 <center>
 <x-m>-2.41</x-m>
 <y-m> 0.00</y-m>
@@ -1149,6 +1153,22 @@ livery_update.stop();
 <x>0.0</x>
 <y>0.0</y>
 <z>1.0</z>
+</axis>
+</animation>
+
+<animation>
+<type>spin</type>
+<object-name>fwheel</object-name>
+<object-name>ftyre</object-name>
+<property>fdm/jsbsim/gear/unit[0]/wheel-speed-fps</property>
+<factor>48.0</factor>
+<axis>
+<x1-m>-2.44</x1-m>
+<y1-m>-0.04</y1-m>
+<z1-m>-0.59</z1-m>   
+<x2-m>-2.44</x2-m>
+<y2-m> 0.04</y2-m>
+<z2-m>-0.59</z2-m>
 </axis>
 </animation>
 
