@@ -4,8 +4,6 @@
 
  <fx>
 
-
-
  <engine>
       <name>engine #1 starting</name>
       <mode>looped</mode>
@@ -91,7 +89,6 @@
         <factor>-0.04</factor>
       </pitch>
     </gear>
-  
 
   <gear-lock>
    <name>gear-lock</name>
@@ -113,6 +110,16 @@
         <offset>0.25</offset>
       </volume>
     </flap>
+    
+    <air-brake>
+      <name>air-brake</name>
+      <mode>in-transit</mode>
+      <path>Sounds/flaps.wav</path>
+      <property>surface-positions/speedbrake-pos-norm</property>
+      <volume>
+        <factor>0.25</factor>
+      </volume>
+    </air-brake>
 
   <squeal>
    <name>squeal</name>

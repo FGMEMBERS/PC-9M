@@ -4,13 +4,15 @@
 
 <path>PC-9M.ac</path>
 <offsets>
-<pitch-deg>-4.50</pitch-deg>   
+<pitch-deg>-4.70</pitch-deg>   
 <heading-deg>0</heading-deg>
 <roll-deg>0</roll-deg>
 <x-m>0</x-m>
 <y-m>0</y-m>
-<z-m>-0.155</z-m>
+<z-m>-0.13</z-m>
 </offsets>
+
+<!-- Livery -->
 
 <nasal>
 <load>
@@ -20,6 +22,61 @@ var livery_update = aircraft.livery_update.new("Aircraft/PC-9M/Models/Liveries")
 livery_update.stop();
 </unload>
 </nasal>
+
+<animation>
+<type>material</type>
+<object-name>spinner</object-name>
+<object-name>hull</object-name>
+<object-name>arch</object-name>
+<object-name>rudder</object-name>
+<object-name>hstab</object-name>
+<object-name>elevator</object-name>
+<object-name>wroot</object-name>
+<object-name>twing</object-name>
+<object-name>dwing</object-name>
+<object-name>airbrake</object-name>
+<object-name>riflap</object-name>
+<object-name>liflap</object-name>
+<object-name>roflap</object-name>
+<object-name>loflap</object-name>
+<object-name>raileron</object-name>
+<object-name>laileron</object-name>
+<object-name>frdoor</object-name>
+<object-name>fldoor</object-name>
+<object-name>rbodoor</object-name>
+<object-name>rbdoor</object-name>
+<object-name>lbodoor</object-name>
+<object-name>lbdoor</object-name>
+<property-base>sim/model/livery</property-base>
+<texture-prop>texture</texture-prop>
+<texture>Aircraft/PC-9M/Models/Liveries/Default.png</texture>
+</animation>
+
+<animation>
+<type>material</type>
+<object-name>propeller</object-name>
+<texture-prop>texture</texture-prop>
+<texture>Aircraft/PC-9M/Models/Liveries/Propeller.png</texture>
+</animation>
+
+<animation>
+<type>material</type>
+<object-name>pdisk</object-name>
+<object-name>prop</object-name>
+<texture-prop>texture</texture-prop>
+<texture>Aircraft/PC-9M/Models/Liveries/Disk.png</texture>
+</animation>
+
+<!-- Cockpit -->
+<model>
+<name>Cockpit</name>
+<path>Aircraft/PC-9M/Models/Cockpit.xml</path>
+<offsets>
+<x-m>0.00</x-m>
+<y-m>0.00</y-m>
+<z-m>0.00</z-m>
+</offsets>
+</model>
 
 <!-- Panel -->
 
@@ -46,23 +103,11 @@ livery_update.stop();
 
 <!-- Student -->
 
-<!-- Cockpit -->
-
 <model>
 <name>Stick</name>
-<path>Aircraft/PC-9M/Instruments/Stick/stick.xml</path>
+<path>Aircraft/PC-9M/Models/Instruments/Stick/Stick.xml</path>
 <offsets>
-<x-m>-0.74</x-m>
-<y-m> 0.00</y-m>
-<z-m> 0.60</z-m>
-</offsets>
-</model>
-
-<model>
-<name>Pedals</name>
-<path>Aircraft/PC-9M/Instruments/Pedals/pedals.xml</path>
-<offsets>
-<x-m>-1.27</x-m>
+<x-m>-0.73</x-m>
 <y-m> 0.00</y-m>
 <z-m> 0.47</z-m>
 </offsets>
@@ -70,7 +115,7 @@ livery_update.stop();
 
 <model>
 <name>Throttle</name>
-<path>Aircraft/PC-9M/Instruments/Throttle/throttle.xml</path>
+<path>Aircraft/PC-9M/Models/Instruments/Throttle/Throttle.xml</path>
 <offsets>
 <x-m>0.00</x-m>
 <y-m>0.00</y-m>
@@ -79,94 +124,158 @@ livery_update.stop();
 </model>
 
 <model>
-<name>Gearhandle</name>
-<path>Aircraft/PC-9M/Instruments/Landing-Gear/gearhandle.xml</path>
+<name>Pedals</name>
+<path>Aircraft/PC-9M/Models/Instruments/Pedals/Pedals.xml</path>
 <offsets>
-<x-m>0</x-m>
-<y-m>0</y-m>
-<z-m>0</z-m>
-</offsets>
-<pitch-deg>0</pitch-deg>
-</model>
-
-<!--EngineSwitch-->
-<model>
-<name>Engine-Switch</name>
-<path>Aircraft/PC-9M/Instruments/Engine-Switch/engine_switch1.xml</path>
-<offsets>
-<x-m>-0.94</x-m>
-<y-m>0.335</y-m>
-<z-m>0.80</z-m>
-<pitch-deg>90</pitch-deg>
+<x-m>-1.28</x-m>
+<y-m> 0.00</y-m>
+<z-m> 0.59</z-m>
 </offsets>
 </model>
 
 <!-- Instruments-->
 
-<!--Altimeter-->
 <model>
-<name>ALT1 gauge</name>
-<path>Aircraft/PC-9M/Instruments/ALT/altimeter1.xml</path>
+<name>Magnetic Compass</name>
+<path>Aircraft/PC-9M/Models/Instruments/Compass/Compass.xml</path>
 <offsets>
-<x-m>-0.94</x-m>
+<x-m>-1.00</x-m>
+<y-m> 0.29</y-m>
+<z-m> 1.26</z-m>
+</offsets>
+</model>
+
+<model>
+<name>Flaps Indicator</name>
+<path>Aircraft/PC-9M/Models/Instruments/Flaps/Flaps.xml</path>
+<offsets>
+<x-m>-0.97</x-m>
+<y-m>-0.29</y-m>
+<z-m> 0.835</z-m>
+</offsets>
+</model>
+
+<model>
+<name>Landing Gear Indicator</name>
+<path>Aircraft/PC-9M/Models/Instruments/Gear/Gear.xml</path>
+<offsets>
+<x-m>-0.93</x-m>
+<y-m>-0.34</y-m>
+<z-m> 0.73</z-m>
+</offsets>
+</model>
+
+<model>
+<name>Nose Wheel Steering Switch</name>
+<path>Aircraft/PC-9M/Models/Instruments/NWS/NWS.xml</path>
+<offsets>
+<x-m>0.00</x-m>
+<y-m>0.03</y-m>
+<z-m>0.04</z-m>
+</offsets>
+</model>
+
+<model>
+<name>Speedbrake Switch</name>
+<path>Aircraft/PC-9M/Models/Instruments/Speedbrake/Speedbrake.xml</path>
+<offsets>
+<x-m>0.00</x-m>
+<y-m>0.03</y-m>
+<z-m>0.04</z-m>
+</offsets>
+</model>
+
+<model>
+<name>Warning Switches</name>
+<path>Aircraft/PC-9M/Models/Instruments/Warning/Warning.xml</path>
+<offsets>
+<x-m>0.00</x-m>
+<y-m>0.00</y-m>
+<z-m>0.00</z-m>
+</offsets>
+</model>
+
+<model>
+<name>Air Cooling</name>
+<path>Aircraft/PC-9M/Models/Instruments/Air/Air.xml</path>
+<offsets>
+<x-m>0.00</x-m>
+<y-m>0.00</y-m>
+<z-m>0.00</z-m>
+</offsets>
+</model>
+
+<model>
+<name>Clock</name>
+<path>Aircraft/PC-9M/Models/Instruments/Clock/Clock.xml</path>
+<offsets>
+<x-m>-0.71</x-m>
+<y-m>-0.357</y-m>
+<z-m> 0.97</z-m>
+<heading-deg>11</heading-deg>
+</offsets>
+</model>
+
+<model>
+<name>Altimeter</name>
+<path>Aircraft/PC-9M/Models/Instruments/ALT/altimeter1.xml</path>
+<offsets>
+<x-m>-0.97</x-m>
 <y-m>0.11</y-m>
 <z-m>1.18</z-m>
 <pitch-deg>0</pitch-deg>
 </offsets>
 </model>
 
-<!--VerticalSpeedIndicator-->
 <model>
-<name>VSI 1 gauge</name>
-<path>Aircraft/PC-9M/Instruments/VSI/vsi.xml</path>
+<name>Vertical Speed Indicator</name>
+<path>Aircraft/PC-9M/Models/Instruments/VSI/vsi.xml</path>
 <offsets>
-<x-m>-0.94</x-m>
-<y-m>0.11</y-m>
-<z-m>1.09</z-m>
+<x-m>-0.97</x-m>
+<y-m> 0.11</y-m>
+<z-m> 1.09</z-m>
 <pitch-deg>0</pitch-deg>
 </offsets>
 </model>
     
-<!--AirSpeedIndicator-->
 <model>
-<name>ASI 1 gauge</name>
-<path>Aircraft/PC-9M/Instruments/ASI/asi300.xml</path>
+<name>Air Speed Indicator</name>
+<path>Aircraft/PC-9M/Models/Instruments/ASI/asi300.xml</path>
 <offsets>
-<x-m>-0.94</x-m>
+<x-m>-0.97</x-m>
 <y-m>-0.12</y-m>
 <z-m>1.18</z-m>
 <pitch-deg>0</pitch-deg>
 </offsets>
 </model>  
-  
-<!-- A-10 ADI -->
+
 <model>
-<path>Aircraft/PC-9M/Instruments/ADI/A-10-adi.xml</path>
+<name>Attitude Indicator</name>
+<path>Aircraft/PC-9M/Models/Instruments/ADI/A-10-adi.xml</path>
 <offsets>
-<x-m>-0.93</x-m>
+<x-m>-0.96</x-m>
 <y-m>-0.005</y-m>
 <z-m>1.16</z-m>
 <pitch-deg>-0</pitch-deg>
 </offsets>
 </model>
 	
-<!-- A-10 HSI -->
 <model>
-<path>Aircraft/PC-9M/Instruments/HSI/A-10-HSI.xml</path>
+<name>Horizontal Situation Indicator</name>
+<path>Aircraft/PC-9M/Models/Instruments/HSI/A-10-HSI.xml</path>
 <offsets>
-<x-m>-0.94</x-m>
+<x-m>-0.97</x-m>
 <y-m>-0.005</y-m>
 <z-m>1.02</z-m>
 <pitch-deg>-0</pitch-deg>
 </offsets>
 </model>
 	
-<!--RMI    ADF-VOR-->
 <model>
-<name>RMI pilot</name>
-<path>Aircraft/PC-9M/Instruments/RMI/rmi.xml</path>
+<name>Radio Magnetic Indicator</name>
+<path>Aircraft/PC-9M/Models/Instruments/RMI/rmi.xml</path>
 <offsets>
-<x-m>-0.94</x-m>
+<x-m>-0.97</x-m>
 <y-m>-0.12</y-m>
 <z-m>1.045</z-m>
 <pitch-deg>0</pitch-deg>
@@ -174,33 +283,32 @@ livery_update.stop();
 </model>
     
 <model>
-<name>Stby-gyro</name>
-<path>Aircraft/PC-9M/Instruments/Mini-AI/mini-ai.xml</path>
+<name>Standby Gyro</name>
+<path>Aircraft/PC-9M/Models/Instruments/Mini-AI/mini-ai.xml</path>
 <offsets>
-<x-m>-0.95</x-m>
+<x-m>-0.98</x-m>
 <y-m>-0.2</y-m>
 <z-m>1.14</z-m>
 <pitch-deg>0</pitch-deg>
 </offsets>
 </model>
 
-<!--Turn indicator--> 
 <model>
-<name>turn-indicator</name>  
-<path>Aircraft/PC-9M/Instruments/TC/tc.xml</path>
+<name>Turn and Bank Indicator</name>  
+<path>Aircraft/PC-9M/Models/Instruments/TC/tc.xml</path>
 <offsets>
-<x-m>-0.938</x-m>
+<x-m>-0.968</x-m>
 <y-m>-0.2</y-m>
 <z-m>1.045</z-m>
 <pitch-deg>0</pitch-deg>
 </offsets>
 </model>
 	
-<!--AOA-->
 <model>
-<path>Aircraft/PC-9M/Instruments/AOA/aoa-gauge.xml</path>
+<name>Angle of Attack</name>
+<path>Aircraft/PC-9M/Models/Instruments/AOA/aoa-gauge.xml</path>
 <offsets> 
-<x-m>-0.94</x-m>
+<x-m>-0.97</x-m>
 <y-m>-0.28</y-m>
 <z-m>1.045</z-m>
 <pitch-deg>0</pitch-deg>
@@ -209,12 +317,12 @@ livery_update.stop();
 <type>noshadow</type>
 </animation>
 </model>
-	
-<!--Gmeter-->	
+		
 <model>
-<path>Aircraft/PC-9M/Instruments/AOA/accelerometer.xml</path>
+<name>G Meter</name>
+<path>Aircraft/PC-9M/Models/Instruments/AOA/accelerometer.xml</path>
 <offsets> 
-<x-m>-0.94</x-m>
+<x-m>-0.97</x-m>
 <y-m>0.11</y-m>
 <z-m>1.01</z-m>
 </offsets>
@@ -223,45 +331,56 @@ livery_update.stop();
 </animation>
 </model>
 	
-<!--DME indicator-->	
+	
 <model>
-<path>Aircraft/PC-9M/Instruments/DME/dme.xml</path>
+<name>Distance Measuring Equipment</name>
+<path>Aircraft/PC-9M/Models/Instruments/DME/dme.xml</path>
 <offsets>
-<x-m>-0.94</x-m>
+<x-m>-0.97</x-m>
 <y-m>-0.12</y-m>
 <z-m>1.11</z-m>
 <pitch-deg>0</pitch-deg>
 </offsets>
 </model>
    
-<!--Comm Nav Adf-->
 <model>
-<name>Comm1</name>
-<path>Aircraft/PC-9M/Instruments/COMM/comm1.xml</path>
+<name>VHF Communications 1</name>
+<path>Aircraft/PC-9M/Models/Instruments/COMM/comm1.xml</path>
 <offsets>
-<x-m>-0.93</x-m>
-<y-m>0.32</y-m>
-<z-m>0.76</z-m>
-<pitch-deg>-63</pitch-deg>
+<x-m>-0.97</x-m>
+<y-m>-0.035</y-m>
+<z-m> 0.80</z-m>
+<pitch-deg>0</pitch-deg>
 </offsets>
 </model>
 
 <model>
-<name>Comm2</name>
-<path>Aircraft/PC-9M/Instruments/COMM/comm2.xml</path>
+<name>VHF Communications 2</name>
+<path>Aircraft/PC-9M/Models/Instruments/COMM/comm2.xml</path>
 <offsets>
-<x-m>-0.877</x-m>
-<y-m>0.325</y-m>
-<z-m>0.72</z-m>
-<pitch-deg>-63</pitch-deg>
+<x-m>-0.97</x-m>
+<y-m> 0.035</y-m>
+<z-m> 0.80</z-m>
+<pitch-deg>0</pitch-deg>
+</offsets>
+</model>
+
+<model>
+<name>Automatic Direction Finder</name>
+<path>Aircraft/PC-9M/Models/Instruments/COMM/ctl62.xml</path>
+<offsets>
+<x-m>-0.97</x-m>
+<y-m>-0.115</y-m>
+<z-m>0.96</z-m>
+<pitch-deg>0</pitch-deg>
 </offsets>
 </model>
   
 <model>
-<name>Nav1</name>
-<path>Aircraft/PC-9M/Instruments/COMM/nav1.xml</path>
+<name>VOR Navigation 1</name>
+<path>Aircraft/PC-9M/Models/Instruments/COMM/nav1.xml</path>
 <offsets>
-<x-m>-0.94</x-m>
+<x-m>-0.97</x-m>
 <y-m>-0.245</y-m>
 <z-m>0.96</z-m>
 <pitch-deg>0</pitch-deg>
@@ -269,32 +388,30 @@ livery_update.stop();
 </model>
 
 <model>
-<name>ADF1</name>
-<path>Aircraft/PC-9M/Instruments/COMM/ctl62.xml</path>
+<name>VOR Navigation 2</name>
+<path>Aircraft/PC-9M/Models/Instruments/COMM/nav2.xml</path>
 <offsets>
-<x-m>-0.94</x-m>
-<y-m>-0.115</y-m>
-<z-m>0.96</z-m>
-<pitch-deg>0</pitch-deg>
-</offsets>
-</model>
-
-<model>
-<name>Nav2</name>
-<path>Aircraft/PC-9M/Instruments/COMM/nav2.xml</path>
-<offsets>
-<x-m>-0.94</x-m>
+<x-m>-0.97</x-m>
 <y-m>-0.18</y-m>
 <z-m>0.96</z-m>
 <pitch-deg>0</pitch-deg>
 </offsets>
 </model>
     
-<!--Engine control Instruments-->
+<model>
+<name>Engine Switch</name>
+<path>Aircraft/PC-9M/Models/Instruments/Engine-Switch/Engine-Switch.xml</path>
+<offsets>
+<x-m>-0.96</x-m>
+<y-m> 0.34</y-m>
+<z-m> 0.72</z-m>
+<pitch-deg>90</pitch-deg>
+</offsets>
+</model>
 
 <model>
-<name>torque</name>
-<path>Aircraft/PC-9M/Instruments/Torque/torque.xml</path>
+<name>Torque</name>
+<path>Aircraft/PC-9M/Models/Instruments/Torque/torque.xml</path>
 <offsets>
 <x-m>-0.94</x-m>
 <y-m>0.185</y-m>
@@ -304,8 +421,8 @@ livery_update.stop();
 </model>
 
 <model>
-<name>prop rpm</name>
-<path>Aircraft/PC-9M/Instruments/RPM/prop-rpm.xml</path>
+<name>Propeller RPM</name>
+<path>Aircraft/PC-9M/Models/Instruments/RPM/prop-rpm.xml</path>
 <offsets>
 <x-m>-0.94</x-m>
 <y-m>0.185</y-m>
@@ -316,7 +433,7 @@ livery_update.stop();
 
 <model>
 <name>T5</name>
-<path>Aircraft/PC-9M/Instruments/T5/t5.xml</path>
+<path>Aircraft/PC-9M/Models/Instruments/T5/t5.xml</path>
 <offsets>
 <x-m>-0.94</x-m>
 <y-m>0.185</y-m>
@@ -326,8 +443,8 @@ livery_update.stop();
 </model>
     
 <model>
-<name>gg rpm</name>
-<path>Aircraft/PC-9M/Instruments/GGRPM/ggrpm.xml</path>
+<name>Gas Generator RPM</name>
+<path>Aircraft/PC-9M/Models/Instruments/GGRPM/ggrpm.xml</path>
 <offsets>
 <x-m>-0.94</x-m>
 <y-m>0.185</y-m>
@@ -337,8 +454,8 @@ livery_update.stop();
 </model>
     
 <model>
-<name>fuelflow</name>
-<path>Aircraft/PC-9M/Instruments/Fuel-Flow/fuelflow.xml</path>
+<name>Fuel Flow</name>
+<path>Aircraft/PC-9M/Models/Instruments/Fuel-Flow/fuelflow.xml</path>
 <offsets>
 <x-m>-0.94</x-m>
 <y-m>0.24</y-m>
@@ -348,8 +465,8 @@ livery_update.stop();
 </model>
     
 <model>
-<name>oiltemp</name>
-<path>Aircraft/PC-9M/Instruments/Oil-Temp/oiltemp.xml</path>
+<name>Oil Temperature</name>
+<path>Aircraft/PC-9M/Models/Instruments/Oil-Temp/oiltemp.xml</path>
 <offsets>
 <x-m>-0.94</x-m>
 <y-m>0.24</y-m>
@@ -359,8 +476,8 @@ livery_update.stop();
 </model>
     
 <model>
-<name>oilpsi</name>
-<path>Aircraft/PC-9M/Instruments/Oil-Psi/oilpsi.xml</path>
+<name>Oil Pressure</name>
+<path>Aircraft/PC-9M/Models/Instruments/Oil-Psi/oilpsi.xml</path>
 <offsets>
 <x-m>-0.94</x-m>
 <y-m>0.24</y-m>
@@ -370,8 +487,8 @@ livery_update.stop();
 </model>
     
 <model>
-<name>fuelqty1</name>
-<path>Aircraft/PC-9M/Instruments/Fuel-Qt/fuel-qty0.xml</path>
+<name>Fuel Quantity 1</name>
+<path>Aircraft/PC-9M/Models/Instruments/Fuel-Qt/fuel-qty0.xml</path>
 <offsets>
 <x-m>-0.94</x-m>
 <y-m>0.29</y-m>
@@ -381,8 +498,8 @@ livery_update.stop();
 </model>
 
 <model>
-<name>fuelqty2</name>
-<path>Aircraft/PC-9M/Instruments/Fuel-Qt/fuel-qty1.xml</path>
+<name>Fuel Quantity 2</name>
+<path>Aircraft/PC-9M/Models/Instruments/Fuel-Qt/fuel-qty1.xml</path>
 <offsets>
 <x-m>-0.94</x-m>
 <y-m>0.29</y-m>
@@ -391,371 +508,409 @@ livery_update.stop();
 </offsets>
 </model>
 
-<model>
-<name>clock</name>
-<path>Aircraft/PC-9M/Instruments/Clock/clock.xml</path>
-<offsets>
-<x-m>-0.76</x-m>
-<y-m>-0.355</y-m>
-<z-m> 0.965</z-m>
-<pitch-deg>0</pitch-deg>
-</offsets>
-</model>
-
 <!-- Instructor -->
 
-<!-- Cockpit -->
-
 <model>
-<name>Stick</name>
-<path>Aircraft/PC-9M/Instruments/Stick/stick.xml</path>
+<name>Stick 2</name>
+<path>Aircraft/PC-9M/Models/Instruments/Stick/Stick.xml</path>
 <offsets>
-<x-m> 0.64</x-m>
+<x-m> 0.63</x-m>
 <y-m> 0.00</y-m>
-<z-m> 0.67</z-m>
+<z-m> 0.51</z-m>
 </offsets>
 </model>
 
 <model>
-<name>Pedals</name>
-<path>Aircraft/PC-9M/Instruments/Pedals/pedals.xml</path>
+<name>Throttle 2</name>
+<path>Aircraft/PC-9M/Models/Instruments/Throttle/Throttle.xml</path>
 <offsets>
-<x-m> 0.11</x-m>
+<x-m>1.36</x-m>
+<y-m>0.00</y-m>
+<z-m>0.04</z-m>
+</offsets>
+</model>
+
+<model>
+<name>Pedals 2</name>
+<path>Aircraft/PC-9M/Models/Instruments/Pedals/Pedals.xml</path>
+<offsets>
+<x-m> 0.08</x-m>
 <y-m> 0.00</y-m>
-<z-m> 0.54</z-m>
-</offsets>
-</model>
-
-<model>
-<name>Throttle</name>
-<path>Aircraft/PC-9M/Instruments/Throttle/throttle.xml</path>
-<offsets>
-<x-m>1.38</x-m>
-<y-m>0.00</y-m>
-<z-m>0.07</z-m>
-</offsets>
-</model>
-
-<model>
-<name>Gearhandle</name>
-<path>Aircraft/PC-9M/Instruments/Landing-Gear/gearhandle.xml</path>
-<offsets>
-<x-m>1.38</x-m>
-<y-m>0.00</y-m>
-<z-m>0.07</z-m>
-</offsets>
-<pitch-deg>0</pitch-deg>
-</model>
-
-<!--EngineSwitch-->
-<model>
-<name>Engine-Switch</name>
-<path>Aircraft/PC-9M/Instruments/Engine-Switch/engine_switch1.xml</path>
-<offsets>
-<x-m>0.44</x-m>
-<y-m>0.335</y-m>
-<z-m>0.87</z-m>
-<pitch-deg>90</pitch-deg>
+<z-m> 0.63</z-m>
 </offsets>
 </model>
 
 <!-- Instruments-->
 
-<!--Altimeter-->
 <model>
-<name>ALT1 gauge</name>
-<path>Aircraft/PC-9M/Instruments/ALT/altimeter1.xml</path>
+<name>Magnetic Compass 2</name>
+<path>Aircraft/PC-9M/Models/Instruments/Compass/Compass.xml</path>
 <offsets>
-<x-m>0.44</x-m>
+<x-m> 0.36</x-m>
+<y-m> 0.29</y-m>
+<z-m> 1.30</z-m>
+</offsets>
+</model>
+
+<model>
+<name>Flaps Indicator 2</name>
+<path>Aircraft/PC-9M/Models/Instruments/Flaps/Flaps.xml</path>
+<offsets>
+<x-m> 0.39</x-m>
+<y-m>-0.29</y-m>
+<z-m> 0.875</z-m>
+</offsets>
+</model>
+
+<model>
+<name>Landing Gear Indicator 2</name>
+<path>Aircraft/PC-9M/Models/Instruments/Gear/Gear.xml</path>
+<offsets>
+<x-m> 0.43</x-m>
+<y-m>-0.34</y-m>
+<z-m> 0.77</z-m>
+</offsets>
+</model>
+
+<model>
+<name>Nose Wheel Steering Switch 2</name>
+<path>Aircraft/PC-9M/Models/Instruments/NWS/NWS.xml</path>
+<offsets>
+<x-m>1.36</x-m>
+<y-m>0.03</y-m>
+<z-m>0.08</z-m>
+</offsets>
+</model>
+
+<model>
+<name>Speedbrake Switch 2</name>
+<path>Aircraft/PC-9M/Models/Instruments/Speedbrake/Speedbrake.xml</path>
+<offsets>
+<x-m>1.36</x-m>
+<y-m>0.03</y-m>
+<z-m>0.08</z-m>
+</offsets>
+</model>
+
+<model>
+<name>Warning Switches 2</name>
+<path>Aircraft/PC-9M/Models/Instruments/Warning/Warning.xml</path>
+<offsets>
+<x-m>1.36</x-m>
+<y-m>0.00</y-m>
+<z-m>0.04</z-m>
+</offsets>
+</model>
+
+<model>
+<name>Air Cooling 2</name>
+<path>Aircraft/PC-9M/Models/Instruments/Air/Air.xml</path>
+<offsets>
+<x-m>1.36</x-m>
+<y-m>0.00</y-m>
+<z-m>0.04</z-m>
+</offsets>
+</model>
+
+<model>
+<name>Clock 2</name>
+<path>Aircraft/PC-9M/Models/Instruments/Clock/Clock.xml</path>
+<offsets>
+<x-m>  0.63</x-m>
+<y-m> -0.38</y-m>
+<z-m> 1.045</z-m>
+<heading-deg>11</heading-deg>
+</offsets>
+</model>
+
+<model>
+<name>Altimeter 2</name>
+<path>Aircraft/PC-9M/Models/Instruments/ALT/altimeter1.xml</path>
+<offsets>
+<x-m>0.39</x-m>
 <y-m>0.11</y-m>
-<z-m>1.25</z-m>
+<z-m>1.22</z-m>
 <pitch-deg>0</pitch-deg>
 </offsets>
 </model>
 
-<!--VerticalSpeedIndicator-->
 <model>
-<name>VSI 1 gauge</name>
-<path>Aircraft/PC-9M/Instruments/VSI/vsi.xml</path>
+<name>Vertical Speed Indicator 2</name>
+<path>Aircraft/PC-9M/Models/Instruments/VSI/vsi.xml</path>
 <offsets>
-<x-m>0.44</x-m>
+<x-m>0.39</x-m>
 <y-m>0.11</y-m>
-<z-m>1.16</z-m>
+<z-m>1.13</z-m>
 <pitch-deg>0</pitch-deg>
 </offsets>
 </model>
     
-<!--AirSpeedIndicator-->
 <model>
-<name>ASI 1 gauge</name>
-<path>Aircraft/PC-9M/Instruments/ASI/asi300.xml</path>
+<name>Air Speed Indicator 2</name>
+<path>Aircraft/PC-9M/Models/Instruments/ASI/asi300.xml</path>
 <offsets>
-<x-m> 0.44</x-m>
+<x-m> 0.39</x-m>
 <y-m>-0.12</y-m>
-<z-m> 1.25</z-m>
+<z-m> 1.22</z-m>
 <pitch-deg>0</pitch-deg>
 </offsets>
 </model>  
-  
-<!-- A-10 ADI -->
+
 <model>
-<path>Aircraft/PC-9M/Instruments/ADI/A-10-adi.xml</path>
+<name>Attitude Indicator 2</name>
+<path>Aircraft/PC-9M/Models/Instruments/ADI/A-10-adi.xml</path>
 <offsets>
-<x-m> 0.45</x-m>
+<x-m> 0.40</x-m>
 <y-m>-0.005</y-m>
-<z-m>1.23</z-m>
+<z-m> 1.20</z-m>
 <pitch-deg>-0</pitch-deg>
 </offsets>
 </model>
 	
-<!-- A-10 HSI -->
 <model>
-<path>Aircraft/PC-9M/Instruments/HSI/A-10-HSI.xml</path>
+<name>Horizontal Situation Indicator 2</name>
+<path>Aircraft/PC-9M/Models/Instruments/HSI/A-10-HSI.xml</path>
 <offsets>
-<x-m> 0.44</x-m>
+<x-m> 0.39</x-m>
 <y-m>-0.005</y-m>
-<z-m>1.09</z-m>
+<z-m> 1.06</z-m>
 <pitch-deg>-0</pitch-deg>
 </offsets>
 </model>
 	
-<!--RMI    ADF-VOR-->
 <model>
-<name>RMI pilot</name>
-<path>Aircraft/PC-9M/Instruments/RMI/rmi.xml</path>
+<name>Radio Magnetic Indicator 2</name>
+<path>Aircraft/PC-9M/Models/Instruments/RMI/rmi.xml</path>
 <offsets>
-<x-m> 0.44</x-m>
+<x-m> 0.39</x-m>
 <y-m>-0.12</y-m>
-<z-m>1.115</z-m>
+<z-m>1.085</z-m>
 <pitch-deg>0</pitch-deg>
 </offsets>
 </model>
     
 <model>
-<name>Stby-gyro</name>
-<path>Aircraft/PC-9M/Instruments/Mini-AI/mini-ai.xml</path>
+<name>Standby Gyro 2</name>
+<path>Aircraft/PC-9M/Models/Instruments/Mini-AI/mini-ai.xml</path>
 <offsets>
-<x-m> 0.44</x-m>
+<x-m> 0.38</x-m>
 <y-m>-0.20</y-m>
-<z-m> 1.21</z-m>
-<pitch-deg>0</pitch-deg>
-</offsets>
-</model>
-
-<!--Turn indicator--> 
-<model>
-<name>turn-indicator</name>  
-<path>Aircraft/PC-9M/Instruments/TC/tc.xml</path>
-<offsets>
-<x-m> 0.458</x-m>
-<y-m>-0.200</y-m>
-<z-m> 1.115</z-m>
-<pitch-deg>0</pitch-deg>
-</offsets>
-</model>
-	
-<!--AOA-->
-<model>
-<path>Aircraft/PC-9M/Instruments/AOA/aoa-gauge.xml</path>
-<offsets> 
-<x-m> 0.440</x-m>
-<y-m>-0.280</y-m>
-<z-m> 1.115</z-m>
-<pitch-deg>0</pitch-deg>
-</offsets>
-<animation>
-<type>noshadow</type>
-</animation>
-</model>
-	
-<!--Gmeter-->	
-<model>
-<path>Aircraft/PC-9M/Instruments/AOA/accelerometer.xml</path>
-<offsets> 
-<x-m> 0.44</x-m>
-<y-m> 0.11</y-m>
-<z-m> 1.08</z-m>
-</offsets>
-<animation>
-<type>noshadow</type>
-</animation>
-</model>
-	
-<!--DME indicator-->	
-<model>
-<path>Aircraft/PC-9M/Instruments/DME/dme.xml</path>
-<offsets>
-<x-m> 0.44</x-m>
-<y-m>-0.12</y-m>
 <z-m> 1.18</z-m>
 <pitch-deg>0</pitch-deg>
 </offsets>
 </model>
-   
-<!--Comm Nav Adf-->
+
 <model>
-<name>Comm1</name>
-<path>Aircraft/PC-9M/Instruments/COMM/comm1.xml</path>
+<name>Turn and Bank Indicator 2</name>  
+<path>Aircraft/PC-9M/Models/Instruments/TC/tc.xml</path>
 <offsets>
-<x-m>0.45</x-m>
-<y-m>0.32</y-m>
-<z-m>0.83</z-m>
-<pitch-deg>-63</pitch-deg>
+<x-m> 0.392</x-m>
+<y-m>-0.20</y-m>
+<z-m> 1.085</z-m>
+<pitch-deg>0</pitch-deg>
+</offsets>
+</model>
+	
+<model>
+<name>Angle of Attack 2</name>
+<path>Aircraft/PC-9M/Models/Instruments/AOA/aoa-gauge.xml</path>
+<offsets> 
+<x-m> 0.39</x-m>
+<y-m>-0.28</y-m>
+<z-m>1.085</z-m>
+<pitch-deg>0</pitch-deg>
+</offsets>
+<animation>
+<type>noshadow</type>
+</animation>
+</model>
+		
+<model>
+<name>G Meter 2</name>
+<path>Aircraft/PC-9M/Models/Instruments/AOA/accelerometer.xml</path>
+<offsets> 
+<x-m>0.39</x-m>
+<y-m>0.11</y-m>
+<z-m>1.05</z-m>
+</offsets>
+<animation>
+<type>noshadow</type>
+</animation>
+</model>
+	
+	
+<model>
+<name>Distance Measuring Equipment 2</name>
+<path>Aircraft/PC-9M/Models/Instruments/DME/dme.xml</path>
+<offsets>
+<x-m> 0.39</x-m>
+<y-m>-0.12</y-m>
+<z-m> 1.15</z-m>
+<pitch-deg>0</pitch-deg>
+</offsets>
+</model>
+   
+<model>
+<name>VHF Communications 1 2</name>
+<path>Aircraft/PC-9M/Models/Instruments/COMM/comm1.xml</path>
+<offsets>
+<x-m> 0.39</x-m>
+<y-m>-0.035</y-m>
+<z-m> 0.84</z-m>
+<pitch-deg>0</pitch-deg>
 </offsets>
 </model>
 
 <model>
-<name>Comm2</name>
-<path>Aircraft/PC-9M/Instruments/COMM/comm2.xml</path>
+<name>VHF Communications 2 2</name>
+<path>Aircraft/PC-9M/Models/Instruments/COMM/comm2.xml</path>
 <offsets>
-<x-m>0.503</x-m>
-<y-m>0.32</y-m>
-<z-m>0.79</z-m>
-<pitch-deg>-63</pitch-deg>
+<x-m> 0.39</x-m>
+<y-m> 0.035</y-m>
+<z-m> 0.84</z-m>
+<pitch-deg>0</pitch-deg>
+</offsets>
+</model>
+
+<model>
+<name>Automatic Direction Finder 2</name>
+<path>Aircraft/PC-9M/Models/Instruments/COMM/ctl62.xml</path>
+<offsets>
+<x-m> 0.39</x-m>
+<y-m>-0.115</y-m>
+<z-m> 1.00</z-m>
+<pitch-deg>0</pitch-deg>
 </offsets>
 </model>
   
 <model>
-<name>Nav1</name>
-<path>Aircraft/PC-9M/Instruments/COMM/nav1.xml</path>
+<name>VOR Navigation 1 2</name>
+<path>Aircraft/PC-9M/Models/Instruments/COMM/nav1.xml</path>
 <offsets>
-<x-m> 0.44</x-m>
+<x-m> 0.39</x-m>
 <y-m>-0.245</y-m>
-<z-m> 1.03</z-m>
+<z-m> 1.00</z-m>
 <pitch-deg>0</pitch-deg>
 </offsets>
 </model>
 
 <model>
-<name>ADF1</name>
-<path>Aircraft/PC-9M/Instruments/COMM/ctl62.xml</path>
+<name>VOR Navigation 2 2</name>
+<path>Aircraft/PC-9M/Models/Instruments/COMM/nav2.xml</path>
 <offsets>
-<x-m> 0.44</x-m>
-<y-m>-0.115</y-m>
-<z-m> 1.03</z-m>
-<pitch-deg>0</pitch-deg>
-</offsets>
-</model>
-
-<model>
-<name>Nav2</name>
-<path>Aircraft/PC-9M/Instruments/COMM/nav2.xml</path>
-<offsets>
-<x-m> 0.44</x-m>
+<x-m> 0.39</x-m>
 <y-m>-0.18</y-m>
-<z-m> 1.03</z-m>
+<z-m> 1.00</z-m>
 <pitch-deg>0</pitch-deg>
 </offsets>
 </model>
     
-<!--Engine control Instruments-->
+<model>
+<name>Engine Switch 2</name>
+<path>Aircraft/PC-9M/Models/Instruments/Engine-Switch/Engine-Switch.xml</path>
+<offsets>
+<x-m> 0.40</x-m>
+<y-m> 0.34</y-m>
+<z-m> 0.76</z-m>
+<pitch-deg>90</pitch-deg>
+</offsets>
+</model>
 
 <model>
-<name>torque</name>
-<path>Aircraft/PC-9M/Instruments/Torque/torque.xml</path>
+<name>Torque 2</name>
+<path>Aircraft/PC-9M/Models/Instruments/Torque/torque.xml</path>
 <offsets>
-<x-m>0.44</x-m>
+<x-m> 0.42</x-m>
 <y-m>0.185</y-m>
-<z-m>1.225</z-m>
+<z-m>1.195</z-m>
 <pitch-deg>0</pitch-deg>
 </offsets>
 </model>
 
 <model>
-<name>prop rpm</name>
-<path>Aircraft/PC-9M/Instruments/RPM/prop-rpm.xml</path>
+<name>Propeller RPM 2</name>
+<path>Aircraft/PC-9M/Models/Instruments/RPM/prop-rpm.xml</path>
 <offsets>
-<x-m>0.44</x-m>
+<x-m> 0.42</x-m>
 <y-m>0.185</y-m>
-<z-m>1.155</z-m>
+<z-m>1.125</z-m>
 <pitch-deg>0</pitch-deg>
 </offsets>
 </model>    
 
 <model>
-<name>T5</name>
-<path>Aircraft/PC-9M/Instruments/T5/t5.xml</path>
+<name>T5 2</name>
+<path>Aircraft/PC-9M/Models/Instruments/T5/t5.xml</path>
 <offsets>
-<x-m>0.44</x-m>
+<x-m> 0.42</x-m>
 <y-m>0.185</y-m>
-<z-m>1.085</z-m>
+<z-m>1.055</z-m>
 <pitch-deg>0</pitch-deg>
 </offsets>
 </model>
     
 <model>
-<name>gg rpm</name>
-<path>Aircraft/PC-9M/Instruments/GGRPM/ggrpm.xml</path>
+<name>Gas Generator RPM 2</name>
+<path>Aircraft/PC-9M/Models/Instruments/GGRPM/ggrpm.xml</path>
 <offsets>
-<x-m>0.44</x-m>
+<x-m> 0.42</x-m>
 <y-m>0.185</y-m>
-<z-m>1.015</z-m>
+<z-m>0.985</z-m>
 <pitch-deg>0</pitch-deg>
 </offsets>
 </model>
     
 <model>
-<name>fuelflow</name>
-<path>Aircraft/PC-9M/Instruments/Fuel-Flow/fuelflow.xml</path>
+<name>Fuel Flow 2</name>
+<path>Aircraft/PC-9M/Models/Instruments/Fuel-Flow/fuelflow.xml</path>
 <offsets>
-<x-m>0.44</x-m>
+<x-m>0.42</x-m>
 <y-m>0.24</y-m>
-<z-m>1.19</z-m>
+<z-m>1.16</z-m>
 <pitch-deg>0</pitch-deg>
 </offsets>
 </model>
     
 <model>
-<name>oiltemp</name>
-<path>Aircraft/PC-9M/Instruments/Oil-Temp/oiltemp.xml</path>
+<name>Oil Temperature 2</name>
+<path>Aircraft/PC-9M/Models/Instruments/Oil-Temp/oiltemp.xml</path>
 <offsets>
-<x-m>0.44</x-m>
+<x-m>0.42</x-m>
 <y-m>0.24</y-m>
-<z-m>1.12</z-m>
+<z-m>1.09</z-m>
 <pitch-deg>0</pitch-deg>
 </offsets>
 </model>
     
 <model>
-<name>oilpsi</name>
-<path>Aircraft/PC-9M/Instruments/Oil-Psi/oilpsi.xml</path>
+<name>Oil Pressure 2</name>
+<path>Aircraft/PC-9M/Models/Instruments/Oil-Psi/oilpsi.xml</path>
 <offsets>
-<x-m>0.44</x-m>
+<x-m>0.42</x-m>
 <y-m>0.24</y-m>
-<z-m>1.05</z-m>
+<z-m>1.02</z-m>
 <pitch-deg>0</pitch-deg>
 </offsets>
 </model>
     
 <model>
-<name>fuelqty1</name>
-<path>Aircraft/PC-9M/Instruments/Fuel-Qt/fuel-qty0.xml</path>
+<name>Fuel Quantity 1 2</name>
+<path>Aircraft/PC-9M/Models/Instruments/Fuel-Qt/fuel-qty0.xml</path>
 <offsets>
-<x-m>0.44</x-m>
-<y-m>0.29</y-m>
-<z-m>1.085</z-m>
+<x-m> 0.42</x-m>
+<y-m> 0.29</y-m>
+<z-m>1.055</z-m>
 <pitch-deg>0</pitch-deg>
 </offsets>
 </model>
 
 <model>
-<name>fuelqty2</name>
-<path>Aircraft/PC-9M/Instruments/Fuel-Qt/fuel-qty1.xml</path>
+<name>Fuel Quantity 2 2</name>
+<path>Aircraft/PC-9M/Models/Instruments/Fuel-Qt/fuel-qty1.xml</path>
 <offsets>
-<x-m>0.44</x-m>
-<y-m>0.29</y-m>
-<z-m>1.015</z-m>
-<pitch-deg>0</pitch-deg>
-</offsets>
-</model>
-
-<model>
-<name>clock</name>
-<path>Aircraft/PC-9M/Instruments/Clock/clock.xml</path>
-<offsets>
-<x-m> 0.57</x-m>
-<y-m>-0.385</y-m>
-<z-m> 1.04</z-m>
+<x-m> 0.42</x-m>
+<y-m> 0.29</y-m>
+<z-m>0.985</z-m>
 <pitch-deg>0</pitch-deg>
 </offsets>
 </model>
@@ -1160,8 +1315,8 @@ livery_update.stop();
 <type>spin</type>
 <object-name>fwheel</object-name>
 <object-name>ftyre</object-name>
-<property>fdm/jsbsim/gear/unit[0]/wheel-speed-fps</property>
-<factor>48.0</factor>
+<property>fdm/jsbsim/gear/unit[1]/wheel-speed-fps</property>
+<factor>-48.0</factor>
 <axis>
 <x1-m>-2.44</x1-m>
 <y1-m>-0.04</y1-m>
@@ -1199,7 +1354,7 @@ livery_update.stop();
 <type>spin</type>
 <object-name>rwheel</object-name>
 <object-name>rtyre</object-name>
-<property>fdm/jsbsim/gear/unit[2]/wheel-speed-fps</property>
+<property>fdm/jsbsim/gear/unit[3]/wheel-speed-fps</property>
 <factor>48.0</factor>
 <axis>
 <x1-m> 0.01</x1-m>
@@ -1254,8 +1409,8 @@ livery_update.stop();
 <type>spin</type>
 <object-name>lwheel</object-name>
 <object-name>ltyre</object-name>
-<property>fdm/jsbsim/gear/unit[1]/wheel-speed-fps</property>
-<factor>48.0</factor>
+<property>fdm/jsbsim/gear/unit[2]/wheel-speed-fps</property>
+<factor>-48.0</factor>
 <axis>
 <x1-m> 0.01</x1-m>
 <y1-m> 1.29</y1-m>
@@ -1488,6 +1643,17 @@ livery_update.stop();
 </animation>
 
 <animation>
+<type>select</type>
+<object-name>propeller</object-name>
+<condition>
+<less-than>
+<property>engines/engine[0]/n2</property>
+<value>50.0001</value>
+</less-than>
+</condition>
+</animation>
+
+<animation>
 <type>spin</type>
 <object-name>propeller</object-name>
 <property>engines/engine[0]/n2</property>
@@ -1505,30 +1671,28 @@ livery_update.stop();
 </animation>
 
 <animation>
-<type>spin</type>
+<type>select</type>
 <object-name>prop</object-name>
+<condition>
+<greater-than>
 <property>engines/engine[0]/n2</property>
-<center>
-<x-m>-4.36</x-m>
-<y-m> 0.00</y-m>
-<z-m> 0.81</z-m>
-</center>
-<axis>
-<x>1.0</x>
-<y>0.0</y>
-<z>0.0</z>
-</axis>
+<value>50.000</value>
+</greater-than>
+<less-than>
+<property>engines/engine[0]/n2</property>
+<value>70.0001</value>
+</less-than>
+</condition>
 </animation>
 
 <animation>
 <type>spin</type>
-<object-name>pdisk</object-name>
+<object-name>prop</object-name>
 <property>engines/engine[0]/n2</property>
-<factor>.5</factor>   
 <center>
-<x-m>-4.36</x-m>
+<x-m>-3.80</x-m>
 <y-m> 0.00</y-m>
-<z-m> 0.81</z-m>
+<z-m> 0.80</z-m>
 </center>
 <axis>
 <x>1.0</x>
@@ -1549,73 +1713,20 @@ livery_update.stop();
 </animation>
 
 <animation>
-<type>select</type>
-<object-name>prop</object-name>
-<condition>
-<greater-than>
-<property>engines/engine[0]/n2</property>
-<value>50.000</value>
-</greater-than>
-<less-than>
-<property>engines/engine[0]/n2</property>
-<value>70.0001</value>
-</less-than>
-</condition>
-</animation>
-
-<animation>
-<type>select</type>
-<object-name>propeller</object-name>
-<condition>
-<less-than>
-<property>engines/engine[0]/n2</property>
-<value>50.0001</value>
-</less-than>
-</condition>
-</animation>
-
-<animation>
-<type>material</type>
+<type>spin</type>
 <object-name>pdisk</object-name>
-<object-name>prop</object-name>
-<texture-prop>texture</texture-prop>
-<texture>Aircraft/PC-9M/Models/Disk.png</texture>
-</animation>
-
-<animation>
-<type>material</type>
-<object-name>propeller</object-name>
-<texture-prop>texture</texture-prop>
-<texture>Aircraft/PC-9M/Models/Propeller.png</texture>
-</animation>
-
-<animation>
-<type>material</type>
-<object-name>spinner</object-name>
-<object-name>hull</object-name>
-<object-name>arch</object-name>
-<object-name>rudder</object-name>
-<object-name>hstab</object-name>
-<object-name>elevator</object-name>
-<object-name>wroot</object-name>
-<object-name>twing</object-name>
-<object-name>dwing</object-name>
-<object-name>airbrake</object-name>
-<object-name>riflap</object-name>
-<object-name>liflap</object-name>
-<object-name>roflap</object-name>
-<object-name>loflap</object-name>
-<object-name>raileron</object-name>
-<object-name>laileron</object-name>
-<object-name>frdoor</object-name>
-<object-name>fldoor</object-name>
-<object-name>rbodoor</object-name>
-<object-name>rbdoor</object-name>
-<object-name>lbodoor</object-name>
-<object-name>lbdoor</object-name>
-<property-base>sim/model/livery</property-base>
-<texture-prop>texture</texture-prop>
-<texture>Aircraft/PC-9M/Models/Liveries/Default.png</texture>
+<property>engines/engine[0]/n2</property>
+<factor>.5</factor>   
+<center>
+<x-m>-3.80</x-m>
+<y-m> 0.00</y-m>
+<z-m> 0.80</z-m>
+</center>
+<axis>
+<x>1.0</x>
+<y>0.0</y>
+<z>0.0</z>
+</axis>
 </animation>
 
 </PropertyList>

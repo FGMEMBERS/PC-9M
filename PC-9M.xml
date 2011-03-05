@@ -183,6 +183,7 @@
     </propulsion>
     
      <system file="speedbrakes"/>
+     <system file="nws"/>
      <system file="canopy"/>
     
     <flight_control name="FCS: PC-9M">
