@@ -2,14 +2,14 @@
 
 <?xml-stylesheet type="text/xsl" href="http://jsbsim.sourceforge.net/JSBSim.xsl"?>
 
-<fdm_config name="PC-9M" version="1.9" release="BETA"
+<fdm_config name="PC-9M" version="2.0" release="BETA"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:noNamespaceSchemaLocation="http://jsbsim.sourceforge.net/JSBSim.xsd">
 
     <fileheader>
         <author> Ernest Teuscher, Petar Jedvaj </author>
         <filecreationdate> 2011-1-1 </filecreationdate>
-        <version> $Revision: 1.9 $ </version>
+        <version>$Revision: 1.9 $</version>
         <description> PC-9M </description>
     </fileheader>
 
@@ -184,6 +184,7 @@
     
      <system file="speedbrakes"/>
      <system file="nws"/>
+     <system file="particles"/>
      <system file="canopy"/>
     
     <flight_control name="FCS: PC-9M">

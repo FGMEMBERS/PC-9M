@@ -49,11 +49,6 @@
 <virtual-cockpit archive="y">true</virtual-cockpit>
 <allow-toggle-cockpit archive="y">false</allow-toggle-cockpit>
 
-<panel>
-<path>Aircraft/PC-9M/Panels/PC-9M-panel.xml</path>
-<visibility archive="y">true</visibility>
-</panel>
-
 <!--Views -->
 
 <view n="0">
@@ -143,8 +138,8 @@
 <desc>Open/close canopy</desc>
 </key>
 <key>
-<name>d</name>
-<desc>Taxi light on/off</desc>
+<name>Ctrl+b</name>
+<desc>Toggle speedbrake</desc>
 </key>
 <key>
 <name>m </name>
@@ -153,10 +148,6 @@
 <key>
 <name>Shift+w+Arrow Keys</name>
 <desc>Walk</desc>
-</key>
-<key>
-<name>Ctrl+b</name>
-<desc>Toggle speedbrake</desc>
 </key>
 <line>Click on engine panel to START/RUN/ABORT or use Autostart</line>
 </help>
@@ -186,15 +177,6 @@
 <binding>
 <command>property-toggle</command>
 <property>fdm/jsbsim/systems/canopy/command</property>
-</binding>
-</key>
-
-<key n="100">
-<name>D</name>
-<desc>Toggle taxi light</desc>
-<binding>
-<command>property-toggle</command>
-<property>controls/switches/taxi-lights</property>
 </binding>
 </key>
 
@@ -347,7 +329,6 @@
 <PC-9M>
 <file>Aircraft/PC-9M/Nasal/liveries.nas</file>
 <file>Aircraft/PC-9M/Nasal/light.nas</file>
-<file>Aircraft/PC-9M/Nasal/contrail.nas</file>
 <file>Aircraft/PC-9M/Nasal/walk.nas</file>
 <file>Aircraft/PC-9M/Nasal/limits.nas</file>
 <file>Aircraft/PC-9M/Nasal/vhf22.nas</file>

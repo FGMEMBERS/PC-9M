@@ -1,0 +1,46 @@
+AC3Db
+MATERIAL "lights" rgb 1 1 1  amb 1 1 1  emis 1 1 1  spec 0 0 0  shi 72  trans 0
+OBJECT world
+kids 2
+OBJECT poly
+name "Light2"
+loc -0.302524 0.0656532 0.65338
+data 8
+Mesh.141
+texture "Landing.png"
+crease 30.000000
+numvert 4
+0 -0.0233031 0.446316
+0 -0.212275 0.446316
+0 -0.212275 0.635289
+0 -0.0233033 0.635289
+numsurf 1
+SURF 0x0
+mat 0
+refs 4
+3 0.697263 0.697265
+0 0.302734 0.697265
+1 0.302734 0.302735
+2 0.697263 0.302735
+kids 0
+OBJECT poly
+name "Light1"
+loc -0.302524 0.0655333 -0.669922
+data 8
+Mesh.215
+texture "Landing.png"
+crease 30.000000
+numvert 4
+0 -0.0233031 -0.635222
+0 -0.212275 -0.635222
+0 -0.212275 -0.446252
+0 -0.0233033 -0.446252
+numsurf 1
+SURF 0x0
+mat 0
+refs 4
+3 0.302734 0.302735
+0 0.697263 0.302735
+1 0.697263 0.697265
+2 0.302734 0.697265
+kids 0

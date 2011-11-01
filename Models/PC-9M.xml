@@ -62,10 +62,70 @@ livery_update.stop();
 <animation>
 <type>material</type>
 <object-name>pdisk</object-name>
-<object-name>prop</object-name>
 <texture-prop>texture</texture-prop>
 <texture>Aircraft/PC-9M/Models/Liveries/Disk.png</texture>
 </animation>
+
+<animation>
+<type>material</type>
+<object-name>prop</object-name>
+<texture-prop>texture</texture-prop>
+<texture>Aircraft/PC-9M/Models/Liveries/Blur.png</texture>
+</animation>
+
+<animation>
+<type>shader</type>
+<shader>chrome</shader>
+<texture>Aircraft/PC-9M/Shaders/Glass.png</texture>
+<object-name>canopy</object-name>
+</animation>
+
+<animation>
+<type>shader</type>
+<shader>chrome</shader>
+<texture>Aircraft/PC-9M/Shaders/Exhaust.png</texture>
+<object-name>exhaust</object-name>
+</animation>
+
+<animation>
+<type>shader</type>
+<shader>chrome</shader>
+<texture>Aircraft/PC-9M/Shaders/Chrome.png</texture>
+<object-name>abhydro</object-name>
+<object-name>fwheel</object-name>
+<object-name>fgear</object-name>
+<object-name>fstrut</object-name>
+<object-name>furingu</object-name>
+<object-name>fhydro</object-name>
+<object-name>fdring</object-name>
+<object-name>fuscissor</object-name>
+<object-name>fdscissor</object-name>
+<object-name>rwheel</object-name>
+<object-name>rstrut</object-name>
+<object-name>ruring</object-name>
+<object-name>rdring</object-name>
+<object-name>ruscissor</object-name>
+<object-name>rdscissor</object-name>
+<object-name>rhydro</object-name>
+<object-name>lwheel</object-name>
+<object-name>lstrut</object-name>
+<object-name>luring</object-name>
+<object-name>ldring</object-name>
+<object-name>luscissor</object-name>
+<object-name>ldscissor</object-name>
+<object-name>lhydro</object-name>
+</animation>
+
+<!-- Instruments -->
+<model>
+<name>Instruments</name>
+<path>Aircraft/PC-9M/Models/Instruments.xml</path>
+<offsets>
+<x-m>0.00</x-m>
+<y-m>0.00</y-m>
+<z-m>0.00</z-m>
+</offsets>
+</model>
 
 <!-- Cockpit -->
 <model>
@@ -77,29 +137,6 @@ livery_update.stop();
 <z-m>0.00</z-m>
 </offsets>
 </model>
-
-<!-- Panel -->
-
-<panel>
-<name>Panel3D</name>
-<path>Aircraft/PC-9M/Panels/PC-9M-panel.xml</path>
-<bottom-left>
-<x-m>-0.95</x-m>
-<y-m> 0.35</y-m>
-<z-m> 0.89</z-m>
-</bottom-left>
-<bottom-right>
-<x-m>-0.95</x-m>
-<y-m>-0.35</y-m>
-<z-m> 0.89</z-m>
-</bottom-right>
-<top-left>
-<x-m>-0.95</x-m>
-<y-m> 0.17</y-m>
-<z-m> 1.25</z-m>
-</top-left>
-<depth-test type="bool">false</depth-test>
-</panel>
 
 <!-- Student -->
 
@@ -209,9 +246,9 @@ livery_update.stop();
 <name>Clock</name>
 <path>Aircraft/PC-9M/Models/Instruments/Clock/Clock.xml</path>
 <offsets>
-<x-m>-0.71</x-m>
-<y-m>-0.357</y-m>
-<z-m> 0.97</z-m>
+<x-m>-0.712</x-m>
+<y-m>-0.343</y-m>
+<z-m> 0.955</z-m>
 <heading-deg>11</heading-deg>
 </offsets>
 </model>
@@ -617,8 +654,8 @@ livery_update.stop();
 <path>Aircraft/PC-9M/Models/Instruments/Clock/Clock.xml</path>
 <offsets>
 <x-m>  0.63</x-m>
-<y-m> -0.38</y-m>
-<z-m> 1.045</z-m>
+<y-m> -0.338</y-m>
+<z-m> 1.032</z-m>
 <heading-deg>11</heading-deg>
 </offsets>
 </model>
@@ -998,21 +1035,11 @@ livery_update.stop();
 </model>
 
 <model>
-<name>LightConeR</name>
-<path>Aircraft/PC-9M/Models/Lights/LightConeR.xml</path>
+<name>LandingLights</name>
+<path>Aircraft/PC-9M/Models/Lights/LandingLights.xml</path>
 <offsets>
 <x-m> 0.00</x-m>
-<y-m>-1.20</y-m>
-<z-m> 0.00</z-m>
-</offsets>
-</model>
-
-<model>
-<name>LightConeL</name>
-<path>Aircraft/PC-9M/Models/Lights/LightConeL.xml</path>
-<offsets>
-<x-m> 0.00</x-m>
-<y-m> 1.20</y-m>
+<y-m> 0.00</y-m>
 <z-m> 0.00</z-m>
 </offsets>
 </model>
@@ -1088,12 +1115,29 @@ livery_update.stop();
 </model>
 
 <model>
+<path>Aircraft/PC-9M/Models/Condensation-Left.xml</path>
+<offsets>
+<x-m> 0.73</x-m>
+<y-m> 5.21</y-m>
+<z-m> 0.64</z-m>
+</offsets>
+</model>
+
+<model>
+<path>Aircraft/PC-9M/Models/Condensation-Right.xml</path>
+<offsets>
+<x-m> 0.73</x-m>
+<y-m>-5.21</y-m>
+<z-m> 0.64</z-m>
+</offsets>
+</model>
+
+<model>
 <path>Aircraft/PC-9M/Models/Contrail.xml</path>
 <offsets>
 <x-m>-2.71</x-m>
 <y-m> 0.69</y-m>
 <z-m> 0.82</z-m>
-<heading-deg>0</heading-deg>
 </offsets>
 </model>
 
@@ -1103,7 +1147,6 @@ livery_update.stop();
 <x-m>-2.71</x-m>
 <y-m>-0.69</y-m>
 <z-m> 0.82</z-m>
-<heading-deg>0</heading-deg>
 </offsets>
 </model>
 
@@ -1611,6 +1654,61 @@ livery_update.stop();
 <y2-m>-0.03</y2-m>
 <z2-m> 0.00</z2-m>
 </axis>
+</animation>
+
+<animation>
+<type>select</type>
+<object-name>fwheel</object-name>
+<object-name>ftyre</object-name>
+<object-name>fgear</object-name>
+<object-name>fstrut</object-name>
+<object-name>furingu</object-name>
+<object-name>fhydro</object-name>
+<object-name>fdring</object-name>
+<object-name>fuscissor</object-name>
+<object-name>fdscissor</object-name>
+<condition>
+<greater-than>
+<property>gear/gear[0]/position-norm</property>
+<value>0</value>
+</greater-than>
+</condition>
+</animation>
+
+<animation>
+<type>select</type>
+<object-name>rwheel</object-name>
+<object-name>rtyre</object-name>
+<object-name>rstrut</object-name>
+<object-name>ruring</object-name>
+<object-name>rdring</object-name>
+<object-name>ruscissor</object-name>
+<object-name>rdscissor</object-name>
+<object-name>rhydro</object-name>
+<condition>
+<greater-than>
+<property>gear/gear[2]/position-norm</property>
+<value>0</value>
+</greater-than>
+</condition>
+</animation>
+
+<animation>
+<type>select</type>
+<object-name>lwheel</object-name>
+<object-name>ltyre</object-name>
+<object-name>lstrut</object-name>
+<object-name>luring</object-name>
+<object-name>ldring</object-name>
+<object-name>luscissor</object-name>
+<object-name>ldscissor</object-name>
+<object-name>lhydro</object-name>
+<condition>
+<greater-than>
+<property>gear/gear[1]/position-norm</property>
+<value>0</value>
+</greater-than>
+</condition>
 </animation>
 
 <animation>
