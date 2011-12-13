@@ -17,7 +17,3 @@ Big thanks to David Culp and Erik Hofman, this PC-9M package is based on their P
 Splash screen artwork is made by Vjekoslav Ranec.
 
 Petar Jedvaj (pjedvaj)
-
-
-https://gitorious.org/~scrat
-
