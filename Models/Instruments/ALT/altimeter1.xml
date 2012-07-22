@@ -87,7 +87,7 @@
     <animation>
         <type>textranslate</type>
         <object-name>mb01</object-name>
-        <property>/instrumentation/altimeter/millibars</property>
+        <property>/instrumentation/altimeter/setting-hpa</property>
         <factor>0.0001</factor>
         <step>1000</step>
         <axis>
@@ -100,7 +100,7 @@
     <animation>
         <type>textranslate</type>
         <object-name>mb02</object-name>
-        <property>/instrumentation/altimeter/millibars</property>
+        <property>/instrumentation/altimeter/setting-hpa</property>
         <factor>0.001</factor>
         <step>100</step>
         <axis>
@@ -113,7 +113,7 @@
     <animation>
         <type>textranslate</type>
         <object-name>mb03</object-name>
-        <property>/instrumentation/altimeter/millibars</property>
+        <property>/instrumentation/altimeter/setting-hpa</property>
         <factor>0.01</factor>
         <step>10</step>
         <axis>
@@ -126,7 +126,7 @@
     <animation>
         <type>textranslate</type>
         <object-name>mb04</object-name>
-        <property>/instrumentation/altimeter/millibars</property>
+        <property>/instrumentation/altimeter/setting-hpa</property>
         <factor>0.1</factor>
         <step>1</step>
         <axis>
