@@ -7,7 +7,7 @@
     xsi:noNamespaceSchemaLocation="http://jsbsim.sourceforge.net/JSBSim.xsd">
 
     <fileheader>
-        <author> Ernest Teuscher, Petar Jedvaj </author>
+        <author> Erik Hofman, David Culp </author>
         <filecreationdate> 2011-1-1 </filecreationdate>
         <version>$Revision: 1.9 $</version>
         <description> PC-9M </description>
@@ -182,7 +182,6 @@
         </tank>
     </propulsion>
     
-     <system file="speedbrakes"/>
      <system file="nws"/>
      <system file="particles"/>
      <system file="canopy"/>
@@ -492,7 +491,7 @@
                     <property>metrics/Sw-sqft</property>
                     <property>metrics/bw-ft</property>
                     <property>aero/beta-rad</property>
-                    <value>-0.1000</value>
+                    <value>-0.0600</value>
                 </product>
             </function>
             <function name="aero/coefficient/Clp">
@@ -514,7 +513,7 @@
                     <property>metrics/bw-ft</property>
                     <property>aero/bi2vel</property>
                     <property>velocities/r-aero-rad_sec</property>
-                    <value>0.1500</value>
+                    <value>0.07500</value>
                 </product>
             </function>
             <function name="aero/coefficient/Clda">
@@ -540,7 +539,7 @@
                     <property>metrics/Sw-sqft</property>
                     <property>metrics/bw-ft</property>
                     <property>fcs/rudder-pos-rad</property>
-                    <value>0.0100</value>
+                    <value>0.00300</value>
                 </product>
             </function>
         </axis>

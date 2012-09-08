@@ -17,7 +17,7 @@
 	<animation>
 		<type>rotate</type>
 		<object-name>sphere</object-name>
-		<property>instrumentation/attitude-indicator/indicated-roll-deg</property>
+        <property>orientation/roll-deg</property>
 		<center>
 			<x-m>0</x-m>
 			<y-m>0.0</y-m>
@@ -33,7 +33,7 @@
 	<animation>
 		<type>rotate</type>
 		<object-name>sphere</object-name>
-		<property>instrumentation/attitude-indicator/indicated-pitch-deg</property>
+        <property>orientation/pitch-deg</property>
 		<center>
 			<x-m>-0.0522</x-m>
 			<y-m>0.0</y-m>
@@ -133,107 +133,70 @@
 		</axis>
 	</animation>
 
-	<!-- ADI's bars in steering mode -->
-	
-<!--
+<!-- ADI's bars -->
+
 	<animation>
 		<type>select</type>
 		<object-name>yaw-steering-bar</object-name>
-		
-	</animation>
-
-	<animation>
-		<type>translate</type>
-		<object-name>yaw-steering-bar</object-name>
-		
-		<property>controls/flight/aileron</property>
-		<factor>0.025</factor>
-		<axis>
-			<x>0</x>
-			<y>1</y>
-			<z>0</z>
-		</axis>
-	</animation>
-
-	<animation>
-		<type>select</type>
-		<object-name>pitch-steering-bar</object-name>
-		
-	</animation>
-
-	<animation>
-		<type>translate</type>
-		<object-name>pitch-steering-bar</object-name>
-		
-		<property>controls/flight/elevator</property>
-		<factor>0.03</factor>
-		<axis>
-			<x>0</x>
-			<y>0</y>
-			<z>1</z>
-		</axis>
-	</animation>
-
--->
-<!-- ADI's bars in homing mode -->
-
-	<animation>
-		<type>select</type>
-		<object-name>nav-yaw-steering-bar</object-name>
 		<condition>
-			
-			<property>instrumentation/nav[0]/in-range</property>
-			
+            <property>instrumentation/afds/inputs/FD</property>
 		</condition>
 	</animation>
 
 	<animation>
 		<type>translate</type>
-		<object-name>nav-yaw-steering-bar</object-name>
-		<property>instrumentation/nav[0]/heading-needle-deflection</property>
-		<factor>0.0012</factor>
-		<min-m>-0.0331</min-m>
-		<max-m>0.0330</max-m>
-		<axis>
-			<x>0</x>
-			<y>1</y>
-			<z>0</z>
-		</axis>
+		<object-name>yaw-steering-bar</object-name>
+        <property>autopilot/internal/target-roll-deg</property>
+        <factor>0.001</factor>
+        <axis>
+            <x>0</x>
+            <y>1</y>
+            <z>0</z>
+        </axis>
+	</animation>
+
+	<animation>
+		<type>translate</type>
+		<object-name>yaw-steering-bar</object-name>
+        <property>orientation/roll-deg</property>
+        <factor>0.001</factor>
+        <axis>
+            <x>0</x>
+            <y>-1</y>
+            <z>0</z>
+        </axis>
 	</animation>
 
 	<animation>
 		<type>select</type>
-		<object-name>nav-pitch-steering-bar</object-name>
+		<object-name>pitch-steering-bar</object-name>
 		<condition>
-			
-			<property>instrumentation/nav[0]/in-range</property>
-			
+            <property>instrumentation/afds/inputs/FD</property>
 		</condition>
 	</animation>
 
 	<animation>
 		<type>translate</type>
-		<object-name>nav-pitch-steering-bar</object-name>
-		<property>instrumentation/nav[0]/nav-distance</property>
-		<interpolation>
-			<entry>
-				<ind>0</ind>
-				<dep>0</dep>
-			</entry>
-			<entry>
-				<ind>50000</ind>
-				<dep>-0.030</dep>
-			</entry>
-			<entry>
-				<ind>600000</ind>
-				<dep>-0.030</dep>
-			</entry>
-		</interpolation>
-		<axis>
-			<x>0</x>
-			<y>0</y>
-			<z>1</z>
-		</axis>
+		<object-name>pitch-steering-bar</object-name>
+        <property>autopilot/internal/target-pitch-deg</property>
+        <factor>0.00168</factor>
+        <axis>
+            <x>0</x>
+            <y>0</y>
+            <z>1</z>
+        </axis>
+	</animation>
+
+	<animation>
+		<type>translate</type>
+		<object-name>pitch-steering-bar</object-name>
+        <property>orientation/pitch-deg</property>
+        <factor>0.00168</factor>
+        <axis>
+            <x>0</x>
+            <y>0</y>
+            <z>-1</z>
+        </axis>
 	</animation>
 
 <!--
@@ -359,20 +322,12 @@
 		
 		<type>material</type>
 		<object-name>yaw-steering-bar</object-name>
-		<object-name>nav-yaw-steering-bar</object-name>
 		<object-name>pitch-steering-bar</object-name>
-		<object-name>nav-pitch-steering-bar</object-name>
 		<emission>
-			<factor-prop>controls/lighting/panel-norm</factor-prop>
-			<red>0.75</red>
-			<green>0.55</green>
-			<blue>0.35</blue>
+			<red>0.9</red>
+			<green>0.7</green>
+			<blue>0.0</blue>
 		</emission>
-	</animation>
-
-	<animation>
-		<object-name>ai</object-name>
-		<type>noshadow</type>
 	</animation>
 
 	<animation>

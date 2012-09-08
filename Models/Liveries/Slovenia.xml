@@ -1,11 +1,13 @@
 <?xml version="1.0"?>
 
+<!-- Johan G -->
+
 <PropertyList>
 
 <sim>
 <model>
 <livery>
-<name type="string">Slovenian Air Force</name>
+<name type="string">Slovenian Air Force 64</name>
 <texture>Liveries/Slovenia.png</texture>
 </livery>
 <livery-logo>

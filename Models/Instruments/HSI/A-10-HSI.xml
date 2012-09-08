@@ -44,7 +44,7 @@
       </greater-than>
     </condition>
    
-   <property>autopilot/settings/heading-bug-deg</property >
+   <property>autopilot/settings/heading-bug-deg</property>
     <center>
       <x-m>0.0</x-m>
       <y-m>0.0</y-m>
@@ -72,7 +72,7 @@
       </greater-than>
     </condition>
    
-   <property>instrumentation/nav/radials/selected-deg</property >
+   <property>instrumentation/nav/radials/selected-deg</property>
     <center>
       <x-m>0.0</x-m>
       <y-m>0.0</y-m>
@@ -210,7 +210,7 @@
     <type>textranslate</type>
     <object-name>course-drum-1</object-name>
  
-    <property>instrumentation/nav/heading-deg</property>
+    <property>instrumentation/nav/radials/selected-deg</property>
     
     <factor>0.1</factor>
     <offset>-1</offset>
@@ -229,7 +229,7 @@
     <type>textranslate</type>
     <object-name>course-drum-2</object-name>
  
-   <property>instrumentation/nav/heading-deg</property>  
+   <property>instrumentation/nav/radials/selected-deg</property>  
     
     <factor>0.01</factor>
     <offset>-10</offset>
@@ -250,7 +250,7 @@
     <type>textranslate</type>
     <object-name>course-drum-3</object-name>
   
-     <property>instrumentation/nav/heading-deg</property>
+     <property>instrumentation/nav/radials/selected-deg</property>
     
     <factor>0.001</factor>
     <offset>-100</offset>
@@ -271,23 +271,57 @@
 
 <!--		COURSE KNOB          -->
 
+<animation>
+	<type>pick</type>
+	<object-name>course-knob</object-name>
+	<action>
+		<button>3</button> <!--  scroll up -->
+		<repeatable>false</repeatable>
+		<binding>
+			<command>property-adjust</command>
+			<property>instrumentation/nav/radials/selected-deg</property>
+			<step>1</step>
+			<min>1</min>
+			<max>361</max>
+			<wrap>true</wrap>
+		</binding>
+	</action>
+</animation>
+
+<animation>
+	<type>pick</type>
+	<object-name>course-knob</object-name>
+	<action>
+		<button>4</button> <!--  scroll down -->
+		<repeatable>false</repeatable>
+		<binding>
+			<command>property-adjust</command>
+			<property>instrumentation/nav/radials/selected-deg</property>
+			<step>-1</step>
+			<min>1</min>
+			<max>361</max>
+			<wrap>true</wrap>
+		</binding>
+	</action>
+</animation>
+
 <!--	CW	-->
 <animation>
 	<type>pick</type>
-		<object-name>course.cw</object-name>
-			<action>
-				<button>0</button>
-				<repeatable>true</repeatable>
-				<interval-sec>0.2</interval-sec>
-				<binding>
-					<command>property-adjust</command>
-					<property>instrumentation/nav/radials/selected-deg</property>
-					<step>1</step>
-					<min>0</min>
-					<max>360</max>
-					<wrap>true</wrap>
-				</binding>
-			</action>
+	<object-name>course.cw</object-name>
+	<action>
+		<button>0</button>
+		<repeatable>true</repeatable>
+		<interval-sec>0.2</interval-sec>
+		<binding>
+			<command>property-adjust</command>
+			<property>instrumentation/nav/radials/selected-deg</property>
+			<step>1</step>
+			<min>1</min>
+			<max>361</max>
+			<wrap>true</wrap>
+		</binding>
+	</action>
 </animation>
 
 <animation>
@@ -301,8 +335,8 @@
 			<command>property-adjust</command>
 			<property>instrumentation/nav/radials/selected-deg</property>
 			<step>10</step>
-			<min>0</min>
-			<max>360</max>
+			<min>1</min>
+			<max>361</max>
 			<wrap>true</wrap>
 		</binding>
 	</action>
@@ -311,7 +345,6 @@
 <!--	CCW	-->
 
 <animation>
-
 	<type>pick</type>
 	<object-name>course.ccw</object-name>
 	<action>
@@ -322,8 +355,8 @@
 			<command>property-adjust</command>
 			<property>instrumentation/nav/radials/selected-deg</property>
 			<step>-1</step>
-			<min>0</min>
-			<max>360</max>
+			<min>1</min>
+			<max>361</max>
 			<wrap>true</wrap>
 		</binding>
 	</action>
@@ -340,8 +373,8 @@
 			<command>property-adjust</command>
 			<property>instrumentation/nav/radials/selected-deg</property>
 			<step>-10</step>
-			<min>0</min>
-			<max>360</max>
+			<min>1</min>
+			<max>361</max>
 			<wrap>true</wrap>
 		</binding>
 	</action>
@@ -366,6 +399,40 @@
 
 <!-- HEADING SET KNOB -->
 
+<animation>
+	<type>pick</type>
+	<object-name>heading-set-knob</object-name>
+	<action>
+		<button>3</button>
+		<repeatable>false</repeatable>
+		<binding>
+			<command>property-adjust</command>					
+			<property>autopilot/settings/heading-bug-deg</property>
+			<step>1</step>
+			<min>1</min>
+			<max>361</max>
+			<wrap>true</wrap>
+		</binding>
+	</action>
+</animation>
+
+<animation>
+	<type>pick</type>
+	<object-name>heading-set-knob</object-name>
+	<action>
+		<button>4</button>
+		<repeatable>false</repeatable>
+		<binding>
+			<command>property-adjust</command>					
+			<property>autopilot/settings/heading-bug-deg</property>
+			<step>-1</step>
+			<min>1</min>
+			<max>361</max>
+			<wrap>true</wrap>
+		</binding>
+	</action>
+</animation>
+
 <!--	CW	-->
 <animation>
 	<type>pick</type>
@@ -377,7 +444,7 @@
 				<interval-sec>0.2</interval-sec>
 				<binding>
 					<command>property-adjust</command>					
-					<property>autopilot/settings/heading-bug-deg</property >
+					<property>autopilot/settings/heading-bug-deg</property>
 					<step>1</step>
 					<min>0</min>
 					<max>360</max>
@@ -397,7 +464,7 @@
 		<binding>
 			<command>property-adjust</command>
 			
-			<property>autopilot/settings/heading-bug-deg</property >
+			<property>autopilot/settings/heading-bug-deg</property>
 			<step>10</step>
 			<min>0</min>
 
@@ -420,7 +487,7 @@
 		<binding>
 			<command>property-adjust</command>
 			
-			<property>autopilot/settings/heading-bug-deg</property >
+			<property>autopilot/settings/heading-bug-deg</property>
 
 			<step>-1</step>
 			<min>0</min>
@@ -440,7 +507,7 @@
 			<binding>
 			<command>property-adjust</command>
 			
-			<property>autopilot/settings/heading-bug-deg</property >
+			<property>autopilot/settings/heading-bug-deg</property>
 
 			<step>-10</step>
 			<min>0</min>
@@ -453,7 +520,7 @@
   <type>rotate</type>
   <object-name>heading-set-knob</object-name>
  
-  <property>autopilot/settings/heading-bug-deg</property >
+  <property>autopilot/settings/heading-bug-deg</property>
 
   <center>
     <x-m>0.0075</x-m>

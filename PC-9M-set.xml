@@ -5,8 +5,14 @@
 <!--Info -->
 
 <description>Pilatus PC-9M</description>
-<author>Petar Jedvaj, Ernest Teuscher</author>
-<status>beta</status>
+<author>Petar Jedvaj, Ernest Teuscher, Erik Hofman, David Culp</author>
+<status>Beta</status>
+<rating>
+<FDM type="int">2</FDM>
+<systems type="int">3</systems>
+<cockpit type="int">3</cockpit>
+<model type="int">4</model>
+</rating>
 
 <flight-model>jsb</flight-model>
 <aero>PC-9M</aero>
@@ -18,9 +24,11 @@
 <!--Systems -->
 
 <systems>
-
+		<autopilot>
+			<path>Aircraft/PC-9M/Systems/autopilot.xml</path>
+		</autopilot>
 <electrical>
-<path>Aircraft/PC-9M/electrical.xml</path>
+<path>Aircraft/PC-9M/Electrical.xml</path>
 </electrical>
 
 <pitot>
@@ -57,7 +65,7 @@
 <pitch-offset-deg>-14.0</pitch-offset-deg>
 <default-field-of-view-deg type="double">89.1</default-field-of-view-deg>
 <x-offset-m archive="y"> 0.00</x-offset-m>
-<y-offset-m archive="y"> 1.18</y-offset-m>
+<y-offset-m archive="y"> 1.28</y-offset-m>
 <z-offset-m archive="y">-0.37</z-offset-m>
 </config>
 </view>
@@ -95,6 +103,8 @@
 
 <chase-distance-m type="double" archive="y">-20.0</chase-distance-m>
 
+<!-- Menu -->
+
 <menubar>
 <default>
 <menu n="100">
@@ -118,7 +128,7 @@
 </binding>
 </mod-up>   
 </item>
-<label>Pilatus PC-9M</label>
+<label>PC-9M</label>
 <enabled type="bool">true</enabled>
 <item>
 <label>Select Livery</label>
@@ -130,6 +140,8 @@
 </menu>
 </default>
 </menubar>
+
+<!-- Help -->
 
 <help>
 <title>Pilatus PC-9M</title>
@@ -145,11 +157,7 @@
 <name>m </name>
 <desc>Nose wheel steering</desc>
 </key>
-<key>
-<name>Shift+w+Arrow Keys</name>
-<desc>Walk</desc>
-</key>
-<line>Click on engine panel to START/RUN/ABORT or use Autostart</line>
+<line>Click on engine panel to Start/Run/Abort or use Autostart</line>
 </help>
 
 </sim>
@@ -167,6 +175,8 @@
 <brake-parking type="double">1</brake-parking>
 </gear>
 </controls>
+
+<!-- Shortcuts -->
 
 <input>
 <keyboard>
@@ -197,36 +207,18 @@
 </mod-up>
 </key>
 
-<key n="119">
-<name>w</name>
-<desc>Walk forward toward view</desc>
-<repeatable>true</repeatable>
-<binding>
-<command>nasal</command>
-<script>walk.walk_about(0.1)</script>
-</binding>
-</key>
-  
-<key n="87">
-<name>W</name>
-<desc>Walk backward from view</desc>
-<repeatable>true</repeatable>
-<binding>
-<command>nasal</command>
-<script>walk.walk_about(-0.1)</script>
-</binding>
-</key>
-
 </keyboard>
 </input>
+
+<!-- Settings -->
 
 <fdm>
 <jsbsim>
 <systems>
 
 <canopy>
-<command type="double">0</command>
-<position type="double">0</position>
+<command type="double">1</command>
+<position type="double">1</position>
 </canopy>
 
 </systems>
@@ -321,20 +313,22 @@
 </engines>
 
 <!--Nasal -->
-
-<nasal>
-<dmesw>
-<file>Aircraft/PC-9M/Nasal/dmesw.nas</file>
-</dmesw>
-<PC-9M>
+<nasal n="0">
+	<PC9M>
+		<file>Aircraft/PC-9M/Nasal/AFDS.nas</file>
 <file>Aircraft/PC-9M/Nasal/liveries.nas</file>
 <file>Aircraft/PC-9M/Nasal/light.nas</file>
-<file>Aircraft/PC-9M/Nasal/walk.nas</file>
 <file>Aircraft/PC-9M/Nasal/limits.nas</file>
 <file>Aircraft/PC-9M/Nasal/vhf22.nas</file>
 <file>Aircraft/PC-9M/Nasal/vir32.nas</file>
 <file>Aircraft/PC-9M/Nasal/crash.nas</file>
-</PC-9M>
+	</PC9M>
+	<dialogs>
+		<file>Aircraft/PC-9M/Nasal/dialogs.nas</file>
+	</dialogs>
+	<dmesw>
+		<file>Aircraft/PC-9M/Nasal/dmesw.nas</file>
+	</dmesw>
 <tyresmoke>
 <file>Aircraft/PC-9M/Nasal/tyresmoke.nas</file>
 </tyresmoke>

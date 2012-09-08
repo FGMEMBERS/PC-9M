@@ -9,7 +9,7 @@
 <animation>
 <type>rotate</type>
 <object-name>lever</object-name>
-<property>controls/engines/engine[1]/throttle</property>
+<property>controls/engines/engine/throttle</property>
 <factor>-55</factor>
 <center>
 <x-m>-0.76</x-m>
