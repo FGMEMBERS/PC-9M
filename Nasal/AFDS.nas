@@ -225,6 +225,9 @@ var AFDS =
 					{
 						if(me.lateral_mode.getValue() == 0)		# Not set
 						{
+							# set target to current magnetic heading
+							var tgtHdg = int(me.heading_magnetic.getValue() + 0.50);
+							me.hdg_setting.setValue(tgtHdg);
 							me.lateral_mode.setValue(1);		# HDG HOLD
 						}
 						if(me.vertical_mode.getValue() == 0)	# Not set
@@ -278,10 +281,31 @@ var AFDS =
 					msg = msg ~ msg3;
 				copilot("Instracor:Autopilot disengaged. Careful, check " ~ msg ~ " trim!");
 			}
+			me.loc_armed.setValue(0);			# Disarm
+			me.gs_armed.setValue(0);			# Disarm
+			if(!me.FD.getValue())
+			{
+				me.lateral_mode.setValue(0);		# NO MODE
+				me.vertical_mode.setValue(0);		# NO MODE
+			}
+			else
+			{
+				me.lateral_mode.setValue(1);		# HDG HOLD
+				me.vertical_mode.setValue(1);		# ALT
+			}
 			me.autothrottle_mode.setValue(0);
 		}
 		else
-			if(me.lateral_mode.getValue() != 2) me.input(0,1);
+		{
+			if(me.lateral_mode.getValue() == 0)		# Not set
+			{
+				me.input(0,1);
+			}
+			if(me.vertical_mode.getValue() == 0)	# Not set
+			{
+				me.input(1,1);
+			}
+		}
 	},
 #################
 	ap_update : func

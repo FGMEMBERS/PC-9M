@@ -183,6 +183,9 @@
             <name>comm2</name>
 			<live>true</live>
             <property>instrumentation/comm[1]/frequencies/standby-mhz</property>
+            <binding>
+                <command>dialog-apply</command>
+            </binding>
         </input>
 
         <dial>
@@ -243,6 +246,9 @@
             <name>nav1</name>
 			<live>true</live>
             <property>instrumentation/nav/frequencies/standby-mhz</property>
+            <binding>
+                <command>dialog-apply</command>
+            </binding>
         </input>
 
         <dial>
@@ -319,6 +325,9 @@
             <name>nav2</name>
 			<live>true</live>
             <property>instrumentation/nav[1]/frequencies/standby-mhz</property>
+            <binding>
+                <command>dialog-apply</command>
+            </binding>
         </input>
 
         <dial>
@@ -394,6 +403,9 @@
             <name>adf1</name>
 			<live>true</live>
             <property>instrumentation/adf/frequencies/standby-khz</property>
+            <binding>
+                <command>dialog-apply</command>
+            </binding>
         </input>
 
         <dial>
@@ -462,6 +474,9 @@
             <name>adf2</name>
 			<live>true</live>
             <property>instrumentation/adf[1]/frequencies/standby-khz</property>
+            <binding>
+                <command>dialog-apply</command>
+            </binding>
         </input>
 
         <dial>
@@ -530,6 +545,9 @@
             <name>transponder</name>
 			<live>true</live>
             <property>instrumentation/transponder/standby-id-code</property>
+            <binding>
+                <command>dialog-apply</command>
+            </binding>
         </input>
 
     </group>
