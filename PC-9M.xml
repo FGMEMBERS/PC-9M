@@ -45,7 +45,7 @@
         <izz unit="SLUG*FT2"> 5696 </izz>
         <emptywt unit="LBS"> 3564 </emptywt>
         <location name="CG" unit="IN">
-            <x> 164.16 </x>
+            <x> 165.16 </x>
             <y> 0 </y>
             <z> -10.26 </z>
         </location>
@@ -67,7 +67,7 @@
             <location unit="IN">
                 <x> 50.1 </x>
                 <y> 0 </y>
-                <z> -34</z>		<!--*****-52.2*****(pos de l'appareil au sol)-->
+                <z> -36</z>		<!--*****-52.2*****(pos de l'appareil au sol)-->
             </location>
             <static_friction> 0.8 </static_friction>
             <dynamic_friction> 0.5 </dynamic_friction>
@@ -81,7 +81,7 @@
         </contact>
         <contact type="BOGEY" name="LEFT_MLG">
             <location unit="IN">
-                <x> 172.2 </x>
+                <x> 177.2 </x>
                 <y> -61.4 </y>
                 <z> -26</z>		<!--*****-46.2*****-->
             </location>
@@ -96,7 +96,7 @@
         </contact>
         <contact type="BOGEY" name="RIGHT_MLG">
             <location unit="IN">
-                <x> 172.2 </x>
+                <x> 177.2 </x>
                 <y> 61.4 </y>
                 <z> -26</z>		<!--*****-46.2*****-->
             </location>
