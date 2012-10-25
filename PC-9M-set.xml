@@ -190,6 +190,14 @@
 </binding>
 </key>
 
+             <key n="108">
+                <name>l</name>
+                <desc>toggle landing lights</desc>
+                <binding>
+                    <command>nasal</command>
+                    <script>controls.toggleLandingLights();</script>
+                </binding>
+            </key>
 <key n="109">
 <name>m</name>
 <desc>engage nose wheel steering</desc>

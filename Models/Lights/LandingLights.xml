@@ -7,7 +7,10 @@
 <object-name>Light1</object-name>
 <object-name>Light2</object-name>
 <condition>
-<property>gear/gear[1]/position-norm</property>
+<and>
+	<property>gear/gear[1]/position-norm</property>
+	<property>controls/lighting/landing-lights</property>
+</and>
 </condition>
 </animation>
 
@@ -15,7 +18,10 @@
         <type>select</type>
         <object-name>LandingLightCone_R</object-name>
         <condition>
-			<property>gear/gear[1]/position-norm</property>
+			<and>
+				<property>gear/gear[1]/position-norm</property>
+				<property>controls/lighting/landing-lights</property>
+			</and>
         </condition>
     </animation>
         
@@ -23,7 +29,10 @@
         <type>select</type>
         <object-name>LandingLightCone_L</object-name>
         <condition>
-			<property>gear/gear[1]/position-norm</property>
+			<and>
+				<property>gear/gear[1]/position-norm</property>
+				<property>controls/lighting/landing-lights</property>
+			</and>
         </condition>
     </animation>
 
@@ -34,7 +43,10 @@
 		<object-name>LandingLightCone_L</object-name>
 		<nopreview/>
 		<condition>
-			<property>gear/gear[1]/position-norm</property>
+			<and>
+				<property>gear/gear[1]/position-norm</property>
+				<property>controls/lighting/landing-lights</property>
+			</and>
 		</condition>
 		<position>
 			<x>-0.5</x>
@@ -82,7 +94,10 @@
 		<object-name>LandingLightCone_R</object-name>
 		<nopreview/>
 		<condition>
-			<property>gear/gear[1]/position-norm</property>
+			<and>
+				<property>gear/gear[1]/position-norm</property>
+				<property>controls/lighting/landing-lights</property>
+			</and>
 		</condition>
 		<position>
 			<x>-0.5</x>
