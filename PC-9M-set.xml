@@ -214,7 +214,6 @@
 </binding>
 </mod-up>
 </key>
-
 </keyboard>
 </input>
 
@@ -324,6 +323,7 @@
 <nasal n="0">
 	<PC9M>
 		<file>Aircraft/PC-9M/Nasal/AFDS.nas</file>
+		<file>Aircraft/PC-9M/Nasal/systems.nas</file>
 <file>Aircraft/PC-9M/Nasal/liveries.nas</file>
 <file>Aircraft/PC-9M/Nasal/light.nas</file>
 <file>Aircraft/PC-9M/Nasal/limits.nas</file>
