@@ -16,6 +16,7 @@ var start_updates = func {
 		setprop("/controls/engines/engine[0]/starter", 1);
 		settimer(func { setprop("/controls/engines/engine[0]/cutoff", 0); }, 1);
 		setprop("/controls/gear/gear-down", 0);
+        setprop("/controls/gear/brake-parking",0);
 		setprop("autopilot/settings/target-speed-kt", getprop("sim/presets/airspeed-kt"));
 		setprop("instrumentation/afds/inputs/at-armed", 1);
 		setprop("instrumentation/afds/inputs/AP", 1);

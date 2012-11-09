@@ -420,6 +420,12 @@ var AFDS =
 			{
 				me.autothrottle_mode.setValue(0);
 			}
+			# AP and A/T off when below AGL100ft
+			elsif(getprop("position/altitude-agl-ft") < 100)
+			{
+				me.autothrottle_mode.setValue(0);
+				me.AP.setValue(0);
+			}
 			# Take off mode and above baro 400 ft
 			elsif(getprop("position/altitude-agl-ft") > 400)
 			{
@@ -472,7 +478,7 @@ var AFDS =
 							var change_wp = abs(getprop("/autopilot/route-manager/wp[1]/bearing-deg") - me.heading_magnetic.getValue());
 							if(change_wp > 180) change_wp = (360 - change_wp);
 							if(((me.heading_change_rate * change_wp) > wpt_eta)
-								or (wpt_distance < 0.2)
+								or (wpt_distance < 0.4)
 								or ((me.remaining_distance_log_last < wpt_distance) and (change_wp < 80)))
  	 						{
  	 							if(atm_wpt < (max_wpt - 1))

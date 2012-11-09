@@ -541,7 +541,7 @@
         <group>
             <layout>hbox</layout>
             <checkbox>
-                <label>Tthrottle arm</label>
+                <label>Throttle arm</label>
                 <property>instrumentation/afds/inputs/at-armed</property>
                 <live>true</live>
                 <halign>left</halign>
