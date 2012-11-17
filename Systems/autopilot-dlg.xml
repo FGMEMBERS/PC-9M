@@ -84,15 +84,6 @@
             </checkbox>
 
             <checkbox>
-                <label>AP DISENGAGE</label>
-				<property>instrumentation/afds/inputs/AP-disengage</property>
-                <live>true</live>
-                <binding>
-                    <command>dialog-apply</command>
-                </binding>
-            </checkbox>
-
-            <checkbox>
                 <label>FD</label>
 				<property>instrumentation/afds/inputs/FD</property>
                 <live>true</live>
