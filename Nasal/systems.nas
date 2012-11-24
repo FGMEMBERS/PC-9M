@@ -24,6 +24,9 @@ var start_updates = func {
         setprop("autopilot/settings/counter-set-altitude-ft", getprop("sim/presets/altitude-ft"));
 		PC9M.afds.input(1,2);
         setprop("autopilot/settings/vertical-speed-fpm", 2000);
+		setprop("controls/flight/rudder-trim", 0);
+		setprop("controls/flight/elevator-trim", 0);
+		setprop("controls/flight/aileron-trim", 0);
     }
 
     # start update_systems loop - but start it once only
