@@ -128,14 +128,20 @@
     <type>select</type>
     <object-name>miles-flag</object-name>
     <condition>
-    <not>        
-          <property>instrumentation/nav/dme-in-range</property>
- 
-    </not>        
+		<and>
+			<not>        
+				<property>instrumentation/nav/dme-in-range</property>
+			</not>        
+			<not>
+				<equals>
+					<property>instrumentation/afds/ap-modes/roll-mode</property>
+					<value>LNAV</value>
+				</equals>
+			</not>
+		</and>
     </condition>
   </animation>
   
-
 <!--Off Flag-->
   <animation>
     <type>select</type>
@@ -152,7 +158,7 @@
   <animation>
     <type>textranslate</type>
     <object-name>miles-drum-1</object-name>
-    <property>instrumentation/dme/indicated-distance-nm</property>
+			<property>instrumentation/internal/distance-nm</property>
     <factor>0.1</factor>
     <offset>-1</offset>
     <center>
@@ -169,7 +175,7 @@
   <animation>
     <type>textranslate</type>
     <object-name>miles-drum-2</object-name>
-    <property>instrumentation/dme/indicated-distance-nm</property>
+			<property>instrumentation/internal/distance-nm</property>
     <factor>0.01</factor>
     <offset>-10</offset>
     <step>10</step>
@@ -188,7 +194,7 @@
   <animation>
     <type>textranslate</type>
     <object-name>miles-drum-3</object-name>
-    <property>instrumentation/dme/indicated-distance-nm</property>
+			<property>instrumentation/internal/distance-nm</property>
     <factor>0.001</factor>
     <offset>-100</offset>
     <step>100</step>

@@ -139,11 +139,11 @@ var AFDS =
 				if(btn==2)
 				{
 					# hold current vertical speed
-					var vs = me.vs_ind.getValue();
-					vs = int(vs/100)*100;
-					if (vs<-8000) vs = -8000;
-					if (vs>6000) vs = 6000;
-					me.vs_setting.setValue(vs);
+#					var vs = me.vs_ind.getValue();
+#					vs = int(vs/100)*100;
+#					if (vs<-8000) vs = -8000;
+#					if (vs>6000) vs = 6000;
+#					me.vs_setting.setValue(vs);
 					me.target_alt.setValue(me.alt_setting.getValue());
 #					me.autothrottle_mode.setValue(5);	# A/T SPD
 				}
@@ -388,6 +388,14 @@ var AFDS =
 			var idx = me.lateral_mode.getValue();
 			me.AP_roll_mode.setValue(me.roll_list[idx]);
 			me.AP_roll_engaged.setBoolValue(idx > 0);
+			if(me.lateral_mode.getValue() == 2)		# Current mode is LNAV
+			{
+				setprop("instrumentation/internal/distance-nm", getprop("autopilot/route-manager/wp/dist"));
+			}
+			else
+			{
+				setprop("instrumentation/internal/distance-nm", getprop("instrumentation/dme/indicated-distance-nm"));
+			}
 		}
 		elsif(me.step == 3)
 		{ ### check vertical modes  ###
