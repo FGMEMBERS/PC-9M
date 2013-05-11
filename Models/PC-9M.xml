@@ -1702,88 +1702,22 @@ livery_update.stop();
 </axis>
 </animation>
 
-<!--
-<animation>
-<type>spin</type>
-<object-name>fwheel</object-name>
-<object-name>ftyre</object-name>
-<property>fdm/jsbsim/gear/unit[1]/wheel-speed-fps</property>
-<factor>-48.0</factor>
-<axis>
-<x1-m>-2.44</x1-m>
-<y1-m>-0.04</y1-m>
-<z1-m>-0.59</z1-m>   
-<x2-m>-2.44</x2-m>
-<y2-m> 0.04</y2-m>
-<z2-m>-0.59</z2-m>
-</axis>
-</animation>
-
-<animation>
-<type>spin</type>
-<object-name>lwheel</object-name>
-<object-name>ltyre</object-name>
-<property>fdm/jsbsim/gear/unit[2]/wheel-speed-fps</property>
-<factor>-48.0</factor>
-<axis>
-<x1-m> 0.01</x1-m>
-<y1-m> 1.29</y1-m>
-<z1-m>-0.53</z1-m>   
-<x2-m> 0.01</x2-m>
-<y2-m> 1.31</y2-m>
-<z2-m>-0.53</z2-m>
-</axis>
-</animation>
-
-<animation>
-<type>spin</type>
-<object-name>rwheel</object-name>
-<object-name>rtyre</object-name>
-<property>fdm/jsbsim/gear/unit[3]/wheel-speed-fps</property>
-<factor>48.0</factor>
-<axis>
-<x1-m> 0.01</x1-m>
-<y1-m>-1.29</y1-m>
-<z1-m>-0.53</z1-m>   
-<x2-m> 0.01</x2-m>
-<y2-m>-1.31</y2-m>
-<z2-m>-0.53</z2-m>
-</axis>
-</animation>
--->
-
 <!-- Gear Compression -->
 
 <animation>
-<type>rotate</type>
+<type>translate</type>
 <object-name>fwheel</object-name>
 <object-name>ftyre</object-name>
 <object-name>fgear</object-name>
 <object-name>fdring</object-name>
 <object-name>fdscissor</object-name>
 <object-name>fuscissor</object-name>
-<property>gear/gear[0]/compression-norm[0]</property>
-<factor>0.3</factor>
+<property>gear/gear[1]/compression-norm</property>
+<factor>0.5</factor>
 <axis>
-<x>-1</x>
+<x>0</x>
 <y>0</y>
-<z>0</z>
-</axis>
-</animation>
-
-<animation>
-<type>translate</type>
-<object-name>rwheel</object-name>
-<object-name>rtyre</object-name>
-<object-name>rdstrut</object-name>
-<object-name>rdring</object-name>
-<object-name>rdscissor</object-name>
-<property>gear/gear[2]/compression-norm[0]</property>
-<factor>0.3</factor>
-<axis>
-<x>-1</x>
-<y>0</y>
-<z>0</z>
+<z>1</z>
 </axis>
 </animation>
 
@@ -1794,13 +1728,84 @@ livery_update.stop();
 <object-name>ldstrut</object-name>
 <object-name>ldring</object-name>
 <object-name>ldscissor</object-name>
-<property>gear/gear[1]/compression-norm[0]</property>
+<object-name>luscissor</object-name>
+<property>gear/gear[2]/compression-norm</property>
 <factor>0.3</factor>
 <axis>
-<x>-1</x>
+<x>0</x>
 <y>0</y>
-<z>0</z>
+<z>1</z>
 </axis>
 </animation>
 
+<animation>
+<type>translate</type>
+<object-name>rwheel</object-name>
+<object-name>rtyre</object-name>
+<object-name>rdstrut</object-name>
+<object-name>rdring</object-name>
+<object-name>rdscissor</object-name>
+<object-name>ruscissor</object-name>
+<property>gear/gear[3]/compression-norm</property>
+<factor>0.3</factor>
+<axis>
+<x>0</x>
+<y>0</y>
+<z>1</z>
+</axis>
+</animation>
+
+<animation>
+<type>spin</type>
+<object-name>fwheel</object-name>
+<object-name>ftyre</object-name>
+<property>fdm/jsbsim/gear/unit[1]/wheel-speed-fps</property>
+<factor>48.0</factor>
+    <axis>
+        <x>0</x>
+        <y>-1</y>
+        <z>0</z>
+    </axis>
+    <center>
+        <x-m>-2.44</x-m>
+        <y-m>0</y-m>
+        <z-m>-0.59</z-m>
+    </center>
+</animation>
+
+<animation>
+<type>spin</type>
+<object-name>lwheel</object-name>
+<object-name>ltyre</object-name>
+<property>fdm/jsbsim/gear/unit[2]/wheel-speed-fps</property>
+<factor>48.0</factor>
+    <axis>
+        <x>0</x>
+        <y>-1</y>
+        <z>0</z>
+    </axis>
+    <center>
+        <x-m>0.009</x-m>
+        <y-m>-1.27</y-m>
+        <z-m>-0.534</z-m>
+    </center>
+</animation>
+
+<animation>
+<type>spin</type>
+<object-name>rwheel</object-name>
+<object-name>rtyre</object-name>
+<property>fdm/jsbsim/gear/unit[3]/wheel-speed-fps</property>
+<factor>48.0</factor>
+    <axis>
+        <x>0</x>
+        <y>-1</y>
+        <z>0</z>
+    </axis>
+    <center>
+        <x-m>0.009</x-m>
+        <y-m>1.27</y-m>
+        <z-m>-0.534</z-m>
+    </center>
+</animation>
 </PropertyList>

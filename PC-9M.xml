@@ -25,7 +25,7 @@
         <location name="AERORP" unit="IN">
             <x> 160.32 </x>
             <y> 0 </y>
-            <z> 0 </z>
+            <z> -10.26 </z>
         </location>
         <location name="EYEPOINT" unit="IN">
             <x> 112.22 </x>
@@ -47,7 +47,7 @@
         <location name="CG" unit="IN">
             <x> 165.16 </x>
             <y> 0 </y>
-            <z> -10.26 </z>
+            <z> 0 </z>
         </location>
     </mass_balance>
 
@@ -67,7 +67,7 @@
             <location unit="IN">
                 <x> 50.1 </x>
                 <y> 0 </y>
-                <z> -36</z>		<!--*****-52.2*****(pos de l'appareil au sol)-->
+                <z> -29</z>		<!--*****-52.2*****(pos de l'appareil au sol)-->
             </location>
             <static_friction> 0.8 </static_friction>
             <dynamic_friction> 0.5 </dynamic_friction>
@@ -83,7 +83,7 @@
             <location unit="IN">
                 <x> 177.2 </x>
                 <y> -61.4 </y>
-                <z> -26</z>		<!--*****-46.2*****-->
+                <z> -20</z>		<!--*****-46.2*****-->
             </location>
             <static_friction> 0.8 </static_friction>
             <dynamic_friction> 0.5 </dynamic_friction>
@@ -98,7 +98,7 @@
             <location unit="IN">
                 <x> 177.2 </x>
                 <y> 61.4 </y>
-                <z> -26</z>		<!--*****-46.2*****-->
+                <z> -20</z>		<!--*****-46.2*****-->
             </location>
             <static_friction> 0.8 </static_friction>
             <dynamic_friction> 0.5 </dynamic_friction>
@@ -126,6 +126,17 @@
              <x> 164.16 </x>
              <y>  17.06 </y>
              <z> -10.26 </z>
+           </location>
+           <static_friction>  0.80 </static_friction>
+           <dynamic_friction> 0.50 </dynamic_friction>
+           <spring_coeff unit="LBS/FT">       5940.00 </spring_coeff>
+           <damping_coeff unit="LBS/FT/SEC">  1188.00 </damping_coeff>
+        </contact>
+       <contact type="STRUCTURE" name="TAIL">
+           <location unit="IN">
+             <x> 351.6 </x>
+             <y> 0 </y>
+             <z> 5.91 </z>
            </location>
            <static_friction>  0.80 </static_friction>
            <dynamic_friction> 0.50 </dynamic_friction>
