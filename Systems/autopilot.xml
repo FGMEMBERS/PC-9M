@@ -10,10 +10,13 @@
 		<debug>false</debug>
 		<enable>
 			<condition>
+				<and>
 				<equals>
 					<property>instrumentation/afds/ap-modes/roll-mode</property>
 					<value>HDG HOLD</value>
 				</equals>
+				<not><property>autopilot/locks/roll-lock</property></not>
+				</and>
 			</condition>
 		</enable>
 		<input>
@@ -381,6 +384,20 @@
 		</config>
 	</pid-controller>
 
+	<filter>
+		<name>AP:Pitch sample and hold</name>
+		<debug>false</debug>
+		<enable>
+			<condition>
+				<property>autopilot/locks/pitch-lock</property>
+			</condition>
+		</enable>
+		<type>gain</type>
+		<gain>1.0</gain>
+		<input>/orientation/pitch-deg</input>
+		<output>/autopilot/internal/target-pitch-deg</output>
+	</filter>
+ 
 	<pid-controller>
 		<name>Elevator Control</name>
 		<debug>false</debug>

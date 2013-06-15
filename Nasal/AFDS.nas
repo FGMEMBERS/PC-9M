@@ -138,12 +138,6 @@ var AFDS =
 				}
 				if(btn==2)
 				{
-					# hold current vertical speed
-#					var vs = me.vs_ind.getValue();
-#					vs = int(vs/100)*100;
-#					if (vs<-8000) vs = -8000;
-#					if (vs>6000) vs = 6000;
-#					me.vs_setting.setValue(vs);
 					me.target_alt.setValue(me.alt_setting.getValue());
 #					me.autothrottle_mode.setValue(5);	# A/T SPD
 				}
@@ -300,10 +294,33 @@ var AFDS =
 			if(me.lateral_mode.getValue() == 0)		# Not set
 			{
 				me.input(0,1);
+				var tgtHdg = int(me.heading_magnetic.getValue() + 0.50);
+				setprop("/autopilot/locks/roll-lock", 1);
+				settimer(func
+				{
+					# set target to current magnetic heading
+					me.hdg_setting.setValue(tgtHdg);
+					setprop("/autopilot/locks/roll-lock", 0);
+				}, 1);
 			}
 			if(me.vertical_mode.getValue() == 0)	# Not set
 			{
-				me.input(1,1);
+				me.input(1,2);
+				# hold current vertical speed
+				var vs = me.vs_ind.getValue();
+				vs = int(vs/100)*100;
+				if (vs<-8000) vs = -8000;
+				if (vs>6000) vs = 6000;
+				setprop("/autopilot/locks/pitch-lock", 1);
+				settimer(func
+				{
+					# hold current vertical speed
+					me.vs_setting.setValue(vs);
+				}, 1);
+				settimer(func
+				{
+					setprop("autopilot/locks/pitch-lock", 0);
+				}, 10);
 			}
 		}
 	},
