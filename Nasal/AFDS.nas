@@ -329,7 +329,7 @@ var AFDS =
 	{
 		var current_alt = getprop("instrumentation/altimeter/indicated-altitude-ft");
 		var VS = getprop("velocities/vertical-speed-fps");
-		var TAS = getprop("velocities/uBody-fps");
+		var TAS = getprop("instrumentation/airspeed-indicator/true-speed-kt") * KT2FPS;
 		if(me.step == 0)
 		{ ### glideslope armed ?###
 			if(me.gs_armed.getValue())
