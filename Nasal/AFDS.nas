@@ -138,6 +138,15 @@ var AFDS =
 				}
 				if(btn==2)
 				{
+<<<<<<< HEAD
+=======
+					# hold current vertical speed
+					var vs = me.vs_ind.getValue();
+					vs = int(vs/100)*100;
+					if (vs<-8000) vs = -8000;
+					if (vs>6000) vs = 6000;
+					me.vs_setting.setValue(vs);
+>>>>>>> b58fde6... PC-9M version 1.3.2 update
 					me.target_alt.setValue(me.alt_setting.getValue());
 #					me.autothrottle_mode.setValue(5);	# A/T SPD
 				}
@@ -294,6 +303,7 @@ var AFDS =
 			if(me.lateral_mode.getValue() == 0)		# Not set
 			{
 				me.input(0,1);
+<<<<<<< HEAD
 				var tgtHdg = int(me.heading_magnetic.getValue() + 0.50);
 				setprop("/autopilot/locks/roll-lock", 1);
 				settimer(func
@@ -321,6 +331,12 @@ var AFDS =
 				{
 					setprop("autopilot/locks/pitch-lock", 0);
 				}, 10);
+=======
+			}
+			if(me.vertical_mode.getValue() == 0)	# Not set
+			{
+				me.input(1,1);
+>>>>>>> b58fde6... PC-9M version 1.3.2 update
 			}
 		}
 	},
@@ -329,7 +345,11 @@ var AFDS =
 	{
 		var current_alt = getprop("instrumentation/altimeter/indicated-altitude-ft");
 		var VS = getprop("velocities/vertical-speed-fps");
+<<<<<<< HEAD
 		var TAS = getprop("instrumentation/airspeed-indicator/true-speed-kt") * KT2FPS;
+=======
+		var TAS = getprop("velocities/uBody-fps");
+>>>>>>> b58fde6... PC-9M version 1.3.2 update
 		if(me.step == 0)
 		{ ### glideslope armed ?###
 			if(me.gs_armed.getValue())
@@ -405,6 +425,7 @@ var AFDS =
 			var idx = me.lateral_mode.getValue();
 			me.AP_roll_mode.setValue(me.roll_list[idx]);
 			me.AP_roll_engaged.setBoolValue(idx > 0);
+<<<<<<< HEAD
 			if(me.lateral_mode.getValue() == 2)		# Current mode is LNAV
 			{
 				setprop("instrumentation/internal/distance-nm", getprop("autopilot/route-manager/wp/dist"));
@@ -413,6 +434,8 @@ var AFDS =
 			{
 				setprop("instrumentation/internal/distance-nm", getprop("instrumentation/dme/indicated-distance-nm"));
 			}
+=======
+>>>>>>> b58fde6... PC-9M version 1.3.2 update
 		}
 		elsif(me.step == 3)
 		{ ### check vertical modes  ###

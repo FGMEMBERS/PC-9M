@@ -1,11 +1,20 @@
 <?xml version="1.0"?>
 
+<<<<<<< HEAD
+=======
+<!-- Rob Dosogne -->
+
+>>>>>>> b58fde6... PC-9M version 1.3.2 update
 <PropertyList>
 
 <sim>
 <model>
 <livery>
+<<<<<<< HEAD
 <name type="string">Royal Canadian Air Force</name>
+=======
+<name type="string">Royal Canadian Air Force 123</name>
+>>>>>>> b58fde6... PC-9M version 1.3.2 update
 <texture>Liveries/Canada.png</texture>
 </livery>
 <livery-logo>
@@ -14,4 +23,8 @@
 </model>
 </sim>
 
+<<<<<<< HEAD
 </PropertyList>
+=======
+</PropertyList>
+>>>>>>> b58fde6... PC-9M version 1.3.2 update
