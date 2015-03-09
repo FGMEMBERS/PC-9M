@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-<PropertyList>
-
-<path>Cockpit.ac</path>
-=======
 <?xml version="1.0"?>
 
 <PropertyList>
@@ -22,6 +17,7 @@
 	<!-- Student -->
 
 	<model>
+		<object-name>Pilot</object-name>
 		<path>Aircraft/PC-9M/Models/Pilot/Pilot.xml</path>
 		<offsets>
 			<x-m>-0.32</x-m>
@@ -39,6 +35,7 @@
 	<!-- Instructor -->
 
 	<model>
+		<object-name>Pilot</object-name>
 		<path>Aircraft/PC-9M/Models/Pilot/Pilot.xml</path>
 		<offsets>
 			<x-m> 1.07</x-m>
@@ -52,7 +49,6 @@
 			</not>
 		</condition>
 	</model>
->>>>>>> b58fde6... PC-9M version 1.3.2 update
 
 </PropertyList>
 

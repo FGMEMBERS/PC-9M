@@ -7,32 +7,16 @@
  <engine>
       <name>engine #1 starting</name>
       <mode>looped</mode>
-<<<<<<< HEAD
-      <path>Sounds/turboprop1.wav</path>
-      <condition>
-        <property>/engines/engine[0]/starter</property>
-	</condition>
-      <volume>
-        <property>/engines/engine[0]/n2</property>
-=======
       <path>Aircraft/PC-9M/Sounds/startup.wav</path>
       <condition>
         <property>engines/engine[0]/starter</property>
 	  </condition>
       <volume>
         <property>engines/engine[0]/n2</property>
->>>>>>> b58fde6... PC-9M version 1.3.2 update
         <type>log</type>
         <factor>0.6</factor>
         <offset>0.5</offset>
       </volume>
-<<<<<<< HEAD
-      <pitch>
-        <property>/engines/engine[0]/n2</property>
-        <type>log</type>
-        <factor>0.40</factor>
-        <offset>0.10</offset>
-=======
       <volume>
         <property>sim/sound/cabin</property>
       </volume>
@@ -41,44 +25,10 @@
         <type>log</type>
         <factor>0.4</factor>
         <offset>0.1</offset>
->>>>>>> b58fde6... PC-9M version 1.3.2 update
       </pitch>
     </engine>
 
     <engine>
-<<<<<<< HEAD
-      <name>engine #1 running</name>
-      <mode>looped</mode>
-      <path>Sounds/turboprop1.wav</path>
-      <condition>
-       <or>
-         <greater-than>
-           <property>/engines/engine[0]/n2</property>
-           <value type="double">19.9</value>
-         </greater-than>
-         <and>
-	  <not>
-            <property>/engines/engine[0]/starter</property>
-          </not>
-            <greater-than>
-              <property>/engines/engine[0]/n2</property>
-              <value type="double">1</value>
-            </greater-than>
-         </and>
-       </or>
-      </condition>
-      <volume>
-        <property>/engines/engine[0]/n2</property>
-        <type>log</type>
-        <factor>0.4</factor>
-	<offset>0.2</offset>
-      </volume>
-        <pitch>
-         <property>/engines/engine[0]/n2</property>
-         <factor>0.004</factor>
-         <offset>0.8</offset>
-        </pitch>
-=======
       <name>engine #1 starting plus</name>
       <mode>once</mode>
       <path>Sounds/turbine_start.wav</path>
@@ -150,7 +100,6 @@
         <factor>0.4</factor>
         <offset>0.1</offset>
       </pitch>
->>>>>>> b58fde6... PC-9M version 1.3.2 update
     </engine>
 
   <tire-rumble>
