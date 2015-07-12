@@ -17,11 +17,11 @@
 	<animation>
 		<type>rotate</type>
 		<object-name>sphere</object-name>
-<<<<<<< HEAD
+
 		<property>instrumentation/attitude-indicator/internal-roll-deg</property>
-=======
+
         <property>orientation/roll-deg</property>
->>>>>>> b58fde6... PC-9M version 1.3.2 update
+
 		<center>
 			<x-m>0</x-m>
 			<y-m>0.0</y-m>
@@ -202,11 +202,11 @@
 	<animation>
 		<type>translate</type>
 		<object-name>pitch-steering-bar</object-name>
-<<<<<<< HEAD
+
 		<property>instrumentation/attitude-indicator/internal-pitch-deg</property>
-=======
+
         <property>orientation/pitch-deg</property>
->>>>>>> b58fde6... PC-9M version 1.3.2 update
+
         <factor>0.00168</factor>
         <axis>
             <x>0</x>
