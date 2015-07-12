@@ -10,19 +10,10 @@
 		<debug>false</debug>
 		<enable>
 			<condition>
-<<<<<<< HEAD
-				<and>
-=======
->>>>>>> b58fde6... PC-9M version 1.3.2 update
 				<equals>
 					<property>instrumentation/afds/ap-modes/roll-mode</property>
 					<value>HDG HOLD</value>
 				</equals>
-<<<<<<< HEAD
-				<not><property>autopilot/locks/roll-lock</property></not>
-				</and>
-=======
->>>>>>> b58fde6... PC-9M version 1.3.2 update
 			</condition>
 		</enable>
 		<input>
@@ -49,25 +40,6 @@
 	</pi-simple-controller>
 
 	<filter>
-<<<<<<< HEAD
-		<name>LNAV course error filter</name>
-		<debug>false</debug>
-		<type>noise-spike</type>
-		<enable>
-			<property>instrumentation/afds/ap-modes/roll-mode</property>
-			<value>LNAV</value>
-		</enable>
-		<max-rate-of-change>0.2</max-rate-of-change>
-		<initialize-to>output</initialize-to>
-		<input>
-			<property>autopilot/internal/course-error</property>
-		</input>
-		<output>autopilot/internal/course-error-filtered</output>
-	</filter>
-
-	<filter>
-=======
->>>>>>> b58fde6... PC-9M version 1.3.2 update
 		<name>LNAV waypoint error computer/normalizer</name>
 		<debug>false</debug>
 		<enable>
@@ -76,17 +48,10 @@
 		</enable>
 		<type>gain</type>
 		<input>
-<<<<<<< HEAD
-			<property>autopilot/internal/course-deg</property>
-			<offset>
-				<property>/orientation/heading-deg</property>
-				<scale>-1.0</scale>
-=======
 			<property>/autopilot/route-manager/wp/bearing-deg</property>
 			<offset>
 			<property>/orientation/heading-magnetic-deg</property>
 			<scale>-1.0</scale>
->>>>>>> b58fde6... PC-9M version 1.3.2 update
 			</offset>
 		</input>
 		<output>autopilot/internal/waypoint-bearing-error-deg</output>
@@ -97,32 +62,6 @@
 		<gain>1.0</gain>
 	</filter>
 
-<<<<<<< HEAD
-	<filter>
-		<name>LNAV course error to waypoint error computer/normalizer </name>
-		<debug>false</debug>
-		<enable>
-			<property>instrumentation/afds/ap-modes/roll-mode</property>
-			<value>LNAV</value>
-		</enable>
-		<type>gain</type>
-		<input>
-			<property>autopilot/internal/waypoint-bearing-error-deg</property>
-			<offset>
-				<property>autopilot/internal/course-error-filtered</property>
-				<scale>1.0</scale>
-			</offset>
-		</input>
-		<output>autopilot/internal/course-error-deg</output>
-		<period>
-			<min>-180</min>
-			<max>180</max>
-		</period>
-		<gain>1.0</gain>
-	</filter>
-
-=======
->>>>>>> b58fde6... PC-9M version 1.3.2 update
 	<pi-simple-controller>
 		<name>LNAV1</name>
 		<debug>false</debug>
@@ -131,18 +70,11 @@
 			<value>LNAV</value>
 		</enable>
 		<input>
-<<<<<<< HEAD
-			<property>/autopilot/internal/course-error-deg</property>
-		</input>
-		<reference>
-			<value>0.0</value>
-=======
 			<property>/autopilot/internal/waypoint-bearing-error-deg</property>
 		</input>
 		<reference>
 			<property>/autopilot/internal/course-deviation</property>
 			<scale>-1.5</scale>
->>>>>>> b58fde6... PC-9M version 1.3.2 update
 		</reference>
 		<output>
 			<property>/autopilot/internal/target-roll-deg</property>
@@ -411,23 +343,6 @@
 		</config>
 	</pid-controller>
 
-<<<<<<< HEAD
-	<filter>
-		<name>AP:Pitch sample and hold</name>
-		<debug>false</debug>
-		<enable>
-			<condition>
-				<property>autopilot/locks/pitch-lock</property>
-			</condition>
-		</enable>
-		<type>gain</type>
-		<gain>1.0</gain>
-		<input>/orientation/pitch-deg</input>
-		<output>/autopilot/internal/target-pitch-deg</output>
-	</filter>
- 
-=======
->>>>>>> b58fde6... PC-9M version 1.3.2 update
 	<pid-controller>
 		<name>Elevator Control</name>
 		<debug>false</debug>
