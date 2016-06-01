@@ -611,7 +611,7 @@
                     <property>metrics/cbarw-ft</property>
                     <property>aero/ci2vel</property>
                     <property>velocities/q-aero-rad_sec</property>
-                    <value>-2.4475</value>
+                    <value>-15.00000</value>
                 </product>
             </function>
             <function name="aero/coefficient/Cmadot">
