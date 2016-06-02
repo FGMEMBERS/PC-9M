@@ -308,6 +308,11 @@
 				</canopy>
 
 			</systems>
+			<propulsion>
+				<engine>
+					<thrust-coefficient type="double">0</thrust-coefficient>
+				</engine>
+			</propulsion>
 		</jsbsim>
 	</fdm>
 
