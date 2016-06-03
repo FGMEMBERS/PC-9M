@@ -11,6 +11,7 @@ set_engine1_state = func() {
 	if (start1 and cutoff1 and !fuel_cutoff1)
 	{
 		setprop("/controls/engines/engine[0]/starter", 1);
+                setprop("/fdm/jsbsim/propulsion/engine/n1", 20);
 		settimer(func { setprop("/controls/engines/engine[0]/cutoff", 0); }, 1);
 		settimer(switchback1, 1);
 	}

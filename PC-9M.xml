@@ -253,7 +253,7 @@
             <tableData>
              -1.57    1.4094
              -0.34    0.0200
-              0.00    0.0200
+              0.00    0.0181
               0.34    0.0200
               1.57    1.4094
             </tableData>
@@ -267,7 +267,7 @@
            <property>aero/qbar-psf</property>
            <property>metrics/Sw-sqft</property>
            <property>aero/cl-squared</property>
-           <value> 0.0522 </value>
+           <value> 0.0479 </value>
          </product>
     </function>
 
@@ -355,7 +355,15 @@
            <property>metrics/Sw-sqft</property>
            <property>aero/bi2vel</property>
            <property>velocities/p-aero-rad_sec</property>
-           <value> -0.0024 </value>
+           <table>
+             <independentVar lookup="row">aero/Re</independentVar>
+             <tableData>
+                  341795  -1.2906
+                 2639137  -0.0216
+                 3510052  -0.0122
+                 5234333  -0.0055
+             </tableData>
+           </table>
        </product>
     </function>
 
@@ -484,7 +492,15 @@
            <property>metrics/Sw-sqft</property>
            <property>metrics/bw-ft</property>
            <property>aero/beta-rad</property>
-           <value> -0.1000 </value>
+           <table>
+             <independentVar lookup="row">aero/Re</independentVar>
+             <tableData>
+                  341795   0.8728
+                 2639137   0.0199
+                 3510052   0.0136
+                 5234333   0.0079
+             </tableData>
+           </table>
        </product>
     </function>
 
@@ -508,7 +524,15 @@
            <property>metrics/bw-ft</property>
            <property>aero/bi2vel</property>
            <property>velocities/r-aero-rad_sec</property>
-           <value> 0.1500 </value>
+           <table>
+             <independentVar lookup="row">aero/Re</independentVar>
+             <tableData>
+                  341795  52.5131
+                 2639137   1.2082
+                 3510052   0.8278
+                 5234333   0.4868
+             </tableData>
+           </table>
        </product>
     </function>
 
@@ -628,7 +652,7 @@
        </product>
     </function>
 
-    <function name="aero/moment/Yaw_rol_rate">
+    <function name="aero/moment/Yaw_roll_rate">
        <description>Yaw_moment_due_to_roll_rate</description>
        <product>
            <property>aero/qbar-psf</property>
@@ -637,14 +661,14 @@
            <property>aero/bi2vel</property>
            <property>velocities/p-rad_sec</property>
            <table>
-            <independentVar lookup="row">aero/Re</independentVar>
-            <tableData>
-               341838  -2.1500
-              1128067  -0.1974
-              1668183  -0.0531
-              3707224  -0.0006
-            </tableData>
-          </table>
+             <independentVar lookup="row">aero/Re</independentVar>
+             <tableData>
+                  341795 -13.0450
+                 2639137  -0.2188
+                 3510052  -0.1237
+                 5234333  -0.0556
+             </tableData>
+           </table>
        </product>
     </function>
 
