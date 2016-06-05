@@ -22,10 +22,10 @@
 <propeller version="1.01" name="prop">
   <ixx> 6.00127 </ixx>
   <diameter unit="IN"> 95 </diameter>
-  <numblades> 6 </numblades>
+  <numblades> 4 </numblades>
   <gearratio> 19.5 </gearratio>
   <cp_factor> 1.00 </cp_factor>
-  <ct_factor> 1.90 </ct_factor>
+  <ct_factor> 1.00 </ct_factor>
   <minpitch> -12 </minpitch>
   <maxpitch> 45 </maxpitch>
   <minrpm> 2000.00 </minrpm>
