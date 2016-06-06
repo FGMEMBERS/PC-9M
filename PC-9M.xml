@@ -181,7 +181,7 @@
   </ground_reactions>
   
   <propulsion>
-   <engine file="PT6A-25C">
+   <engine file="PT6A-25C-TurboProp">
     <location unit="IN">
       <x>    36.00 </x>
       <y>     0.00 </y>
@@ -195,7 +195,7 @@
     <feed> 0 </feed>
     <feed> 1 </feed>
 
-    <thruster file="direct">
+    <thruster file="Propeller">
      <sense> 1 </sense>
      <location unit="IN">
        <x>    36.00 </x>
@@ -641,6 +641,8 @@
   </axis>
 
   <axis name="YAW">
+
+    <!-- Stall initiator -->
     <function name="aero/moment/Yaw_alpha">
        <description>Yaw_moment_due_alpha</description>
        <product>

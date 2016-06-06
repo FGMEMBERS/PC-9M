@@ -21,10 +21,10 @@ Syd Adams
     <animation>
         <type>rotate</type>
         <object-name>OTneedle</object-name>
-        <property>engines/engine[0]/oil-temp-c</property>
+        <property>engines/engine[0]/oil-temperature-degf</property>
         <interpolation>
-            <entry><ind>-70.0</ind><dep>0.0</dep></entry>
-            <entry><ind>150</ind><dep>264.0</dep></entry>
+            <entry><ind>-94.0</ind><dep>0.0</dep></entry>
+            <entry><ind>302</ind><dep>264.0</dep></entry>
         </interpolation>
         <axis>
             <x>-1</x>
