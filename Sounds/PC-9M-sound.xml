@@ -126,6 +126,9 @@
       <mode>in-transit</mode>
       <path>Sounds/gear.wav</path>
       <property>/gear/gear[0]/position-norm</property>
+      <volume>
+	<factor>1</factor>
+      </volume>
       <pitch>
         <internal>dt_play</internal>
         <offset>1.0</offset>
