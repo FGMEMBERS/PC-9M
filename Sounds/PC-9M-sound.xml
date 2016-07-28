@@ -12,7 +12,7 @@
         <property>engines/engine[0]/starter</property>
 	  </condition>
       <volume>
-        <property>engines/engine[0]/n2</property>
+        <property>engines/engine[0]/n1</property>
         <type>log</type>
         <factor>0.6</factor>
         <offset>0.5</offset>
@@ -21,7 +21,7 @@
         <property>sim/sound/cabin</property>
       </volume>
       <pitch>
-        <property>engines/engine[0]/n2</property>
+        <property>engines/engine[0]/n1</property>
         <type>log</type>
         <factor>0.4</factor>
         <offset>0.1</offset>
@@ -48,7 +48,7 @@
       <condition>
         <or>
           <greater-than>
-            <property>engines/engine[0]/n2</property>
+            <property>engines/engine[0]/n1</property>
             <value type="double">19.9</value>
           </greater-than>
           <and>
@@ -56,14 +56,14 @@
               <property>engines/engine[0]/starter</property>
             </not>
             <greater-than>
-              <property>engines/engine[0]/n2</property>
+              <property>engines/engine[0]/n1</property>
               <value type="double">1</value>
             </greater-than>
           </and>
         </or>
       </condition>
       <volume>
-        <property>engines/engine[0]/n2</property>
+        <property>engines/engine[0]/n1</property>
         <type>log</type>
         <factor>0.4</factor>
 		<offset>0.2</offset>
@@ -72,7 +72,7 @@
         <property>sim/sound/E_volume</property>
       </volume>
       <pitch>
-       <property>engines/engine[0]/n2</property>
+       <property>engines/engine[0]/n1</property>
        <factor>0.004</factor>
        <offset>0.8</offset>
       </pitch>
@@ -86,7 +86,7 @@
 		<property>engines/engine[0]/running</property>
       </condition>
       <volume>
-        <property>engines/engine[0]/n2</property>
+        <property>engines/engine[0]/n1</property>
         <type>log</type>
         <factor>0.6</factor>
 		<offset>0.5</offset>
@@ -95,7 +95,7 @@
         <property>sim/sound/cabin</property>
       </volume>
       <pitch>
-        <property>engines/engine[0]/n2</property>
+        <property>engines/engine[0]/n1</property>
 		<type>log</type>
         <factor>0.4</factor>
         <offset>0.1</offset>

@@ -232,6 +232,7 @@
   
   <system file="Conventional Controls.xml"/>
   <system file="Landing Gear.xml"/>
+  <system file="Speedbrake.xml"/>
   <system file="Flaps.xml"/>
   <system file="nws"/>
   <system file="particles"/>
