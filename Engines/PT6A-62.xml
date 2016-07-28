@@ -2,22 +2,22 @@
 
 <!--
   File:     PT6A.xml
-  Author:   AeromatiC++ v 3.2.5
+  Author:   AeromatiC++ v 3.3.1
 
   See: http://wiki.flightgear.org/JSBSim_Engines#FGTurboprop
 
   Inputs:
     name:                   PT6A
     type:                   Turboprop Engine
-    power:                  1149.2 hp
-    inlet temperature:      1292.6 degrees C
-    overall pressure ratio: 9.4:1
+    power:                  949.4 hp
+    inlet temperature:      800.0 degrees C
+    overall pressure ratio: 13.0:1
 
   Outputs:
-    psfc:                   0.547 lbs/hr/hp
-    engine weight:          623.4 lbs
-    engine length:          6.3 ft
-    engine diameter:        2.2 ft
+    psfc:                   0.562 lbs/hr/hp
+    engine weight:          515.0 lbs
+    engine length:          5.8 ft
+    engine diameter:        2.1 ft
 -->
 
 <turboprop_engine name="PT6A">
@@ -40,15 +40,15 @@
       <independentVar lookup="row">atmosphere/P-psf</independentVar>
       <independentVar lookup="column">velocities/ve-kts</independentVar>
       <tableData>
-              0      50    100    150    200    250
-        503   0.357  0.380  0.400  0.425  0.457  0.486
-       1048   0.586  0.589  0.600  0.621  0.650  0.686
-       1328   0.707  0.721  0.731  0.757  0.786  0.821
-       1496   0.779  0.786  0.808  0.821  0.857  0.900
-       1684   0.850  0.857  0.874  0.900  0.943  0.979
-       1896   0.914  0.929  0.946  0.971  1      1.057
-       2135   1      1.011  1.029  1.043  1.083  1.150
-       2213   1.029  1.043  1.057  1.079  1.114  1.171
+              0      50     100    150    200    250    300    350
+        503   0.357  0.380  0.400  0.425  0.457  0.486  0.517  0.550
+       1048   0.586  0.589  0.600  0.621  0.650  0.686  0.724  0.764
+       1328   0.707  0.721  0.731  0.757  0.786  0.821  0.858  0.896
+       1496   0.779  0.786  0.808  0.821  0.857  0.900  0.945  0.993
+       1684   0.850  0.857  0.874  0.900  0.943  0.979  1.016  1.055
+       1896   0.914  0.929  0.946  0.971  1      1.057  1.117  1.181
+       2135   1      1.011  1.029  1.043  1.083  1.150  1.221  1.297
+       2213   1.029  1.043  1.057  1.079  1.114  1.171  1.231  1.294
      </tableData>
    </table>
   </function>

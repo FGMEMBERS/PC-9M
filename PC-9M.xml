@@ -181,7 +181,7 @@
   </ground_reactions>
   
   <propulsion>
-   <engine file="PT6A-25C-TurboProp">
+   <engine file="PT6A-62">
     <location unit="IN">
       <x>    36.00 </x>
       <y>     0.00 </y>
@@ -261,9 +261,9 @@
             <independentVar lookup="row">aero/alpha-rad</independentVar>
             <tableData>
              -1.57    1.4094
-             -0.32    0.0916
-              0.00    0.0197
-              0.32    0.0916
+             -0.32    0.0816
+              0.00    0.0178
+              0.32    0.0816
               1.57    1.4094
             </tableData>
           </table>
@@ -276,7 +276,7 @@
            <property>aero/qbar-psf</property>
            <property>metrics/Sw-sqft</property>
            <property>aero/cl-squared</property>
-           <value> 0.0522 </value>
+           <value> 0.0422 </value>
          </product>
     </function>
 
@@ -289,7 +289,7 @@
             <independentVar lookup="row">velocities/mach</independentVar>
             <tableData>
                 0.00    0.0000
-                0.75    0.0000
+                0.85    0.0000
                 1.10    0.0230
                 1.80    0.0150
             </tableData>
@@ -412,8 +412,8 @@
             <tableData>
                      0.0     60.0
               -0.30  0.000   0.000
-               0.00  0.102   0.272
-               0.34  0.456   1.216
+               0.00  0.034   0.090
+               0.34  0.152   0.405
                0.68  0.000   0.000
             </tableData>
           </table>
