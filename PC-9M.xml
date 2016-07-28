@@ -345,6 +345,16 @@
            <value> 0.0012 </value>
          </product>
     </function>
+
+    <function name="aero/coefficient/Drag_speedbrake">
+       <description>Drag due to speedbrakes</description>
+         <product>
+           <property>aero/qbar-psf</property>
+           <property>metrics/Sw-sqft</property>
+           <property>fcs/speedbrake-pos-norm</property>
+           <value>0.03</value>
+         </product>
+    </function>
   </axis>
 
   <axis name="SIDE">
@@ -480,6 +490,17 @@
            <value> 0.0092 </value>
        </product>
     </function>
+
+    <function name="aero/coefficient/Lift_speedbrake">
+       <description>Delta Lift due to speedbrake</description>
+       <product>
+           <property>aero/qbar-psf</property>
+           <property>metrics/Sw-sqft</property>
+           <property>fcs/speedbrake-pos-norm</property>
+           <value>0.0000</value>
+       </product>
+    </function>
+
   </axis>
 
   <axis name="ROLL">
