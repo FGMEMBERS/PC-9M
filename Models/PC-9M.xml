@@ -764,6 +764,7 @@
 
 	<!-- Gear Compression -->
 
+<!--
 	<animation>
 		<type>rotate</type>
 		<object-name>fwheel</object-name>
@@ -780,7 +781,72 @@
 			<z>0</z>
 		</axis>
 	</animation>
+-->
+        <animation>
+                <type>rotate</type>
+                <object-name>fuscissor</object-name>
+                <object-name>fdscissor</object-name>
+                <object-name>fstrut</object-name>
+                <object-name>fdring</object-name>
+                <object-name>fgear</object-name>
+                <object-name>fwheel</object-name>
+                <object-name>ftyre</object-name>
+                <property>gear/gear[0]/compression-norm</property>
+                <factor>40</factor>
+                <center>
+                        <x-m>-2.41</x-m>
+                        <y-m> 0.00</y-m>
+                        <z-m> 0.09</z-m>
+                </center>
+                <axis>
+                        <x>0.0</x>
+                        <y>1.0</y>
+                        <z>0.0</z>
+                </axis>
+        </animation>
+        <animation>
+                <type>rotate</type>
+                <object-name>fdscissor</object-name>
+                <object-name>fstrut</object-name>
+                <object-name>fdring</object-name>
+                <object-name>fgear</object-name>
+                <object-name>fwheel</object-name>
+                <object-name>ftyre</object-name>
+                <property>gear/gear[0]/compression-norm</property>
+                <factor>-120</factor>
+                <center>
+                        <x-m>-2.54</x-m>
+                        <y-m> 0.00</y-m>
+                        <z-m> 0.01</z-m>
+                </center>
+                <axis>
+                        <x>0.0</x>
+                        <y>1.0</y>
+                        <z>0.0</z>
+                </axis>
+        </animation>
+        <animation>
+                <type>rotate</type>
+                <object-name>fstrut</object-name>
+                <object-name>fdring</object-name>
+                <object-name>fgear</object-name>
+                <object-name>fwheel</object-name>
+                <object-name>ftyre</object-name>
+                <property>gear/gear[0]/compression-norm</property>
+                <factor>80</factor>
+                <center>
+                        <x-m>-2.42</x-m>
+                        <y-m> 0.00</y-m>
+                        <z-m>-0.12</z-m>
+                </center>
+                <axis>
+                        <x>0.0</x>
+                        <y>1.0</y>
+                        <z>0.0</z>
+                </axis>
+        </animation>
 
+<!--
 	<animation>
 		<type>translate</type>
 		<object-name>rwheel</object-name>
@@ -796,7 +862,72 @@
 			<z>0</z>
 		</axis>
 	</animation>
+-->
+        <animation>
+                <type>rotate</type>
+                <object-name>ruscissor</object-name>
+                <object-name>rdscissor</object-name>
+                <object-name>rdstrut</object-name>
+                <object-name>rdring</object-name>
+                <object-name>rgear</object-name>
+                <object-name>rwheel</object-name>
+                <object-name>rtyre</object-name>
+                <property>gear/gear[2]/compression-norm</property>
+                <factor>20</factor>
+                <center>
+                        <x-m> 0.37</x-m>
+                        <y-m> 0.00</y-m>
+                        <z-m>-0.35</z-m>
+                </center>
+                <axis>
+                        <x>0.0</x>
+                        <y>1.0</y>
+                        <z>0.0</z>
+                </axis>
+        </animation>
+        <animation>
+                <type>rotate</type>
+                <object-name>rdscissor</object-name>
+                <object-name>rdstrut</object-name>
+                <object-name>rdring</object-name>
+                <object-name>rgear</object-name>
+                <object-name>rwheel</object-name>
+                <object-name>rtyre</object-name>
+                <property>gear/gear[2]/compression-norm</property>
+                <factor>-60</factor>
+                <center>
+                        <x-m> 0.24</x-m>
+                        <y-m> 0.00</y-m>
+                        <z-m>-0.43</z-m>
+                </center>
+                <axis>
+                        <x>0.0</x>
+                        <y>1.0</y>
+                        <z>0.0</z>
+                </axis>
+        </animation>
+        <animation>
+                <type>rotate</type>
+                <object-name>rdstrut</object-name>
+                <object-name>rdring</object-name>
+                <object-name>rgear</object-name>
+                <object-name>rwheel</object-name>
+                <object-name>rtyre</object-name>
+                <property>gear/gear[2]/compression-norm</property>
+                <factor>40</factor>
+                <center>
+                        <x-m> 0.36</x-m>
+                        <y-m> 0.00</y-m>
+                        <z-m>-0.51</z-m>
+                </center>
+                <axis>
+                        <x>0.0</x>
+                        <y>1.0</y>
+                        <z>0.0</z>
+                </axis>
+        </animation>
 
+<!--
 	<animation>
 		<type>translate</type>
 		<object-name>lwheel</object-name>
@@ -812,5 +943,69 @@
 			<z>0</z>
 		</axis>
 	</animation>
+-->
+                <animation>
+                <type>rotate</type>
+                <object-name>luscissor</object-name>
+                <object-name>ldscissor</object-name>
+                <object-name>ldstrut</object-name>
+                <object-name>ldring</object-name>
+                <object-name>lgear</object-name>
+                <object-name>lwheel</object-name>
+                <object-name>ltyre</object-name>
+                <property>gear/gear[1]/compression-norm</property>
+                <factor>20</factor>
+                <center>
+                        <x-m> 0.37</x-m>
+                        <y-m> 0.00</y-m>
+                        <z-m>-0.35</z-m>
+                </center>
+                <axis>
+                        <x>0.0</x>
+                        <y>1.0</y>
+                        <z>0.0</z>
+                </axis>
+        </animation>
+        <animation>
+                <type>rotate</type>
+                <object-name>ldscissor</object-name>
+                <object-name>ldstrut</object-name>
+                <object-name>ldring</object-name>
+                <object-name>lgear</object-name>
+                <object-name>lwheel</object-name>
+                <object-name>ltyre</object-name>
+                <property>gear/gear[1]/compression-norm</property>
+                <factor>-60</factor>
+                <center>
+                        <x-m> 0.24</x-m>
+                        <y-m> 0.00</y-m>
+                        <z-m>-0.43</z-m>
+                </center>
+                <axis>
+                        <x>0.0</x>
+                        <y>1.0</y>
+                        <z>0.0</z>
+                </axis>
+        </animation>
+        <animation>
+                <type>rotate</type>
+                <object-name>ldstrut</object-name>
+                <object-name>ldring</object-name>
+                <object-name>lgear</object-name>
+                <object-name>lwheel</object-name>
+                <object-name>ltyre</object-name>
+                <property>gear/gear[1]/compression-norm</property>
+                <factor>40</factor>
+                <center>
+                        <x-m> 0.36</x-m>
+                        <y-m> 0.00</y-m>
+                        <z-m>-0.51</z-m>
+                </center>
+                <axis>
+                        <x>0.0</x>
+                        <y>1.0</y>
+                        <z>0.0</z>
+                </axis>
+        </animation>
 
 </PropertyList>
