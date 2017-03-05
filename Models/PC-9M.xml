@@ -88,6 +88,30 @@
 		</unload>
 	</nasal>
 
+       <effect>
+                <inherits-from>Aircraft/PC-9M/Models/Effects/reflection</inherits-from>       
+                <object-name>spinner</object-name>
+                <object-name>hull</object-name>
+                <object-name>arch</object-name>
+                <object-name>rudder</object-name>
+                <object-name>hstab</object-name>
+                <object-name>elevator</object-name>
+                <object-name>wing</object-name>
+                <object-name>airbrake</object-name>
+                <object-name>riflap</object-name>
+                <object-name>liflap</object-name>
+                <object-name>roflap</object-name>
+                <object-name>loflap</object-name>
+                <object-name>raileron</object-name>
+                <object-name>laileron</object-name>
+                <object-name>frdoor</object-name>
+                <object-name>fldoor</object-name>
+                <object-name>rbodoor</object-name>
+                <object-name>rbdoor</object-name>
+                <object-name>lbodoor</object-name>
+                <object-name>lbdoor</object-name>
+        </effect>
+
 	<animation>
 		<type>material</type>
 		<object-name>spinner</object-name>
