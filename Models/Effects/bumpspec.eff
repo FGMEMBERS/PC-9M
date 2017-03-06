@@ -4,9 +4,9 @@
  <inherits-from>Effects/model-combined-deferred</inherits-from>
  <parameters>
   <rain-enabled type="int">2</rain-enabled>
-  <normalmap-enabled type="int"> 0 </normalmap-enabled>
+  <normalmap-enabled type="int"> 1 </normalmap-enabled>
   <normalmap-dds type="int"> 0 </normalmap-dds>
-  <normalmap-tiling type="float"> 0.0 </normalmap-tiling>
+  <normalmap-tiling type="float"> 1.0 </normalmap-tiling>
   <lightmap-enabled type="int"> 0 </lightmap-enabled>
   <reflection-enabled type="int"> 1 </reflection-enabled>
   <reflection-correction type="float">-0.75</reflection-correction>
@@ -50,6 +50,7 @@
   </pass>
  </technique>
 
+<!--
  <technique n="5">
     <pass>
       <lighting>true</lighting>
@@ -81,6 +82,7 @@
       <alpha-to-coverage>true</alpha-to-coverage>
     </pass>
   </technique>
+-->
 
  <technique n="7">
   <pass>

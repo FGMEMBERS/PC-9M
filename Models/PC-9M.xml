@@ -45,31 +45,21 @@
 		<path>Aircraft/PC-9M/Models/Effects.xml</path>
 	</model>
 	
-	<!-- Glass shader -->
-    
-    <animation>
-        <type>shader</type>
-        <shader>chrome</shader>
-        <texture>Aircraft/Generic/Effects/glass_shader.png</texture>
-        <object-name>canopy</object-name>
-    </animation>
+	<!-- glass effects -->
+	<effect>
+		<inherits-from>Aircraft/PC-9M/Models/Effects/glass/glass</inherits-from>
+		<object-name>canopy_inner</object-name>
+	</effect>
+
+ 	<effect>
+		<inherits-from>Aircraft/PC-9M/Models/Effects/glass/reflection</inherits-from>
+  		<object-name>canopy_outer</object-name>
+ 	</effect>
 	
 	<animation>
 		<type>noshadow</type>
         <object-name>canopy</object-name>
 	</animation>
-	
-    <!-- Parts invisible from internally -->
-    
-    <animation>
-        <type>select</type>
-        <object-name>canopy</object-name>
-		<condition>
-            <not>
-                <property>sim/current-view/internal</property>
-            </not>
-        </condition>
-    </animation>
 	
 	<!-- MP sound -->
 	
