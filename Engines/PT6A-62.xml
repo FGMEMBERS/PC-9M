@@ -1,35 +1,35 @@
 <?xml version="1.0"?>
 
 <!--
-  File:     PT6A.xml
+  File:     PT6A-62.xml
   Author:   AeromatiC++ v 3.3.1
 
   See: http://wiki.flightgear.org/JSBSim_Engines#FGTurboprop
 
   Inputs:
-    name:                   PT6A
+    name:                   PT6A-62
     type:                   Turboprop Engine
-    power:                  949.4 hp
+    power:                  1149.2 hp
     inlet temperature:      800.0 degrees C
     overall pressure ratio: 13.0:1
 
   Outputs:
-    psfc:                   0.562 lbs/hr/hp
-    engine weight:          515.0 lbs
-    engine length:          5.8 ft
-    engine diameter:        2.1 ft
+    psfc:                   0.551 lbs/hr/hp
+    engine weight:          623.4 lbs
+    engine length:          6.3 ft
+    engine diameter:        2.2 ft
 -->
 
-<turboprop_engine name="PT6A">
+<turboprop_engine name="PT6A-62">
   <milthrust unit="LBS">       2574.3   </milthrust>
   <idlen1>                       60.0   </idlen1>
   <maxn1>                       100.0   </maxn1>
   <maxpower unit="HP">         1149.2   </maxpower>
-  <psfc unit="LBS/HR/HP">         0.547 </psfc>
+  <psfc unit="LBS/HR/HP">         0.551 </psfc>
   <n1idle_max_delay>              1     </n1idle_max_delay>
   <maxstartingtime>              20     </maxstartingtime>
   <startern1>                    20     </startern1>
-  <ielumaxtorque unit="FT*LB"> 2724.9   </ielumaxtorque>
+  <ielumaxtorque unit="FT*LB"> 2755.4   </ielumaxtorque>
   <itt_delay>                     0.05  </itt_delay>
   <betarangeend>                 64     </betarangeend>
   <reversemaxpower>              60     </reversemaxpower>
@@ -58,11 +58,11 @@
     <tableData>
               0       5       60      86      94      95      96      97      98      99     100     101
       0.0     0.0     0.8     0.8     0.8     0.8     0.8     0.8     0.8     0.8     0.8     0.8     0.8
-    862.7     0.0     0.8    54.1   309.4   541.4   587.7   649.7   711.5   773.3   819.8   897.1   959.0
-   1291.7     0.0     0.8    46.4   355.8   618.7   665.1   727.0   781.1   850.7   912.6   990.0  1051.8
-   1723.0     0.0     0.8     7.7   371.2   680.6   734.7   788.8   850.7   920.3   974.4  1051.8  1113.6
-   2154.4     0.0     0.1     0.1   348.0   696.1   765.6   812.1   873.9   943.5  1005.4  1082.7  1152.3
-   2370.1     0.0     0.1     0.1   317.1   680.6   742.4   796.5   866.2   935.8   997.7  1075.0  1149.2
+    853.2     0.0     0.8    54.1   309.4   541.4   587.7   649.7   711.5   773.3   819.8   897.1   959.0
+   1277.4     0.0     0.8    46.4   355.8   618.7   665.1   727.0   781.1   850.7   912.6   990.0  1051.8
+   1704.0     0.0     0.8     7.7   371.2   680.6   734.7   788.8   850.7   920.3   974.4  1051.8  1113.6
+   2130.5     0.0     0.1     0.1   348.0   696.1   765.6   812.1   873.9   943.5  1005.4  1082.7  1152.3
+   2343.8     0.0     0.1     0.1   317.1   680.6   742.4   796.5   866.2   935.8   997.7  1075.0  1149.2
     </tableData>
   </table>
 
@@ -71,10 +71,10 @@
     <tableData>
               0     1
         0     0     0
-       15   187.4   187.4
-       60   336.1   974.6
-       96   505.4  1274.5
-      100   524.8  1408.9
+       15   116.0   116.0
+       60   208.0   603.2
+       96   312.8   788.8
+      100   324.8   872.0
     </tableData>
   </table>
 

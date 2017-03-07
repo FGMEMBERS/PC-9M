@@ -4,12 +4,12 @@
 
 	<path>PC-9M.ac</path>
 	<offsets>
-		<pitch-deg>-4.70</pitch-deg>   
+		<pitch-deg>-3.00</pitch-deg>   
 		<heading-deg>0</heading-deg>
 		<roll-deg>0</roll-deg>
 		<x-m>0</x-m>
 		<y-m>0</y-m>
-		<z-m>-0.13</z-m>
+		<z-m>0.15</z-m>
 	</offsets>
 	
 	<model>
