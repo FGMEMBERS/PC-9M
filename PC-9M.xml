@@ -73,20 +73,20 @@
    <htailarm  unit="M" >      5.97 </htailarm>
    <vtailarea unit="M2">      1.63 </vtailarea>
    <vtailarm  unit="M" >      5.97 </vtailarm>
-   <location name="AERORP" unit="M">
-     <x>    4.306 </x>
-     <y>    0.0   </y>
-     <z>    1.66  </z>
+   <location name="AERORP" unit="IN">
+     <x>   201.18 </x>
+     <y>     0.00 </y>
+     <z>     0.00 </z>
    </location>
-   <location name="EYEPOINT" unit="M">
-     <x>    4.061 </x>
-     <y>    0.0   </y>
-     <z>    2.5   </z>
+   <location name="EYEPOINT" unit="IN">
+     <x>   111.78 </x>
+     <y>     0.00 </y>
+     <z>    40.00 </z>
    </location>
-   <location name="VRP" unit="M">
-     <x>   4.306 </x>
-     <y>    0.0  </y>
-     <z>    2.0  </z>
+   <location name="VRP" unit="IN">
+     <x>     0.0 </x>
+     <y>     0.0 </y>
+     <z>     0.0 </z>
    </location>
  </metrics>
 
@@ -98,41 +98,24 @@
    <ixz unit="KG*M2">     169.9 </ixz>
    <iyz unit="KG*M2">       3.0 </iyz>
    <emptywt unit="KG" >  1866.1 </emptywt>
-   <location name="CG" unit="M">
-     <x>    4.306 </x>
-     <y>    0.0   </y>
-     <z>    2.0   </z>
+   <location name="CG" unit="IN">
+     <x>   201.18 </x>
+     <y>     0.00 </y>
+     <z>    -9.98 </z>
    </location>
-   <pointmass name="Pilot">
-    <description> Front Pilot </description>
-    <weight unit="KG"> 81.6 </weight>
-    <location name="POINTMASS" unit="M">
-     <x>    4.061 </x>
-     <y>     0.0  </y>
-     <z>     2.5  </z>
-    </location>
-   </pointmass>
-   <pointmass name="Instructor">
-    <description> Rear Pilot </description>
-    <weight unit="KG"> 81.6 </weight>
-    <location name="POINTMASS" unit="M">
-     <x>    5.711 </x>
-     <y>     0.0  </y>
-     <z>     2.5  </z>
-    </location>
-   </pointmass>
    <pointmass name="Payload">
-    <description> 378 Kg should bring model up to entered max weight </description>
-    <weight unit="KG"> 378 </weight>
-    <location name="POINTMASS" unit="M">
-     <x>    4.306 </x>
-     <y>     0.0  </y>
-     <z>     2.0  </z>
-    </location>
-   </pointmass>
+    <description> 2391.54 LBS should bring model up to entered max weight </description>
+    <weight unit="LBS"> 1195.77 </weight>
+    <location name="POINTMASS" unit="IN">
+     <x>   201.18 </x>
+     <y>     0.00 </y>
+     <z>    -9.98 </z>
+   </location>
+  </pointmass>
   </mass_balance>
 
   <ground_reactions>
+<!--
      <contact type="STRUCTURE" name="NOSE">
        <location unit="M">
        <x> 0.8 </x>
@@ -144,51 +127,54 @@
        <spring_coeff unit="LBS/FT">     5940.00 </spring_coeff>
        <damping_coeff unit="LBS/FT/SEC">  1188.00 </damping_coeff>
     </contact>
+-->
     <contact type="BOGEY" name="NOSE_LG">
-      <location unit="M">
-        <x>  2.28 </x>
-        <y>  0.0  </y>
-        <z>  1.08 </z>
+    <location unit="IN">
+      <x>    51.90 </x>
+      <y>     0.00 </y>
+      <z>   -47.91 </z>
       </location>
       <static_friction> 0.8 </static_friction>
       <dynamic_friction> 0.5 </dynamic_friction>
       <rolling_friction> 0.02 </rolling_friction>
-      <spring_coeff unit="LBS/FT"> 1389.1 </spring_coeff>
-      <damping_coeff unit="LBS/FT/SEC"> 463.1 </damping_coeff>
+      <spring_coeff  unit="LBS/FT">     2116.80 </spring_coeff>
+      <damping_coeff unit="LBS/FT/SEC"> 1058.40 </damping_coeff>
       <max_steer unit="DEG"> 80 </max_steer>
       <brake_group> NONE </brake_group>
       <retractable>1</retractable>
     </contact>
     <contact type="BOGEY" name="LEFT_MLG">
-      <location unit="M">
-        <x>  4.62 </x>
-        <y> -1.27 </y>
-        <z>  1.23 </z>
+    <location unit="IN">
+      <x>   209.23 </x>
+      <y>   -59.79 </y>
+      <z>   -47.91 </z>
       </location>
       <static_friction> 0.8 </static_friction>
       <dynamic_friction> 0.5 </dynamic_friction>
       <rolling_friction> 0.02 </rolling_friction>
-      <spring_coeff unit="LBS/FT"> 4630.5 </spring_coeff>
-      <damping_coeff unit="LBS/FT/SEC"> 926.1 </damping_coeff>
+      <spring_coeff  unit="LBS/FT">     7056.00 </spring_coeff>
+      <damping_coeff unit="LBS/FT/SEC"> 3528.00 </damping_coeff>
       <max_steer unit="DEG"> 0.0 </max_steer>
       <brake_group> LEFT </brake_group>
       <retractable>1</retractable>
     </contact>
     <contact type="BOGEY" name="RIGHT_MLG">
-      <location unit="M">
-        <x>  4.62 </x>
-        <y>  1.27 </y>
-        <z>  1.23 </z>
+    <location unit="IN">
+      <x>   209.23 </x>
+      <y>    59.79 </y>
+      <z>   -47.91 </z>
+
       </location>
       <static_friction> 0.8 </static_friction>
       <dynamic_friction> 0.5 </dynamic_friction>
       <rolling_friction> 0.02 </rolling_friction>
-      <spring_coeff unit="LBS/FT"> 4630.5 </spring_coeff>
-      <damping_coeff unit="LBS/FT/SEC"> 926.1 </damping_coeff>
+      <spring_coeff  unit="LBS/FT">     7056.00 </spring_coeff>
+      <damping_coeff unit="LBS/FT/SEC"> 3528.00 </damping_coeff>
       <max_steer unit="DEG"> 0.0 </max_steer>
       <brake_group> RIGHT </brake_group>
       <retractable>1</retractable>
     </contact>
+<!--
     <contact type="STRUCTURE" name="LEFT_WING">
        <location unit="M">
        <x>  4.4225 </x>
@@ -211,14 +197,15 @@
        <spring_coeff unit="LBS/FT">     5940.00 </spring_coeff>
        <damping_coeff unit="LBS/FT/SEC">  1188.00 </damping_coeff>
     </contact>
+-->
   </ground_reactions>
   
   <propulsion>
    <engine file="PT6A-62">
-    <location unit="M">
-      <x>     2.75 </x>
+     <location unit="IN">
+      <x>    36.00 </x>
       <y>     0.00 </y>
-      <z>     2.50 </z>
+      <z>     0.00 </z>
     </location>
     <orient unit="DEG">
       <pitch>     0.00 </pitch>
@@ -230,10 +217,39 @@
 
     <thruster file="Propeller">
      <sense> 1 </sense>
-     <location unit="M">
-       <x>     0.80 </x>
-       <y>     0.00 </y>
-       <z>     2.50 </z>
+     <location unit="IN">
+      <x>    36.00 </x>
+      <y>     0.00 </y>
+      <z>     0.00 </z>
+     </location>
+     <orient unit="DEG">
+       <pitch>     0.00 </pitch>
+        <roll>     0.00 </roll>
+         <yaw>     0.00 </yaw>
+     </orient>
+    </thruster>
+   </engine>
+
+   <engine file="PT6A-62-exhaust">
+     <location unit="IN">
+      <x>    36.00 </x>
+      <y>     0.00 </y>
+      <z>     0.00 </z>
+    </location>
+    <orient unit="DEG">
+      <pitch>     0.00 </pitch>
+       <roll>     0.00 </roll>
+        <yaw>     0.00 </yaw>
+    </orient>
+    <feed> 0 </feed>
+    <feed> 1 </feed>
+
+    <thruster file="direct">
+     <sense> 1 </sense>
+     <location unit="IN">
+      <x>    36.00 </x>
+      <y>     0.00 </y>
+      <z>     0.00 </z>
      </location>
      <orient unit="DEG">
        <pitch>     0.00 </pitch>
@@ -244,19 +260,19 @@
    </engine>
     
    <tank type="FUEL" number="0">
-     <location unit="M">
-        <x>  4.178 </x>
-        <y>  0.5   </y>
-        <z>  1.33  </z>
+     <location unit="IN">
+       <x>   201.18 </x>
+       <y>     0.00 </y>
+       <z>    -9.98 </z>
      </location>
      <capacity unit="KG"> 237.5 </capacity>
      <contents unit="KG"> 175.0 </contents>
    </tank>
    <tank type="FUEL" number="1">
-     <location unit="M">
-        <x>  4.178 </x>
-        <y> -0.5   </y>
-        <z>  1.33  </z>
+     <location unit="IN">
+       <x>   201.18 </x>
+       <y>     0.00 </y>
+       <z>    -9.98 </z>
      </location>
      <capacity unit="KG"> 237.5 </capacity>
      <contents unit="KG"> 175.0 </contents>
@@ -906,7 +922,7 @@
            <property>metrics/bw-ft</property>
            <property>aero/beta-rad</property>
            <property>gear/gear-pos-norm</property>
-           <value> 0.0464 </value>	<!-- DSTO -->
+           <value> 0.0464 </value>	<!-- DSTO  -->
        </product>
     </function>
 

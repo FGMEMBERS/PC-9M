@@ -79,7 +79,7 @@
 	</nasal>
 
        <effect>
-                <inherits-from>Aircraft/PC-9M/Models/Effects/reflection</inherits-from>       
+                <inherits-from>Aircraft/PC-9M/Models/Effects/bumpspec-reflection</inherits-from>       
                 <object-name>spinner</object-name>
                 <object-name>hull</object-name>
                 <object-name>arch</object-name>

@@ -25,7 +25,7 @@
   <numblades> 4 </numblades>
   <gearratio> 16.6394 </gearratio>
   <cp_factor> 1.00 </cp_factor>
-  <ct_factor> 4 </ct_factor> <!-- set to match the number of blades -->
+  <ct_factor> 4 </ct_factor>
   <minpitch> -12 </minpitch>
   <maxpitch> 45 </maxpitch>
   <minrpm> 1992.26 </minrpm>
