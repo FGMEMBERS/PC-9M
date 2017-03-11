@@ -44,6 +44,12 @@
     <!--Systems -->
 
     <systems>
+
+      <property-rule n="101">
+        <name>altitude-agl-m</name>
+        <path>Aircraft/PC-9M/Systems/shadow.xml</path>
+      </property-rule>
+
       <autopilot>
         <path>Aircraft/PC-9M/Systems/autopilot.xml</path>
       </autopilot>
@@ -85,7 +91,7 @@
         <pitch-offset-deg>-14.0</pitch-offset-deg>
         <default-field-of-view-deg type="double">89.1</default-field-of-view-deg>
         <x-offset-m archive="y"> 0.00</x-offset-m>
-        <y-offset-m archive="y"> 1.56</y-offset-m>
+        <y-offset-m archive="y"> 0.96</y-offset-m>
         <z-offset-m archive="y">-0.37</z-offset-m>
       </config>
     </view>
@@ -103,7 +109,7 @@
         <default-pitch-deg type="double">0</default-pitch-deg>
         <default-heading-deg type="double">0</default-heading-deg>
         <x-offset-m archive="y"> 0.00 </x-offset-m>  
-        <y-offset-m archive="y"> 1.34 </y-offset-m>
+        <y-offset-m archive="y"> 0.96 </y-offset-m>
         <z-offset-m archive="y"> 1.12 </z-offset-m>
         <pitch-offset-deg> -10.0</pitch-offset-deg>
         <dynamic-view type="bool">true</dynamic-view>
@@ -455,6 +461,7 @@
       <file>Aircraft/PC-9M/Nasal/vhf22.nas</file>
       <file>Aircraft/PC-9M/Nasal/vir32.nas</file>
       <file>Aircraft/PC-9M/Nasal/crash.nas</file>
+      <file>Aircraft/PC-9M/Nasal/rain.nas</file>
     </PC9M>
     <dialogs>
       <file>Aircraft/PC-9M/Nasal/dialogs.nas</file>
