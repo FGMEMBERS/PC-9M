@@ -7,7 +7,7 @@
 
  
 <effect>
-   <inherits-from>Aircraft/pc7/Models/Effects/lights/left-strobe</inherits-from>
+   <inherits-from>Aircraft/PC-9M/Models/Effects/lights/left-strobe</inherits-from>
    <object-name>left-strobe</object-name>
  </effect>
  

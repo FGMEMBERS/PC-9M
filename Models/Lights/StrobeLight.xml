@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+ <path>WhiteLight.ac</path>
+
+<animation>
+<name>StrobeLight</name>
+<type>select</type>
+<object-name>Light</object-name>
+<condition>
+<property>/sim/model/lights/strobe/state</property>
+</condition>
+</animation>
+
+<animation>
+<type>material</type>
+<object-name>StrobeLight</object-name>
+<threshold>0.001</threshold>
+</animation>
+
+<animation>
+<type>scale</type>
+<object-name>StrobeLight</object-name>
+<property>/sim/time/sun-angle-rad</property>
+<offset>-1.4</offset>
+<x-factor>2</x-factor>
+<y-factor>2</y-factor>
+<z-factor>2</z-factor>
+</animation>
+
+<animation>
+<type>noshadow</type>
+<object-name>StrobeLight</object-name>
+</animation>
+
+</PropertyList>

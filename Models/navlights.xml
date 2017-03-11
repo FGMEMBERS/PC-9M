@@ -1,0 +1,113 @@
+<PropertyList>
+
+  <model>
+   <name>RedLight</name>
+   <path>Aircraft/PC-9M/Models/Lights/RedLight.xml</path>
+   <offsets>
+    <x-m>-0.13</x-m>
+    <y-m>-4.80</y-m>
+    <z-m> 0.56</z-m>
+   </offsets>
+  </model>
+
+  <model>
+   <name>GreenLight</name>
+   <path>Aircraft/PC-9M/Models/Lights/GreenLight.xml</path>
+   <offsets>
+    <x-m>-0.13</x-m>
+    <y-m> 4.80</y-m>
+    <z-m> 0.56</z-m>
+   </offsets>
+  </model>
+
+  <model>
+   <name>StrobeLightR</name>
+   <path>Aircraft/PC-9M/Models/Lights/StrobeLight.xml</path>
+   <offsets>
+    <x-m>-0.04</x-m>
+    <y-m> 4.80</y-m>
+    <z-m> 0.56</z-m>
+   </offsets>
+  </model>
+
+  <model>
+   <name>StrobeLightL</name>
+   <path>Aircraft/PC-9M/Models/Lights/StrobeLight.xml</path>
+   <offsets>
+    <x-m>-0.04</x-m>
+    <y-m>-4.80</y-m>
+    <z-m> 0.56</z-m>
+   </offsets>
+  </model>
+
+  <model>
+   <name>BeaconLight1</name>
+   <path>Aircraft/PC-9M/Models/Lights/BeaconLight.xml</path>
+   <offsets>
+    <x-m> 1.40</x-m>
+    <y-m> 0.00</y-m>
+    <z-m> 0.04</z-m>
+   </offsets>
+  </model>
+
+  <model>
+   <name>BeaconLight2</name>
+   <path>Aircraft/PC-9M/Models/Lights/BeaconLight.xml</path>
+   <offsets>
+    <x-m> 2.30</x-m>
+    <y-m> 0.00</y-m>
+    <z-m> 1.25</z-m>
+   </offsets>
+  </model>
+
+  <model>
+   <name>PositionLightR</name>
+   <path>Aircraft/PC-9M/Models/Lights/PositionLight.xml</path>
+   <offsets>
+    <x-m> 0.68</x-m>
+    <y-m> 4.80</y-m>
+    <z-m> 0.56</z-m>
+   </offsets>
+  </model>
+
+  <model>
+   <name>PositionLightL</name>
+   <path>Aircraft/PC-9M/Models/Lights/PositionLight.xml</path>
+   <offsets>
+    <x-m> 0.68</x-m>
+    <y-m>-4.80</y-m>
+    <z-m> 0.56</z-m>
+   </offsets>
+  </model>
+
+  <model>
+   <name>LandingLights</name>
+   <path>Aircraft/PC-9M/Models/Lights/LandingLights.xml</path>
+   <offsets>
+    <x-m> 0.00</x-m>
+    <y-m> 0.00</y-m>
+    <z-m> 0.00</z-m>
+   </offsets>
+  </model>
+
+  <model>
+   <name>LightConeR</name>
+   <path>Aircraft/pc7/Models/Lights/LightCone.xml</path>
+   <offsets>
+    <x-m>-0.29</x-m>
+    <y-m> 1.20</y-m>
+    <z-m>-0.05</z-m>
+   </offsets>
+  </model>
+
+  <model>
+   <name>LightConeL</name>
+   <path>Aircraft/pc7/Models/Lights/LightCone.xml</path>
+   <offsets>
+    <x-m>-0.29</x-m>
+    <y-m>-1.20</y-m>
+    <z-m>-0.00</z-m>
+  </offsets>
+ </model>
+  
+</PropertyList>

@@ -1,0 +1,104 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+<!-- Lights -->
+
+<model>
+<name>RedLightALS</name>
+<path>Aircraft/PC-9M/Models/Effects/lights/red-navlight.xml</path>
+<offsets>
+<x-m>-0.35</x-m>
+<y-m>-5.26</y-m>
+<z-m> 0.68</z-m>
+</offsets>
+</model>
+
+<model>
+<name>GreenLight</name>
+<path>Aircraft/PC-9M/Models/Effects/lights/green-navlight.xml</path>
+<offsets>
+<x-m>-0.35</x-m>
+<y-m> 5.26</y-m>
+<z-m> 0.68</z-m>
+</offsets>
+</model>
+
+<model>
+<name>StrobeLightR</name>
+<path>Aircraft/PC-9M/Models/Effects/lights/right-strobe.xml</path>
+<condition>
+<property>/sim/model/lights/strobe/state</property>
+</condition>
+<offsets>
+<x-m>-0.15</x-m>
+<y-m> 5.26</y-m>
+<z-m> 0.68</z-m>
+</offsets>
+</model>
+
+<model>
+<name>StrobeLightR</name>
+<path>Aircraft/PC-9M/Models/Effects/lights/left-strobe.xml</path>
+<condition>
+<property>/sim/model/lights/strobe/state</property>
+</condition>
+<offsets>
+<x-m>-0.15</x-m>
+<y-m>-5.26</y-m>
+<z-m> 0.68</z-m>
+</offsets>
+</model>
+
+<model>
+<name>BeaconLight1</name>
+<path>Aircraft/PC-9M/Models/Effects/lights/beacon-navlight.xml</path>
+<offsets>
+<x-m> 3.34</x-m>
+<y-m> 0.00</y-m>
+<z-m> 0.10</z-m>
+</offsets>
+</model>
+
+<model>
+<name>BeaconLight2</name>
+<path>Aircraft/PC-9M/Models/Effects/lights/beacon-navlight.xml</path>
+<offsets>
+<x-m> 2.01</x-m>
+<y-m> 0.00</y-m>
+<z-m> 1.42</z-m>
+</offsets>
+</model>
+
+<model>
+<name>PositionLightR</name>
+<path>Aircraft/PC-9M/Models/Lights/PositionLight.xml</path>
+<offsets>
+<x-m> 0.54</x-m>
+<y-m> 5.26</y-m>
+<z-m> 0.68</z-m>
+</offsets>
+</model>
+
+<model>
+<name>PositionLightL</name>
+<path>Aircraft/PC-9M/Models/Lights/PositionLight.xml</path>
+<offsets>
+<x-m> 0.54</x-m>
+<y-m>-5.26</y-m>
+<z-m> 0.68</z-m>
+</offsets>
+</model>
+
+<model>
+<name>LandingLights</name>
+<path>Aircraft/PC-9M/Models/Lights/LandingLights.xml</path>
+<offsets>
+<x-m> 0.00</x-m>
+<y-m> 0.00</y-m>
+<z-m> 0.00</z-m>
+</offsets>
+</model>
+
+
+</PropertyList>

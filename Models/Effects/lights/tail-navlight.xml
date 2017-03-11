@@ -6,12 +6,12 @@
 
  
 <effect>
-   <inherits-from>Aircraft/pc7/Models/Effects/lights/tail-navlight</inherits-from>
+   <inherits-from>Aircraft/PC-9M/Models/Effects/lights/tail-navlight</inherits-from>
    <object-name>tail-navlight</object-name>
  </effect>
  
 <effect>
-   <inherits-from>Aircraft/pc7/Models/Effects/lights/tail-navlight2</inherits-from>
+   <inherits-from>Aircraft/PC-9M/Models/Effects/lights/tail-navlight2</inherits-from>
    <object-name>tail-navlight.001</object-name>
  </effect>
  
