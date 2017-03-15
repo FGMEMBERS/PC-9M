@@ -30,6 +30,12 @@
       <tag>tandem</tag>
     </tags>
 
+    <startup>
+     <splash-logo-image>gplv3_logo.svg</splash-logo-image>
+     <splash-logo-width>0.2</splash-logo-width>
+     <splash-logo-x-norm>0.1</splash-logo-x-norm>
+     <splash-logo-y-norm>0.1</splash-logo-y-norm>
+    </startup>
     <previews>
       <preview>
         <type>exterior</type>

@@ -5,15 +5,18 @@
 <PropertyList>
 
 <sim>
-<model>
-<livery>
-<name type="string">Royal Canadian Air Force 123</name>
-<texture>Liveries/Canada.png</texture>
-</livery>
-<livery-logo>
-<texture>Liveries/Canada.png</texture>
-</livery-logo>
-</model>
+ <model>
+  <livery>
+   <name type="string">Royal Canadian Air Force 123</name>
+   <texture>Liveries/Canada.png</texture>
+  </livery>
+  <livery-logo>
+   <texture>Liveries/Canada.png</texture>
+  </livery-logo>
+  <normalmap>
+   <texture type="string">Effects/normalmap.png</texture>
+  </normalmap>
+ </model>
 </sim>
 
 </PropertyList>

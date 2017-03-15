@@ -29,7 +29,7 @@ var rtimer = maketimer(1.0, func {
    var splash_z = 1.0 - 1.35 * airspeed;
 
    setprop("/environment/aircraft-effects/splash-vector-x", -splash_x);
-   setprop("/environment/aircraft-effects/splash-vector-y", -0.2);
+   setprop("/environment/aircraft-effects/splash-vector-y", 0.0);
    setprop("/environment/aircraft-effects/splash-vector-z", -splash_z);
 
 #   setprop("environment/aircraft-effects/frost-level", getprop("/fdm/jsbsim/systems/ecs/windscreen-frost-amount"));

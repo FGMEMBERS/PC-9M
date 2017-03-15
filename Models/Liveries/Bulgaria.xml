@@ -3,15 +3,18 @@
 <PropertyList>
 
 <sim>
-<model>
-<livery>
-<name type="string">Bulgarian Air Force 664</name>
-<texture>Liveries/Bulgaria.png</texture>
-</livery>
-<livery-logo>
-<texture>Liveries/Bulgaria.png</texture>
-</livery-logo>
-</model>
+ <model>
+  <livery>
+   <name type="string">Bulgarian Air Force 664</name>
+   <texture>Liveries/Bulgaria.png</texture>
+  </livery>
+  <livery-logo>
+   <texture>Liveries/Bulgaria.png</texture>
+  </livery-logo>
+  <normalmap>
+   <texture type="string">Effects/normalmap.png</texture>
+  </normalmap>
+ </model>
 </sim>
 
 </PropertyList>

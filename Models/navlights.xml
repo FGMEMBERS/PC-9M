@@ -62,7 +62,7 @@
 
   <model>
    <name>PositionLightR</name>
-   <path>Aircraft/PC-9M/Models/Lights/PositionLight.xml</path>
+   <path>Aircraft/PC-9M/Models/Lights/WhiteLight.xml</path>
    <offsets>
     <x-m> 0.68</x-m>
     <y-m> 4.80</y-m>
@@ -72,7 +72,7 @@
 
   <model>
    <name>PositionLightL</name>
-   <path>Aircraft/PC-9M/Models/Lights/PositionLight.xml</path>
+   <path>Aircraft/PC-9M/Models/Lights/WhiteLight.xml</path>
    <offsets>
     <x-m> 0.68</x-m>
     <y-m>-4.80</y-m>
@@ -92,7 +92,7 @@
 
   <model>
    <name>LightConeR</name>
-   <path>Aircraft/pc7/Models/Lights/LightCone.xml</path>
+   <path>Aircraft/PC-9M/Models/Lights/LightCone.xml</path>
    <offsets>
     <x-m>-0.29</x-m>
     <y-m> 1.20</y-m>
@@ -102,7 +102,7 @@
 
   <model>
    <name>LightConeL</name>
-   <path>Aircraft/pc7/Models/Lights/LightCone.xml</path>
+   <path>Aircraft/PC-9M/Models/Lights/LightCone.xml</path>
    <offsets>
     <x-m>-0.29</x-m>
     <y-m>-1.20</y-m>

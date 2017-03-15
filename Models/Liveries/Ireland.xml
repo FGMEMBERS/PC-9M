@@ -3,15 +3,18 @@
 <PropertyList>
 
 <sim>
-<model>
-<livery>
-<name type="string">Irish Air Corps 264</name>
-<texture>Liveries/Ireland.png</texture>
-</livery>
-<livery-logo>
-<texture>Liveries/Ireland.png</texture>
-</livery-logo>
-</model>
+ <model>
+  <livery>
+   <name type="string">Irish Air Corps 264</name>
+   <texture>Liveries/Ireland.png</texture>
+  </livery>
+  <livery-logo>
+   <texture>Liveries/Ireland.png</texture>
+  </livery-logo>
+  <normalmap>
+   <texture type="string">Effects/normalmap.png</texture>
+  </normalmap>
+ </model>
 </sim>
 
 </PropertyList>

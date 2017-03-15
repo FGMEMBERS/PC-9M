@@ -72,7 +72,7 @@
 
 <model>
 <name>PositionLightR</name>
-<path>Aircraft/PC-9M/Models/Lights/PositionLight.xml</path>
+<path>Aircraft/PC-9M/Models/Lights/WhiteLight.xml</path>
 <offsets>
 <x-m> 0.54</x-m>
 <y-m> 5.26</y-m>
@@ -82,7 +82,7 @@
 
 <model>
 <name>PositionLightL</name>
-<path>Aircraft/PC-9M/Models/Lights/PositionLight.xml</path>
+<path>Aircraft/PC-9M/Models/Lights/WhiteLight.xml</path>
 <offsets>
 <x-m> 0.54</x-m>
 <y-m>-5.26</y-m>

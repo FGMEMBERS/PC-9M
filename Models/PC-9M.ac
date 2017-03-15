@@ -29375,11 +29375,11 @@ refs 3
 kids 0
 OBJECT group
 name "rgeargrp"
-loc 0.00444659 -0.828788 5.7033e-05
+loc 0.0044466 -0.828788 5.7033e-05
 kids 7
 OBJECT poly
 name "rdstrut"
-loc 9.71071e-05 -0.00101978 0
+loc 9.7096e-05 -0.00101978 0
 crease 45.000000
 numvert 73
 -0.0161779 0.559944 -1.20404
@@ -30239,7 +30239,7 @@ refs 3
 kids 0
 OBJECT poly
 name "rstrut"
-loc 9.71109e-05 -0.00101972 0
+loc 9.7096e-05 -0.00101972 0
 crease 45.000000
 numvert 31
 0.0484551 0.994132 -1.2229
@@ -30577,7 +30577,7 @@ refs 3
 kids 0
 OBJECT poly
 name "ruring"
-loc 9.71109e-05 -0.00101972 0
+loc 9.7096e-05 -0.00101972 0
 crease 45.000000
 numvert 30
 -0.0571759 0.553239 -1.17476
@@ -30926,7 +30926,7 @@ refs 3
 kids 0
 OBJECT poly
 name "rdring"
-loc 9.71109e-05 -0.00101972 0
+loc 9.7096e-05 -0.00101972 0
 crease 45.000000
 numvert 30
 0.0304551 0.341698 -1.22906
@@ -31275,7 +31275,7 @@ refs 3
 kids 0
 OBJECT poly
 name "rdscissor"
-loc 9.71071e-05 -0.00101978 0
+loc 9.7096e-05 -0.00101978 0
 crease 45.000000
 numvert 30
 -0.180889 0.448828 -1.17876
@@ -31624,7 +31624,7 @@ refs 3
 kids 0
 OBJECT poly
 name "ruscissor"
-loc 9.71109e-05 -0.00101972 0
+loc 9.7096e-05 -0.00101972 0
 crease 45.000000
 numvert 8
 -0.159281 0.449979 -1.17876
@@ -31711,7 +31711,7 @@ refs 3
 kids 0
 OBJECT poly
 name "rhydro"
-loc -0.000582659 0.0061183 0
+loc -0.000582665 0.0061183 0
 crease 45.000000
 numvert 44
 0.0389761 0.955611 -0.922825
@@ -32242,11 +32242,11 @@ refs 3
 kids 0
 OBJECT group
 name "lgeargrp"
-loc 0.00444659 -0.828788 5.7033e-05
+loc 0.0044466 -0.828788 5.7033e-05
 kids 7
 OBJECT poly
 name "ldstrut"
-loc 9.71099e-05 -0.00101972 0
+loc 9.7096e-05 -0.00101972 0
 crease 45.000000
 numvert 73
 -0.0161781 0.559944 1.20404
@@ -33106,7 +33106,7 @@ refs 3
 kids 0
 OBJECT poly
 name "ldring"
-loc 9.71099e-05 -0.00101972 0
+loc 9.7096e-05 -0.00101972 0
 crease 45.000000
 numvert 30
 0.0304549 0.341698 1.22906
@@ -33455,7 +33455,7 @@ refs 3
 kids 0
 OBJECT poly
 name "luring"
-loc 9.71099e-05 -0.00101972 0
+loc 9.7096e-05 -0.00101972 0
 crease 45.000000
 numvert 30
 -0.0571761 0.553239 1.17476
@@ -33804,7 +33804,7 @@ refs 3
 kids 0
 OBJECT poly
 name "luscissor"
-loc 9.71099e-05 -0.00101972 0
+loc 9.7096e-05 -0.00101972 0
 crease 45.000000
 numvert 8
 -0.159281 0.449979 1.17876
@@ -33891,7 +33891,7 @@ refs 3
 kids 0
 OBJECT poly
 name "ldscissor"
-loc 9.71099e-05 -0.00101972 0
+loc 9.7096e-05 -0.00101972 0
 crease 45.000000
 numvert 30
 -0.180889 0.448828 1.17876
@@ -34240,7 +34240,7 @@ refs 3
 kids 0
 OBJECT poly
 name "lhydro"
-loc -0.00058266 0.0061183 0
+loc -0.000582665 0.0061183 0
 crease 45.000000
 numvert 44
 0.0372789 0.965386 0.916882
@@ -34771,7 +34771,7 @@ refs 3
 kids 0
 OBJECT poly
 name "lstrut"
-loc 9.71099e-05 -0.00101972 0
+loc 9.7096e-05 -0.00101972 0
 crease 45.000000
 numvert 31
 0.0484549 0.994132 1.2229
