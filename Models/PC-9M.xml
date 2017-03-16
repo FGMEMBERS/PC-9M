@@ -384,10 +384,10 @@
   <factor>91</factor>
   <offset-deg>-91</offset-deg>
   <axis>
-   <x1-m>-0.03</x1-m>
+   <x1-m>-0.20</x1-m>
    <y1-m> 1.14</y1-m>
    <z1-m> 0.16</z1-m>   
-   <x2-m> 0.03</x2-m>
+   <x2-m> 0.20</x2-m>
    <y2-m> 1.29</y2-m>
    <z2-m> 0.16</z2-m>
   </axis>
@@ -571,7 +571,7 @@
     <dep>0</dep>
    </entry>
    <entry>
-    <ind>0.4</ind>
+    <ind>0.2</ind>
     <dep>-88</dep>
    </entry>
    <entry>
@@ -603,7 +603,7 @@
     <dep>0</dep>
    </entry>
    <entry>
-    <ind>0.4</ind>
+    <ind>0.2</ind>
     <dep>88</dep>
    </entry>
    <entry>
@@ -875,7 +875,8 @@
   <object-name>rwheel</object-name>
   <object-name>rtyre</object-name>
   <property>gear/gear[2]/compression-norm</property>
-  <factor>45</factor>
+  <factor>67.5</factor>
+  <offset-deg>-22.5</offset-deg>
   <center>
    <x-m>-0.05</x-m>
    <y-m> 0.00</y-m>
@@ -896,7 +897,8 @@
   <object-name>rwheel</object-name>
   <object-name>rtyre</object-name>
   <property>gear/gear[2]/compression-norm</property>
-  <factor>-80</factor>
+  <factor>-110</factor>
+  <offset-deg>40</offset-deg>
   <center>
    <x-m>-0.17</x-m>
    <y-m> 0.00</y-m>
@@ -916,7 +918,8 @@
   <object-name>rwheel</object-name>
   <object-name>rtyre</object-name>
   <property>gear/gear[2]/compression-norm</property>
-  <factor>30</factor>
+  <factor>45</factor>
+  <offset-deg>-17.5</offset-deg>
   <center>
    <x-m>-0.04</x-m>
    <y-m> 0.00</y-m>
@@ -939,7 +942,8 @@
   <object-name>lwheel</object-name>
   <object-name>ltyre</object-name>
   <property>gear/gear[1]/compression-norm</property>
-  <factor>45</factor>
+  <factor>67.5</factor>
+  <offset-deg>-22.5</offset-deg>
   <center>
    <x-m>-0.05</x-m>
    <y-m> 0.00</y-m>
@@ -960,7 +964,8 @@
   <object-name>lwheel</object-name>
   <object-name>ltyre</object-name>
   <property>gear/gear[1]/compression-norm</property>
-  <factor>-80</factor>
+  <factor>-110</factor>
+  <offset-deg>40</offset-deg>
   <center>
    <x-m>-0.17</x-m>
    <y-m> 0.00</y-m>
@@ -980,7 +985,8 @@
   <object-name>lwheel</object-name>
   <object-name>ltyre</object-name>
   <property>gear/gear[1]/compression-norm</property>
-  <factor>30</factor>
+  <factor>45</factor>
+  <offset-deg>-17.5</offset-deg>
   <center>
    <x-m>-0.04</x-m>
    <y-m> 0.00</y-m>
