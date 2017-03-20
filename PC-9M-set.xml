@@ -42,6 +42,11 @@
         <path>Preview/PC-9M.jpg</path>
         <splash type="bool">true</splash>
       </preview>
+      <preview>
+        <type>exterior</type>
+        <path>Military.jpg</path>
+        <splash type="bool">false</splash>
+      </preview>
     </previews>
 
     <flight-model>jsb</flight-model>
