@@ -44,7 +44,12 @@
       </preview>
       <preview>
         <type>exterior</type>
-        <path>Military.jpg</path>
+        <path>Preview/Military.jpg</path>
+        <splash type="bool">false</splash>
+      </preview>
+      <preview>
+        <type>exterior</type>
+        <path>Preview/Startup.jpg</path>
         <splash type="bool">false</splash>
       </preview>
     </previews>

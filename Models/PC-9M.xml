@@ -124,6 +124,7 @@
 
  <animation>
   <type>material</type>
+  <object-name>antennas</object-name>
   <object-name>spinner</object-name>
   <object-name>hull</object-name>
   <object-name>bumper</object-name>
