@@ -11,9 +11,7 @@
   <livery-logo>
    <texture>Liveries/Oman.png</texture>
   </livery-logo>
-  <normalmap>
-   <texture type="string">Effects/normalmap.png</texture>
-  </normalmap>
+  <military type="bool">true</military>
  </model>
 </sim>
 

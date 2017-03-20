@@ -13,9 +13,7 @@
   <livery-logo>
    <texture>Liveries/RAF_BAE2.png</texture>
   </livery-logo>
-  <normalmap>
-   <texture type="string">Liveries/military-normalmap.png</texture>
-  </normalmap>
+  <military type="bool">false</military>
  </model>
 </sim>
 

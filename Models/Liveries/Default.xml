@@ -11,9 +11,7 @@
   <livery-logo>
    <texture>Liveries/Default.png</texture>
   </livery-logo>
-  <normalmap>
-   <texture type="string">Liveries/military-normalmap.png</texture>
-  </normalmap>
+  <military type="bool">false</military>
  </model>
 </sim>
 

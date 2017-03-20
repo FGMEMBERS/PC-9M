@@ -13,9 +13,7 @@
   <livery-logo>
    <texture>Liveries/RAAF76S.png</texture>
   </livery-logo>
-  <normalmap>
-   <texture type="string">Effects/normalmap.png</texture>
-  </normalmap>
+  <military type="bool">true</military>
  </model>
 </sim>
 

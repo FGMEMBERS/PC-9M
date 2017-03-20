@@ -13,9 +13,7 @@
   <livery-logo>
    <texture>Liveries/Canada.png</texture>
   </livery-logo>
-  <normalmap>
-   <texture type="string">Effects/normalmap.png</texture>
-  </normalmap>
+  <military type="bool">false</military>
  </model>
 </sim>
 
