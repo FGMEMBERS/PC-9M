@@ -9,11 +9,12 @@
   <livery>
    <name type="string">Pilatus Factory Demonstrator</name>
    <texture>Liveries/Factory.png</texture>
+   <shininess type="float">-0.75</shininess>
   </livery>
   <livery-logo>
    <texture>Liveries/Factory.png</texture>
   </livery-logo>
-  <military type="bool">false</military>
+  <civilian type="bool">true</civilian>
  </model>
 </sim>
 

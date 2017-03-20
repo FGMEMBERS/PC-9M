@@ -88,6 +88,7 @@
       <path archive="y">Aircraft/PC-9M/Models/PC-9M.xml</path>
       <livery>
         <file type="string"/>
+        <shininess type="float">-0.85</shininess>
       </livery>
     </model>
 

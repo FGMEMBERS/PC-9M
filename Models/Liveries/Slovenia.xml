@@ -13,7 +13,7 @@
   <livery-logo>
    <texture>Liveries/Slovenia.png</texture>
   </livery-logo>
-  <military type="bool">true</military>
+  <civilian type="bool">false</civilian>
  </model>
 </sim>
 

@@ -13,7 +13,7 @@
   <livery-logo>
    <texture>Liveries/Roulettes.png</texture>
   </livery-logo>
-  <military type="bool">false</military>
+  <civilian type="bool">true</civilian>
  </model>
 </sim>
 
