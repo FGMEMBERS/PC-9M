@@ -5,15 +5,16 @@
 <PropertyList>
 
 <sim>
-<model>
-<livery>
-<name type="string">RAAF 4th Sqdn</name>
-<texture>Liveries/RAAF4S.png</texture>
-</livery>
-<livery-logo>
-<texture>Liveries/RAAF4S.png</texture>
-</livery-logo>
-</model>
+ <model>
+  <livery>
+   <name type="string">RAAF 4th Sqdn</name>
+   <texture>Liveries/RAAF4S.png</texture>
+  </livery>
+  <livery-logo>
+   <texture>Liveries/RAAF4S.png</texture>
+  </livery-logo>
+  <civilian type="bool">false</civilian>
+ </model>
 </sim>
 
 </PropertyList>

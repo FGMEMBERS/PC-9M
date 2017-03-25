@@ -10,14 +10,22 @@ set_engine1_state = func() {
 
 	if (start1 and cutoff1 and !fuel_cutoff1)
 	{
+                # turboprop
 		setprop("/controls/engines/engine[0]/starter", 1);
-                setprop("/fdm/jsbsim/propulsion/engine/n1", 20);
+                setprop("/fdm/jsbsim/propulsion/engine[0]/n1", 20);
 		settimer(func { setprop("/controls/engines/engine[0]/cutoff", 0); }, 1);
+
+                # turbine for emulating exhaust thrust
+                setprop("/engines/engine[1]/cutoff", 1);
+                setprop("/controls/engines/engine[1]/starter", 1);
+                settimer(func { setprop("/controls/engines/engine[1]/cutoff", 0); }, 1);
+
 		settimer(switchback1, 1);
 	}
 	if (abort1)
 	{
 		setprop("/controls/engines/engine[0]/cutoff", 1);
+                setprop("/controls/engines/engine[1]/cutoff", 1);
 		settimer(switchback1, 1);
 	}
 }

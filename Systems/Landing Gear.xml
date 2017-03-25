@@ -15,8 +15,8 @@
         <independentVar>velocities/vg-fps</independentVar>
         <tableData>
             10.0        80.0
-            50.0        15.0
-           150.0         5.0
+            20.0        15.0
+            50.0         5.0
         </tableData>
       </table>
       <output>fcs/steer-pos-deg</output>

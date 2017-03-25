@@ -3,15 +3,16 @@
 <PropertyList>
 
 <sim>
-<model>
-<livery>
-<name type="string">Mexican Air Force HB-HRI</name>
-<texture>Liveries/Mexico.png</texture>
-</livery>
-<livery-logo>
-<texture>Liveries/Mexico.png</texture>
-</livery-logo>
-</model>
+ <model>
+  <livery>
+   <name type="string">Mexican Air Force HB-HRI</name>
+   <texture>Liveries/Mexico.png</texture>
+  </livery>
+  <livery-logo>
+   <texture>Liveries/Mexico.png</texture>
+  </livery-logo>
+  <civilian type="bool">false</civilian>
+ </model>
 </sim>
 
 </PropertyList>

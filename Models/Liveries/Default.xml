@@ -3,15 +3,16 @@
 <PropertyList>
 
 <sim>
-<model>
-<livery>
-<name type="string">Croatian Air Force 057</name>
-<texture>Liveries/Default.png</texture>
-</livery>
-<livery-logo>
-<texture>Liveries/Default.png</texture>
-</livery-logo>
-</model>
+ <model>
+  <livery>
+   <name type="string">Croatian Air Force 057</name>
+   <texture>Liveries/Default.png</texture>
+  </livery>
+  <livery-logo>
+   <texture>Liveries/Default.png</texture>
+  </livery-logo>
+  <civilian type="bool">true</civilian>
+ </model>
 </sim>
 
 </PropertyList>

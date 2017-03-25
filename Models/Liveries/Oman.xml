@@ -3,15 +3,16 @@
 <PropertyList>
 
 <sim>
-<model>
-<livery>
-<name type="string">Royal Air Force of Oman</name>
-<texture>Liveries/Oman.png</texture>
-</livery>
-<livery-logo>
-<texture>Liveries/Oman.png</texture>
-</livery-logo>
-</model>
+ <model>
+  <livery>
+   <name type="string">Royal Air Force of Oman</name>
+   <texture>Liveries/Oman.png</texture>
+  </livery>
+  <livery-logo>
+   <texture>Liveries/Oman.png</texture>
+  </livery-logo>
+  <civilian type="bool">false</civilian>
+ </model>
 </sim>
 
 </PropertyList>

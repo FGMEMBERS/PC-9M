@@ -4,7 +4,10 @@
 
     <!--Info -->
 
-    <description>Pilatus PC-9M</description>
+    <description>Pilatus PC-9M, FlightGear UK</description>
+    <long-description>
+     The Pilatus PC-9 is a single-engine, low-wing tandem-seat turboprop training aircraft manufactured by Pilatus Aircraft of Switzerland. Designed as a more powerful evolution of the Pilatus PC-7, the PC-9's first flight was made in May 1984 after which certification was achieved in September 1985.
+    </long-description>
     <author>Petar Jedvaj, Ernest Teuscher, Erik Hofman, David Culp Johan G and Gary Brown</author>
     <status>1.3.2</status>
     <rating>
@@ -13,17 +16,56 @@
       <cockpit type="int">3</cockpit>
       <model type="int">5</model>
     </rating>
+    <tags>
+      <tag>ga</tag>
+      <tag>pilatus</tag>
+      <tag>pc-9m</tag>
+      <tag>turboprop</tag>
+      <tag>single-engine</tag>
+      <tag>retractable-gear</tag>
+      <tag>reflection</tag>
+      <tag>waterdrop</tag>
+      <tag>1150hp</tag>
+      <tag>trainer</tag>
+      <tag>tandem</tag>
+    </tags>
+
+    <startup>
+     <splash-logo-image>gplv3_logo.svg</splash-logo-image>
+     <splash-logo-width>0.2</splash-logo-width>
+     <splash-logo-x-norm>0.1</splash-logo-x-norm>
+     <splash-logo-y-norm>0.1</splash-logo-y-norm>
+    </startup>
+    <previews>
+      <preview>
+        <type>exterior</type>
+        <path>Preview/PC-9M.jpg</path>
+        <splash type="bool">true</splash>
+      </preview>
+      <preview>
+        <type>exterior</type>
+        <path>Preview/Military.jpg</path>
+        <splash type="bool">false</splash>
+      </preview>
+      <preview>
+        <type>exterior</type>
+        <path>Preview/Startup.jpg</path>
+        <splash type="bool">false</splash>
+      </preview>
+    </previews>
 
     <flight-model>jsb</flight-model>
     <aero>PC-9M</aero>
 
-    <startup>
-      <splash-texture>Aircraft/PC-9M/Splash.png</splash-texture>
-    </startup>
-
     <!--Systems -->
 
     <systems>
+
+      <property-rule n="101">
+        <name>altitude-agl-m</name>
+        <path>Aircraft/PC-9M/Systems/shadow.xml</path>
+      </property-rule>
+
       <autopilot>
         <path>Aircraft/PC-9M/Systems/autopilot.xml</path>
       </autopilot>
@@ -51,6 +93,7 @@
       <path archive="y">Aircraft/PC-9M/Models/PC-9M.xml</path>
       <livery>
         <file type="string"/>
+        <shininess type="float">-0.85</shininess>
       </livery>
     </model>
 
@@ -65,7 +108,7 @@
         <pitch-offset-deg>-14.0</pitch-offset-deg>
         <default-field-of-view-deg type="double">89.1</default-field-of-view-deg>
         <x-offset-m archive="y"> 0.00</x-offset-m>
-        <y-offset-m archive="y"> 1.28</y-offset-m>
+        <y-offset-m archive="y"> 0.96</y-offset-m>
         <z-offset-m archive="y">-0.37</z-offset-m>
       </config>
     </view>
@@ -83,7 +126,7 @@
         <default-pitch-deg type="double">0</default-pitch-deg>
         <default-heading-deg type="double">0</default-heading-deg>
         <x-offset-m archive="y"> 0.00 </x-offset-m>  
-        <y-offset-m archive="y"> 1.34 </y-offset-m>
+        <y-offset-m archive="y"> 0.96 </y-offset-m>
         <z-offset-m archive="y"> 1.12 </z-offset-m>
         <pitch-offset-deg> -10.0</pitch-offset-deg>
         <dynamic-view type="bool">true</dynamic-view>
@@ -435,6 +478,7 @@
       <file>Aircraft/PC-9M/Nasal/vhf22.nas</file>
       <file>Aircraft/PC-9M/Nasal/vir32.nas</file>
       <file>Aircraft/PC-9M/Nasal/crash.nas</file>
+      <file>Aircraft/PC-9M/Nasal/rain.nas</file>
     </PC9M>
     <dialogs>
       <file>Aircraft/PC-9M/Nasal/dialogs.nas</file>
