@@ -4,7 +4,7 @@
 
  <path>PC-9M.ac</path>
  <offsets>
-  <pitch-deg>-1.00</pitch-deg>   
+  <pitch-deg>-1.0</pitch-deg>   
   <heading-deg>0</heading-deg>
   <roll-deg>0</roll-deg>
   <x-m>0</x-m>
@@ -115,13 +115,6 @@
   <object-name>lbdoor</object-name>
  </effect>
 
- <effect>
-  <inherits-from>Aircraft/PC-9M/Models/Effects/reflection</inherits-from>
-  <object-name>fgeargrp</object-name>
-  <object-name>lgeargrp</object-name>
-  <object-name>rgeargrp</object-name>
- </effect>
-
  <animation>
   <type>material</type>
   <object-name>antennas</object-name>
@@ -146,6 +139,9 @@
   <object-name>rbdoor</object-name>
   <object-name>lbodoor</object-name>
   <object-name>lbdoor</object-name>
+  <object-name>fgeargrp</object-name>
+  <object-name>lgeargrp</object-name>
+  <object-name>rgeargrp</object-name>
   <property-base>sim/model/livery</property-base>
   <texture-prop>texture</texture-prop>
   <texture>Aircraft/PC-9M/Models/Liveries/Default.png</texture>
