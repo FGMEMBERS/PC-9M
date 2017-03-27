@@ -61,11 +61,6 @@
 
     <systems>
 
-      <property-rule n="101">
-        <name>altitude-agl-m</name>
-        <path>Aircraft/PC-9M/Systems/shadow.xml</path>
-      </property-rule>
-
       <autopilot>
         <path>Aircraft/PC-9M/Systems/autopilot.xml</path>
       </autopilot>
@@ -82,6 +77,10 @@
         <name>static</name>
         <number>0</number>
       </static>
+
+      <property-rule n="101">
+        <path>Aircraft/PC-9M/Systems/shadow.xml</path>
+      </property-rule>
 
     </systems> 
 

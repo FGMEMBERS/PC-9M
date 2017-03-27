@@ -7,7 +7,7 @@
 
 
  <effect>
-   <inherits-from>Aircraft/PC-9M/Models/Effects/lights/red-navlight</inherits-from>
+   <inherits-from>Aircraft/PC-9M/Models/Effects/lights/white-navlight</inherits-from>
    <object-name>light</object-name>
  </effect>
  

@@ -113,6 +113,9 @@
   <object-name>rbdoor</object-name>
   <object-name>lbodoor</object-name>
   <object-name>lbdoor</object-name>
+  <object-name>fgeargrp</object-name>
+  <object-name>lgeargrp</object-name>
+  <object-name>rgeargrp</object-name>
  </effect>
 
  <animation>

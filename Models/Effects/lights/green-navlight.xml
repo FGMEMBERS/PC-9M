@@ -1,14 +1,14 @@
 <?xml version="1.0"?>
 <PropertyList>
 
- <path>green-navlight.ac</path>
+ <path>light.ac</path>
  <nopreview/>
 
 
 
  <effect>
    <inherits-from>Aircraft/PC-9M/Models/Effects/lights/green-navlight</inherits-from>
-   <object-name>green-navlight</object-name>
+   <object-name>light</object-name>
  </effect>
  
  <animation>
@@ -20,7 +20,7 @@
  
 <animation>
   <type>dist-scale</type>
-  <object-name>green-navlight</object-name>
+  <object-name>light</object-name>
   <interpolation>
    <entry>
     <ind>0</ind>
