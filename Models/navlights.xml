@@ -81,22 +81,12 @@
   </model>
 
   <model>
-   <name>LandingLights</name>
-   <path>Aircraft/PC-9M/Models/Lights/LandingLights.xml</path>
-   <offsets>
-    <x-m> 0.00</x-m>
-    <y-m> 0.00</y-m>
-    <z-m> 0.00</z-m>
-   </offsets>
-  </model>
-
-  <model>
    <name>LightConeR</name>
    <path>Aircraft/PC-9M/Models/Lights/LightCone.xml</path>
    <offsets>
-    <x-m>-0.29</x-m>
+    <x-m>-0.35</x-m>
     <y-m> 1.20</y-m>
-    <z-m>-0.05</z-m>
+    <z-m> 0.14</z-m>
    </offsets>
   </model>
 
@@ -104,9 +94,9 @@
    <name>LightConeL</name>
    <path>Aircraft/PC-9M/Models/Lights/LightCone.xml</path>
    <offsets>
-    <x-m>-0.29</x-m>
+    <x-m>-0.35</x-m>
     <y-m>-1.20</y-m>
-    <z-m>-0.00</z-m>
+    <z-m> 0.14</z-m>
   </offsets>
  </model>
   

@@ -156,6 +156,10 @@
           <redout-complete-g type="double">-3.5</redout-complete-g>
         </parameters>
       </redout>
+      <als-secondary-lights>
+       <landing-light1-offset-deg type="double"> 5</landing-light1-offset-deg>
+       <landing-light2-offset-deg type="double">-5</landing-light2-offset-deg>
+      </als-secondary-lights>
     </rendering>
 
     <chase-distance-m type="double" archive="y">-20.0</chase-distance-m>

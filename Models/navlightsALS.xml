@@ -94,11 +94,21 @@
 
 <model>
 <name>LandingLights</name>
-<path>Aircraft/PC-9M/Models/Lights/LandingLights.xml</path>
+<path>Aircraft/PC-9M/Models/Effects/lights/landinglight.xml</path>
 <offsets>
-<x-m> 0.00</x-m>
-<y-m> 0.00</y-m>
-<z-m> 0.00</z-m>
+<x-m>-0.80</x-m>
+<y-m> 1.20</y-m>
+<z-m>-0.06</z-m>
+</offsets>
+</model>
+
+<model>
+<name>LandingLights</name>
+<path>Aircraft/PC-9M/Models/Effects/lights/landinglight.xml</path>
+<offsets>
+<x-m>-0.80</x-m>
+<y-m>-1.20</y-m>
+<z-m>-0.06</z-m>
 </offsets>
 </model>
 

@@ -14,21 +14,37 @@
   <!-- Instruments -->
   <!-- Student -->
   <model>
-    <path>Aircraft/PC-9M/Models/Instruments.xml</path>
+    <path>Aircraft/PC-9M/Models/Cockpit/Controls.xml</path>
     <offsets>
       <x-m>-0.97</x-m>
       <y-m> 0.00 </y-m>
       <z-m> 0.00</z-m>
     </offsets>
   </model>
+  <model>
+    <path>Aircraft/PC-9M/Models/Cockpit/Analog1.xml</path>
+    <offsets>
+      <x-m>-0.97</x-m>
+      <y-m> 0.00 </y-m>
+      <z-m> 0.015</z-m>
+    </offsets>
+  </model>
 
   <!-- Instructor -->
   <model>
-    <path>Aircraft/PC-9M/Models/Instruments.xml</path>
+    <path>Aircraft/PC-9M/Models/Cockpit/Controls.xml</path>
     <offsets>
       <x-m> 0.39</x-m>
       <y-m> 0.00 </y-m>
       <z-m> 0.04</z-m>
+    </offsets>
+  </model>
+  <model>
+    <path>Aircraft/PC-9M/Models/Cockpit/Analog1.xml</path>
+    <offsets>
+      <x-m> 0.39</x-m>
+      <y-m> 0.00 </y-m>
+      <z-m> 0.055</z-m>
     </offsets>
   </model>
 

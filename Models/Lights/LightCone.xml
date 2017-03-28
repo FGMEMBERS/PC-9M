@@ -2,7 +2,10 @@
 
 <PropertyList>
 
- <path>WhiteLight.ac</path>
+ <path>LightCone.ac</path>
+ <offsets>
+  <pitch-deg>10.0</pitch-deg>
+ </offsets>
 
  <animation>
   <type>select</type>

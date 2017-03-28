@@ -14,7 +14,7 @@
  
  <model>
   <usage>interior</usage>
-  <path>Aircraft/PC-9M/Models/Cockpit.xml</path>
+  <path>Aircraft/PC-9M/Models/Cockpit/Cockpit.xml</path>
  </model>
 
  <model>
