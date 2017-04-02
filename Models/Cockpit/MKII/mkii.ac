@@ -3059,7 +3059,7 @@ OBJECT poly
 name "ehandle"
 loc -0.000393727 -1.22999 5.7033e-05
 texture "/export/fgfs/flightgear-fgaddon/Aircraft/PC-9M/Models/dirtmap.png"
-crease 45.000000
+crease 90.000000
 numvert 640
 -0.641648 1.4631 0.0223479
 -0.638989 1.45789 0.0198269

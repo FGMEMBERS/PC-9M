@@ -486,6 +486,9 @@
     <dialogs>
       <file>Aircraft/PC-9M/Nasal/dialogs.nas</file>
     </dialogs>
+    <engeine_panel>
+      <file>Nasal/engines.nas</file>
+    </engeine_panel>
     <dmesw>
       <file>Aircraft/PC-9M/Nasal/dmesw.nas</file>
     </dmesw>

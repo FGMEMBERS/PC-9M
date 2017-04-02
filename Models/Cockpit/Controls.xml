@@ -3,7 +3,7 @@
   <!-- Controls -->
   <model>
     <name>Stick</name>
-    <path>Aircraft/PC-9M/Models/Cockpit/Instruments/Stick/Stick.xml</path>
+    <path>Aircraft/PC-9M/Models/Cockpit/Stick/Stick.xml</path>
     <offsets>
       <x-m> 0.24</x-m>
       <y-m> 0.00</y-m>
@@ -13,7 +13,7 @@
 
   <model>
     <name>Pedals</name>
-    <path>Aircraft/PC-9M/Models/Cockpit/Instruments/Pedals/Pedals.xml</path>
+    <path>Aircraft/PC-9M/Models/Cockpit/Pedals/Pedals.xml</path>
     <offsets>
       <x-m>-0.31</x-m>
       <y-m> 0.00</y-m>
@@ -23,7 +23,7 @@
 
   <model>
     <name>Throttle</name>
-    <path>Aircraft/PC-9M/Models/Cockpit/Instruments/Throttle/Throttle.xml</path>
+    <path>Aircraft/PC-9M/Models/Cockpit/Throttle/Throttle.xml</path>
     <offsets>
       <x-m>0.97</x-m>
       <y-m>0.00</y-m>

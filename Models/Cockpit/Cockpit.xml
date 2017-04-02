@@ -40,11 +40,11 @@
     </offsets>
   </model>
   <model>
-    <path>Aircraft/PC-9M/Models/Cockpit/Analog1.xml</path>
+    <path>Aircraft/PC-9M/Models/Cockpit/Electronic1.xml</path>
     <offsets>
       <x-m> 0.39</x-m>
       <y-m> 0.00 </y-m>
-      <z-m> 0.055</z-m>
+      <z-m> 0.075</z-m>
     </offsets>
   </model>
 
