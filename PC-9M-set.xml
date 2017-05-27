@@ -6,10 +6,10 @@
 
     <description>Pilatus PC-9M, FlightGear UK</description>
     <long-description>
-     The Pilatus PC-9 is a single-engine, low-wing tandem-seat turboprop training aircraft manufactured by Pilatus Aircraft of Switzerland. Designed as a more powerful evolution of the Pilatus PC-7, the PC-9's first flight was made in May 1984 after which certification was achieved in September 1985.
+     The Pilatus PC-9 is a single-engine, low-wing tandem-seat turboprop training aircraft manufactured by Pilatus Aircraft of Switzerland. Designed as a more powerful evolution of the Pilatus PC-7.
     </long-description>
-    <author>Petar Jedvaj, Ernest Teuscher, Erik Hofman, David Culp Johan G and Gary Brown</author>
-    <status>1.3.2</status>
+    <author>Petar Jedvaj, Ernest Teuscher, Erik Hofman, David Culp, Johan G and Gary Brown</author>
+    <status>1.4.0</status>
     <rating>
       <FDM type="int">4</FDM>
       <systems type="int">3</systems>
@@ -45,12 +45,12 @@
       <preview>
         <type>exterior</type>
         <path>Preview/Military.jpg</path>
-        <splash type="bool">false</splash>
+        <splash type="bool">true</splash>
       </preview>
       <preview>
         <type>exterior</type>
         <path>Preview/Startup.jpg</path>
-        <splash type="bool">false</splash>
+        <splash type="bool">true</splash>
       </preview>
     </previews>
 
@@ -60,11 +60,6 @@
     <!--Systems -->
 
     <systems>
-
-      <property-rule n="101">
-        <name>altitude-agl-m</name>
-        <path>Aircraft/PC-9M/Systems/shadow.xml</path>
-      </property-rule>
 
       <autopilot>
         <path>Aircraft/PC-9M/Systems/autopilot.xml</path>
@@ -82,6 +77,10 @@
         <name>static</name>
         <number>0</number>
       </static>
+
+      <property-rule n="101">
+        <path>Aircraft/PC-9M/Systems/shadow.xml</path>
+      </property-rule>
 
     </systems> 
 
@@ -157,6 +156,10 @@
           <redout-complete-g type="double">-3.5</redout-complete-g>
         </parameters>
       </redout>
+      <als-secondary-lights>
+       <landing-light1-offset-deg type="double"> 5</landing-light1-offset-deg>
+       <landing-light2-offset-deg type="double">-5</landing-light2-offset-deg>
+      </als-secondary-lights>
     </rendering>
 
     <chase-distance-m type="double" archive="y">-20.0</chase-distance-m>
@@ -483,6 +486,9 @@
     <dialogs>
       <file>Aircraft/PC-9M/Nasal/dialogs.nas</file>
     </dialogs>
+    <engeine_panel>
+      <file>Nasal/engines.nas</file>
+    </engeine_panel>
     <dmesw>
       <file>Aircraft/PC-9M/Nasal/dmesw.nas</file>
     </dmesw>

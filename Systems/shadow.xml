@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <PropertyList>
-   <filter>
+   <filter n="10001">
       <type>gain</type>
       <gain>0.3048</gain>
       <input>/position/altitude-agl-ft</input>

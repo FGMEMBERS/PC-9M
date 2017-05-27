@@ -8,8 +8,8 @@
 <name>RedLightALS</name>
 <path>Aircraft/PC-9M/Models/Effects/lights/red-navlight.xml</path>
 <offsets>
-<x-m>-0.35</x-m>
-<y-m>-5.26</y-m>
+<x-m>-0.45</x-m>
+<y-m>-5.22</y-m>
 <z-m> 0.68</z-m>
 </offsets>
 </model>
@@ -18,9 +18,31 @@
 <name>GreenLight</name>
 <path>Aircraft/PC-9M/Models/Effects/lights/green-navlight.xml</path>
 <offsets>
-<x-m>-0.35</x-m>
-<y-m> 5.26</y-m>
+<x-m>-0.45</x-m>
+<y-m> 5.22</y-m>
 <z-m> 0.68</z-m>
+</offsets>
+</model>
+
+<model>
+<name>PositionLightR</name>
+<path>Aircraft/PC-9M/Models/Effects/lights/white-navlight.xml</path>
+<offsets>
+<x-m> 0.54</x-m>
+<y-m> 5.26</y-m>
+<z-m> 0.66</z-m>
+<heading-deg>-135</heading-deg>
+</offsets>
+</model>
+
+<model>
+<name>PositionLightL</name>
+<path>Aircraft/PC-9M/Models/Effects/lights/white-navlight.xml</path>
+<offsets>
+<x-m> 0.54</x-m>
+<y-m>-5.26</y-m>
+<z-m> 0.66</z-m>
+<heading-deg>45</heading-deg>
 </offsets>
 </model>
 
@@ -31,7 +53,7 @@
 <property>/sim/model/lights/strobe/state</property>
 </condition>
 <offsets>
-<x-m>-0.15</x-m>
+<x-m>-0.35</x-m>
 <y-m> 5.26</y-m>
 <z-m> 0.68</z-m>
 </offsets>
@@ -44,7 +66,7 @@
 <property>/sim/model/lights/strobe/state</property>
 </condition>
 <offsets>
-<x-m>-0.15</x-m>
+<x-m>-0.35</x-m>
 <y-m>-5.26</y-m>
 <z-m> 0.68</z-m>
 </offsets>
@@ -71,32 +93,22 @@
 </model>
 
 <model>
-<name>PositionLightR</name>
-<path>Aircraft/PC-9M/Models/Lights/WhiteLight.xml</path>
+<name>LandingLights</name>
+<path>Aircraft/PC-9M/Models/Effects/lights/landinglight.xml</path>
 <offsets>
-<x-m> 0.54</x-m>
-<y-m> 5.26</y-m>
-<z-m> 0.68</z-m>
-</offsets>
-</model>
-
-<model>
-<name>PositionLightL</name>
-<path>Aircraft/PC-9M/Models/Lights/WhiteLight.xml</path>
-<offsets>
-<x-m> 0.54</x-m>
-<y-m>-5.26</y-m>
-<z-m> 0.68</z-m>
+<x-m>-0.80</x-m>
+<y-m> 1.20</y-m>
+<z-m>-0.06</z-m>
 </offsets>
 </model>
 
 <model>
 <name>LandingLights</name>
-<path>Aircraft/PC-9M/Models/Lights/LandingLights.xml</path>
+<path>Aircraft/PC-9M/Models/Effects/lights/landinglight.xml</path>
 <offsets>
-<x-m> 0.00</x-m>
-<y-m> 0.00</y-m>
-<z-m> 0.00</z-m>
+<x-m>-0.80</x-m>
+<y-m>-1.20</y-m>
+<z-m>-0.06</z-m>
 </offsets>
 </model>
 

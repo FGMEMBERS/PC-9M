@@ -1,0 +1,86 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+  <path>Cockpit.ac</path>
+
+  <effect>
+    <inherits-from>Aircraft/PC-9M/Models/Effects/reflection</inherits-from>
+    <object-name>metal</object-name>
+  </effect>
+  
+  <!-- Submodels -->
+
+  <!-- Instruments -->
+  <!-- Student -->
+  <model>
+    <path>Aircraft/PC-9M/Models/Cockpit/Controls.xml</path>
+    <offsets>
+      <x-m>-0.97</x-m>
+      <y-m> 0.00 </y-m>
+      <z-m> 0.00</z-m>
+    </offsets>
+  </model>
+  <model>
+    <path>Aircraft/PC-9M/Models/Cockpit/Analog1.xml</path>
+    <offsets>
+      <x-m>-0.97</x-m>
+      <y-m> 0.00 </y-m>
+      <z-m> 0.015</z-m>
+    </offsets>
+  </model>
+
+  <!-- Instructor -->
+  <model>
+    <path>Aircraft/PC-9M/Models/Cockpit/Controls.xml</path>
+    <offsets>
+      <x-m> 0.39</x-m>
+      <y-m> 0.00 </y-m>
+      <z-m> 0.04</z-m>
+    </offsets>
+  </model>
+  <model>
+    <path>Aircraft/PC-9M/Models/Cockpit/Electronic1.xml</path>
+    <offsets>
+      <x-m> 0.39</x-m>
+      <y-m> 0.00 </y-m>
+      <z-m> 0.075</z-m>
+    </offsets>
+  </model>
+
+
+  <!-- Pilots -->
+  <!-- Student -->
+  <model>
+    <path>Aircraft/PC-9M/Models/Pilot/Pilot.xml</path>
+    <offsets>
+      <x-m>-0.32</x-m>
+      <y-m> 0.00 </y-m>
+      <z-m> 0.92</z-m>
+      <pitch-deg>0.0</pitch-deg>
+    </offsets>
+    <condition>
+      <not>
+  <property>/sim/current-view/internal</property>
+      </not>
+    </condition>
+  </model>
+
+  <!-- Instructor -->
+  <model>
+    <path>Aircraft/PC-9M/Models/Pilot/Pilot.xml</path>
+    <offsets>
+      <x-m> 1.07</x-m>
+      <y-m> 0.00 </y-m>
+      <z-m> 0.94</z-m>
+      <pitch-deg>0.0</pitch-deg>
+    </offsets>
+    <condition>
+      <not>
+        <property>/sim/current-view/internal</property>
+      </not>
+    </condition>
+  </model>
+
+</PropertyList>
+

@@ -1,14 +1,14 @@
 <?xml version="1.0"?>
 <PropertyList>
 
- <path>left-strobe.ac</path>
+ <path>light.ac</path>
  <nopreview/>
 
 
  
 <effect>
    <inherits-from>Aircraft/PC-9M/Models/Effects/lights/left-strobe</inherits-from>
-   <object-name>left-strobe</object-name>
+   <object-name>light</object-name>
  </effect>
  
 
@@ -24,7 +24,7 @@
  
 <animation>
   <type>dist-scale</type>
-  <object-name>left-strobe</object-name>
+  <object-name>light</object-name>
   <interpolation>
    <entry>
     <ind>0</ind>

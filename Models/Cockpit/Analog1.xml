@@ -1,0 +1,345 @@
+<PropertyList>
+
+  <!-- Controls -->
+  <model>
+    <name>Flaps Indicator</name>
+    <path>Aircraft/PC-9M/Models/Cockpit/Instruments/Flaps/Flaps.xml</path>
+    <offsets>
+      <x-m> 0.00</x-m>
+      <y-m>-0.29</y-m>
+      <z-m> 0.835</z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <name>Landing Gear Indicator</name>
+    <path>Aircraft/PC-9M/Models/Cockpit/Instruments/Gear/Gear.xml</path>
+    <offsets>
+      <x-m> 0.04</x-m>
+      <y-m>-0.34</y-m>
+      <z-m> 0.73</z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <name>Air Cooling</name>
+    <path>Aircraft/PC-9M/Models/Cockpit/Instruments/Air/Air.xml</path>
+    <offsets>
+      <x-m>0.97</x-m>
+      <y-m>0.00</y-m>
+      <z-m>0.00</z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <name>Nose Wheel Steering Switch</name>
+    <path>Aircraft/PC-9M/Models/Cockpit/Instruments/NWS/NWS.xml</path>
+    <offsets>
+      <x-m>0.97</x-m>
+      <y-m>0.03</y-m>
+      <z-m>0.04</z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <name>Speedbrake Switch</name>
+    <path>Aircraft/PC-9M/Models/Cockpit/Instruments/Speedbrake/Speedbrake.xml</path>
+    <offsets>
+      <x-m>0.97</x-m>
+      <y-m>0.03</y-m>
+      <z-m>0.04</z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <name>Warning Switches</name>
+    <path>Aircraft/PC-9M/Models/Cockpit/Instruments/Warning/Warning.xml</path>
+    <offsets>
+      <x-m>0.98</x-m>
+      <y-m>0.00</y-m>
+      <z-m>-0.010</z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <name>Engine Switch</name>
+    <path>Aircraft/PC-9M/Models/Cockpit/Instruments/Engine-Switch/Engine-Switch.xml</path>
+    <offsets>
+      <x-m> 0.00</x-m>
+      <y-m> 0.34</y-m>
+      <z-m> 0.72</z-m>
+      <pitch-deg>90</pitch-deg>
+    </offsets>
+  </model>
+
+
+  <!-- Instumentation -->
+  <model>
+    <name>Magnetic Compass</name>
+    <path>Aircraft/PC-9M/Models/Cockpit/Instruments/Compass/Compass.xml</path>
+    <offsets>
+      <x-m>-0.01</x-m>
+      <y-m> 0.29</y-m>
+      <z-m> 1.26</z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <name>Clock</name>
+    <path>Aircraft/PC-9M/Models/Cockpit/Instruments/Clock/Clock.xml</path>
+    <offsets>
+      <x-m> 0.258</x-m>
+      <y-m>-0.343</y-m>
+      <z-m> 0.940</z-m>
+      <heading-deg>11</heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <name>Altimeter</name>
+    <path>Aircraft/PC-9M/Models/Cockpit/Instruments/ALT/altimeter1.xml</path>
+    <offsets>
+      <x-m>0.00</x-m>
+      <y-m>0.11</y-m>
+      <z-m>1.18</z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <name>Vertical Speed Indicator</name>
+    <path>Aircraft/PC-9M/Models/Cockpit/Instruments/VSI/vsi.xml</path>
+    <offsets>
+      <x-m> 0.00</x-m>
+      <y-m> 0.11</y-m>
+      <z-m> 1.09</z-m>
+    </offsets>
+  </model>
+    
+  <model>
+    <name>Air Speed Indicator</name>
+    <path>Aircraft/PC-9M/Models/Cockpit/Instruments/ASI/asi300.xml</path>
+    <offsets>
+      <x-m> 0.00</x-m>
+      <y-m>-0.12</y-m>
+      <z-m>1.18</z-m>
+    </offsets>
+  </model>  
+
+  <model>
+    <name>Attitude Indicator</name>
+    <path>Aircraft/PC-9M/Models/Cockpit/Instruments/ADI/A-10-adi.xml</path>
+    <offsets>
+      <x-m> 0.01</x-m>
+      <y-m>-0.005</y-m>
+      <z-m>1.16</z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <name>Horizontal Situation Indicator</name>
+    <path>Aircraft/PC-9M/Models/Cockpit/Instruments/HSI/A-10-HSI.xml</path>
+    <offsets>
+      <x-m> 0.00</x-m>
+      <y-m>-0.005</y-m>
+      <z-m>1.02</z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <name>Radio Magnetic Indicator</name>
+    <path>Aircraft/PC-9M/Models/Cockpit/Instruments/RMI/rmi.xml</path>
+    <offsets>
+      <x-m> 0.00</x-m>
+      <y-m>-0.12</y-m>
+      <z-m>1.045</z-m>
+    </offsets>
+  </model>
+    
+  <model>
+    <name>Standby Gyro</name>
+    <path>Aircraft/PC-9M/Models/Cockpit/Instruments/Mini-AI/mini-ai.xml</path>
+    <offsets>
+      <x-m> 0.00</x-m>
+      <y-m>-0.2</y-m>
+      <z-m>1.14</z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <name>Turn and Bank Indicator</name>  
+    <path>Aircraft/PC-9M/Models/Cockpit/Instruments/TC/tc.xml</path>
+    <offsets>
+      <x-m> 0.00</x-m>
+      <y-m>-0.2</y-m>
+      <z-m>1.045</z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <name>Angle of Attack</name>
+    <path>Aircraft/PC-9M/Models/Cockpit/Instruments/AOA/aoa-gauge.xml</path>
+    <offsets> 
+      <x-m> 0.00</x-m>
+      <y-m>-0.28</y-m>
+      <z-m>1.045</z-m>
+    </offsets>
+    <animation>
+      <type>noshadow</type>
+    </animation>
+  </model>
+    
+  <model>
+    <name>G Meter</name>
+    <path>Aircraft/PC-9M/Models/Cockpit/Instruments/AOA/accelerometer.xml</path>
+    <offsets> 
+      <x-m> 0.00</x-m>
+      <y-m>0.11</y-m>
+      <z-m>1.01</z-m>
+    </offsets>
+    <animation>
+      <type>noshadow</type>
+    </animation>
+  </model>
+  
+  
+  <model>
+    <name>Distance Measuring Equipment</name>
+    <path>Aircraft/PC-9M/Models/Cockpit/Instruments/DME/dme.xml</path>
+    <offsets>
+      <x-m> 0.00</x-m>
+      <y-m>-0.12</y-m>
+      <z-m>1.11</z-m>
+    </offsets>
+  </model>
+   
+  <model>
+    <name>VOR Navigation 1</name>
+    <path>Aircraft/PC-9M/Models/Cockpit/Instruments/kx165/kx165-1.xml</path>
+    <offsets>
+      <x-m> 0.00</x-m>
+      <y-m>-0.165</y-m>
+      <z-m>0.97</z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <name>VOR Navigation 2</name>
+    <path>Aircraft/PC-9M/Models/Cockpit/Instruments/kx165/kx165-2.xml</path>
+    <offsets>
+      <x-m> 0.00</x-m>
+      <y-m>-0.165</y-m>
+      <z-m>0.915</z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <name>Automatic Direction Finder</name>
+    <path>Aircraft/PC-9M/Models/Cockpit/Instruments/kr87/kr87.xml</path>
+    <offsets>
+      <x-m> 0.00</x-m>
+      <y-m>-0.165</y-m>
+      <z-m>0.87</z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <name>gma</name>
+    <path>Aircraft/PC-9M/Models/Cockpit/Instruments/gma340/gma340.xml</path>
+    <offsets>
+      <x-m> 0.00</x-m>
+      <y-m>0.0</y-m>
+      <z-m>0.92</z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <name>Torque</name>
+    <path>Aircraft/PC-9M/Models/Cockpit/Instruments/Torque/torque.xml</path>
+    <offsets>
+      <x-m> 0.00</x-m>
+      <y-m>0.185</y-m>
+      <z-m>1.155</z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <name>Propeller RPM</name>
+    <path>Aircraft/PC-9M/Models/Cockpit/Instruments/RPM/prop-rpm.xml</path>
+    <offsets>
+      <x-m> 0.00</x-m>
+      <y-m>0.185</y-m>
+      <z-m>1.085</z-m>
+    </offsets>
+  </model>    
+
+  <model>
+    <name>T5</name>
+    <path>Aircraft/PC-9M/Models/Cockpit/Instruments/T5/t5.xml</path>
+    <offsets>
+      <x-m> 0.00</x-m>
+      <y-m>0.185</y-m>
+      <z-m>1.015</z-m>
+    </offsets>
+  </model>
+    
+  <model>
+    <name>Gas Generator RPM</name>
+    <path>Aircraft/PC-9M/Models/Cockpit/Instruments/GGRPM/ggrpm.xml</path>
+    <offsets>
+      <x-m> 0.00</x-m>
+      <y-m>0.185</y-m>
+      <z-m>0.945</z-m>
+    </offsets>
+  </model>
+    
+  <model>
+    <name>Fuel Flow</name>
+    <path>Aircraft/PC-9M/Models/Cockpit/Instruments/Fuel-Flow/fuelflow.xml</path>
+    <offsets>
+      <x-m> 0.00</x-m>
+      <y-m>0.24</y-m>
+      <z-m>1.12</z-m>
+    </offsets>
+  </model>
+    
+  <model>
+    <name>Oil Temperature</name>
+    <path>Aircraft/PC-9M/Models/Cockpit/Instruments/Oil-Temp/oiltemp.xml</path>
+    <offsets>
+      <x-m> 0.00</x-m>
+      <y-m>0.24</y-m>
+      <z-m>1.05</z-m>
+    </offsets>
+  </model>
+    
+  <model>
+    <name>Oil Pressure</name>
+    <path>Aircraft/PC-9M/Models/Cockpit/Instruments/Oil-Psi/oilpsi.xml</path>
+    <offsets>
+      <x-m> 0.00</x-m>
+      <y-m>0.24</y-m>
+      <z-m>0.98</z-m>
+    </offsets>
+  </model>
+    
+  <model>
+    <name>Fuel Quantity 1</name>
+    <path>Aircraft/PC-9M/Models/Cockpit/Instruments/Fuel-Qt/fuel-qty0.xml</path>
+    <offsets>
+      <x-m> 0.00</x-m>
+      <y-m>0.29</y-m>
+      <z-m>1.015</z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <name>Fuel Quantity 2</name>
+    <path>Aircraft/PC-9M/Models/Cockpit/Instruments/Fuel-Qt/fuel-qty1.xml</path>
+    <offsets>
+      <x-m> 0.00</x-m>
+      <y-m>0.29</y-m>
+      <z-m>0.945</z-m>
+    </offsets>
+  </model>
+
+</PropertyList>
