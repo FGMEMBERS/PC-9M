@@ -2,7 +2,7 @@
 
 <PropertyList>
 
-  <path>PC-9M.ac</path>
+  <path>T-6.ac</path>
   <offsets>
     <pitch-deg>-1.0</pitch-deg>
     <heading-deg>0</heading-deg>
@@ -59,7 +59,7 @@
   <animation>
     <type>noshadow</type>
     <object-name>canopy</object-name>
-  </animation> 
+  </animation>
 
   <effect>
     <inherits-from>Effects/model-transparent</inherits-from>

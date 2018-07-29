@@ -1,0 +1,70 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+  <path>PC-7.ac</path>
+  <offsets>
+    <pitch-deg>-2.5</pitch-deg>
+    <z-m>-0.35</z-m>
+  </offsets>
+
+  <model>
+    <usage>interior</usage>
+    <path>Aircraft/PC-9M/Models/Cockpit/Cockpit-PC7.xml</path>
+  </model>
+
+  <effect>
+    <inherits-from>Aircraft/PC-9M/Models/Effects/pc7-bumpspec-reflection</inherits-from>
+    <object-name>fuselage</object-name>
+    <object-name>wings</object-name>
+    <object-name>spinner</object-name>
+    <object-name>canopy_arch</object-name>
+    <object-name>canopy</object-name>
+    <object-name>rudder</object-name>
+    <object-name>right_flap</object-name>
+    <object-name>left_flap</object-name>
+    <object-name>right_aileron</object-name>
+    <object-name>left_aileron</object-name>
+    <object-name>hstab</object-name>
+    <object-name>elevator</object-name>
+    <object-name>left_door</object-name>
+    <object-name>right_door</object-name>
+    <object-name>back_right_door</object-name>
+    <object-name>back_left_door</object-name>
+    <object-name>front_strut</object-name>
+    <object-name>right_strut</object-name>
+  </effect>
+
+  <!-- glass effects -->
+  <effect>
+    <inherits-from>Aircraft/PC-9M/Models/Effects/glass/glass</inherits-from>
+    <object-name>canopy_inner_shell</object-name>
+    <object-name>inner_shell</object-name>
+  </effect>
+
+  <effect>
+    <inherits-from>Aircraft/PC-9M/Models/Effects/glass/reflection</inherits-from>
+    <object-name>canopy_outer_shell</object-name>
+    <object-name>outer_shell</object-name>
+  </effect>
+
+  <animation>
+    <type>noshadow</type>
+    <object-name>canopy</object-name>
+  </animation>
+
+  <effect>
+    <inherits-from>Effects/model-transparent</inherits-from>
+    <condition>
+      <greater-than>
+        <property>sim/multiplay/generic/float[6]</property>
+        <value>9</value>
+      </greater-than>
+      <property>/sim/rendering/rembrandt/enabled</property>
+    </condition>
+    <object-name>canopy</object-name>
+    <object-name>prop</object-name>
+    <object-name>pdisk</object-name>
+  </effect>
+
+</PropertyList>

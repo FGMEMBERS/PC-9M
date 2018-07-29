@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PropertyList>
+  <name>Aircraft/PC-9M/Models/Effects/reflection</name>
+  <inherits-from>Aircraft/PC-9M/Models/Effects/bumpspec</inherits-from>
+  <parameters>
+    <reflection-correction><use>sim/model/livery/shininess</use></reflection-correction>
+    <reflection-enabled><use>sim/model/civilian</use></reflection-enabled>
+    <texture n="2">
+      <image>Aircraft/PC-9M/Models/Effects/pc7-normalmap.png</image>
+      <filter>linear-mipmap-linear</filter>
+      <wrap-s>clamp</wrap-s>
+      <wrap-t>clamp</wrap-t>
+      <internal-format>normalized</internal-format>
+    </texture>
+  </parameters>
+</PropertyList>
+

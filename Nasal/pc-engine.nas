@@ -12,13 +12,15 @@ set_engine1_state = func() {
 	{
                 # turboprop
 		setprop("/controls/engines/engine[0]/starter", 1);
-                setprop("/fdm/jsbsim/propulsion/engine[0]/n1", 20);
-		settimer(func { setprop("/controls/engines/engine[0]/cutoff", 0); }, 1);
+                interpolate("/fdm/jsbsim/propulsion/engine[0]/n1", 20, 15);
+		settimer(func {
+                    setprop("/controls/engines/engine[0]/cutoff", 0);
 
-                # turbine for emulating exhaust thrust
-                setprop("/engines/engine[1]/cutoff", 1);
-                setprop("/controls/engines/engine[1]/starter", 1);
-                settimer(func { setprop("/controls/engines/engine[1]/cutoff", 0); }, 1);
+                    # turbine for emulating exhaust thrust
+                    setprop("/engines/engine[1]/cutoff", 1);
+                    setprop("/controls/engines/engine[1]/starter", 1);
+                    settimer(func { setprop("/controls/engines/engine[1]/cutoff", 0); }, 1);
+                 }, 16);
 
 		settimer(switchback1, 1);
 	}

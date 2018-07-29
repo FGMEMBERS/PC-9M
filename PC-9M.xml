@@ -201,7 +201,7 @@
   </ground_reactions>
   
   <propulsion>
-   <engine file="PT6A-62">
+   <engine file="PT6A-25">
      <location unit="IN">
       <x>    36.00 </x>
       <y>     0.00 </y>
@@ -215,7 +215,7 @@
     <feed> 0 </feed>
     <feed> 1 </feed>
 
-    <thruster file="Propeller">
+    <thruster file="Propeller-3blade">
      <sense> 1 </sense>
      <location unit="IN">
       <x>    36.00 </x>
@@ -230,7 +230,67 @@
     </thruster>
    </engine>
 
-   <engine file="PT6A-62-exhaust">
+<!--
+   <engine file="PT6A-62">
+     <location unit="IN">
+      <x>    36.00 </x>
+      <y>     0.00 </y>
+      <z>     0.00 </z>
+    </location>
+    <orient unit="DEG">
+      <pitch>     0.00 </pitch>
+       <roll>     0.00 </roll>
+        <yaw>     0.00 </yaw>
+    </orient>
+    <feed> 0 </feed>
+    <feed> 1 </feed>
+
+    <thruster file="Propeller-4blade">
+     <sense> 1 </sense>
+     <location unit="IN">
+      <x>    36.00 </x>
+      <y>     0.00 </y>
+      <z>     0.00 </z>
+     </location>
+     <orient unit="DEG">
+       <pitch>     0.00 </pitch>
+        <roll>     0.00 </roll>
+         <yaw>     0.00 </yaw>
+     </orient>
+    </thruster>
+   </engine>
+
+   <engine file="PT6A-68">
+     <location unit="IN">
+      <x>    36.00 </x>
+      <y>     0.00 </y>
+      <z>     0.00 </z>
+    </location>
+    <orient unit="DEG">
+      <pitch>     0.00 </pitch>
+       <roll>     0.00 </roll>
+        <yaw>     0.00 </yaw>
+    </orient>
+    <feed> 0 </feed>
+    <feed> 1 </feed>
+
+    <thruster file="Propeller-4blade">
+     <sense> 1 </sense>
+     <location unit="IN">
+      <x>    36.00 </x>
+      <y>     0.00 </y>
+      <z>     0.00 </z>
+     </location>
+     <orient unit="DEG">
+       <pitch>     0.00 </pitch>
+        <roll>     0.00 </roll>
+         <yaw>     0.00 </yaw>
+     </orient>
+    </thruster>
+   </engine>
+-->
+
+   <engine file="PT6A-exhaust">
      <location unit="IN">
       <x>    36.00 </x>
       <y>     0.00 </y>

@@ -1,13 +1,13 @@
 <PropertyList include="PC9-shared.xml">
 
   <sim>
-<!--<variant-of>PC-9M</variant-of>-->
+    <variant-of>PC-9M</variant-of>
 
     <!--Info -->
 
-    <description>Pilatus PC-9M</description>
+    <description>Beechcraft T-6 Texan II</description>
     <long-description>
-     The Pilatus PC-9M is a single-engine, low-wing tandem-seat turboprop training aircraft manufactured by Pilatus Aircraft of Switzerland. Designed as a more powerful evolution of the Pilatus PC-7.
+     The Beechcraft T-6 Texan II is a single-engine turboprop aircraft built by the Raytheon Aircraft Company (which became Hawker Beechcraft and later Beechcraft Defense Company, and was bought by Textron Aviation in 2014). As a trainer aircraft based on the Pilatus PC-9, the T-6 has replaced the Air Force's Cessna T-37B Tweet and the Navy's T-34C Turbo Mentor. 
     </long-description>
     <rating>
       <FDM type="int">4</FDM>
@@ -34,23 +34,23 @@
 
     <model>
       <!--
-       The model is dynamically loaded by setting /model/pc9m/pc-9m to true
+       The model is dynamically loaded by setting /model/pc9m/t-6 to true
        -->
       <pc9m>
-       <pc-9m type="bool">true</pc-9m>
+       <t-6 type="bool">true</t-6>
       </pc9m>
     </model>
 
     <menubar>
       <default>
         <menu n="100">
-          <label>PC-9M</label>
+          <label>T-6 Texan II</label>
         </menu>
       </default>
     </menubar>
 
     <help>
-      <title>Pilatus PC-9M</title>
+      <title>Beechcraft T-6 Texan II</title>
     </help>
   </sim>
 

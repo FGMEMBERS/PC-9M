@@ -1,0 +1,122 @@
+<PropertyList>
+
+    <!-- set 50% flap adjustment with each detent -->
+      <key n="91">
+        <name>[</name>
+        <desc>Decrease flaps.</desc>
+        <binding>
+          <command>property-adjust</command>
+          <property>/controls/flight/flaps</property>
+         <step type="double">-0.50</step>
+        </binding>
+      </key>
+
+      <key n="93">
+       <name>]</name>
+       <desc>Increase flaps.</desc>
+       <binding>
+         <command>property-adjust</command>
+         <property>/controls/flight/flaps</property>
+        <step type="double">0.50</step>
+       </binding>
+      </key>
+
+      <key n="99">
+        <name>c</name>
+        <desc>Toggle canopy</desc>
+        <binding>
+          <command>property-toggle</command>
+          <property>fdm/jsbsim/systems/canopy/command</property>
+        </binding>
+      </key>
+
+      <key n="108">
+        <name>l</name>
+        <desc>toggle landing lights</desc>
+        <binding>
+          <command>nasal</command>
+          <script>controls.toggleLandingLights();</script>
+        </binding>
+      </key>
+      <key n="109">
+        <name>m</name>
+        <desc>engage nose wheel steering</desc>
+        <binding>
+          <command>property-assign</command>
+          <property>controls/gear/nose-wheel-steering</property>
+          <value>1</value>
+        </binding>
+        <mod-up>
+          <binding>
+            <command>property-assign</command>
+            <property>controls/gear/nose-wheel-steering</property>
+            <value>0</value>
+          </binding>
+        </mod-up>
+      </key>
+      <key n="1">
+        <name>Ctrl-A</name>
+        <desc>toggle autopilot altitude lock</desc>
+        <binding>
+          <command>nasal</command>
+          <script>PC9M.afds.input(1,1);</script>
+        </binding>
+      </key>
+      <key n="7">
+        <name>Ctrl-G</name>
+        <desc>toggle autopilot glide slope lock</desc>
+        <binding>
+          <command>nasal</command>
+          <script>PC9M.afds.input(3,1);</script>
+        </binding>
+      </key>
+      <key n="8">
+        <name>Ctrl-H</name>
+        <desc>toggle autopilot heading lock</desc>
+        <binding>
+          <command>nasal</command>
+          <script>PC9M.afds.input(0,1);</script>
+        </binding>
+      </key>
+      <key n="14">
+        <name>Ctrl-N</name>
+        <desc>toggle nav1 lock</desc>
+        <binding>
+          <command>property-toggle</command>
+          <property>instrumentation/afds/inputs/loc-armed</property>
+        </binding>
+      </key>
+      <key n="15">
+        <name>Ctrl-o</name>
+        <desc>A/P ~ Engage/Disengage</desc>
+        <binding>
+          <command>property-toggle</command>
+          <property>instrumentation/afds/inputs/AP</property>
+        </binding>
+      </key>
+      <key n="19">
+        <name>Ctrl-S</name>
+        <desc>toggle auto throttle arm</desc>
+        <binding>
+          <command>property-toggle</command>
+          <property>instrumentation/afds/inputs/at-armed</property>
+        </binding>
+      </key>
+      <key n="267">
+        <name>F11</name>
+        <desc>Pop up autopilot dialog</desc>
+        <binding>
+          <command>nasal</command>
+          <script>dialogs.ap_settings.toggle()</script>
+        </binding>
+      </key>
+      <key n="268">
+        <name>F12</name>
+        <desc>Radio Stack</desc>
+        <binding>
+          <command>nasal</command>
+          <script>dialogs.Radio.open()</script>
+        </binding>
+      </key>
+
+</PropertyList>

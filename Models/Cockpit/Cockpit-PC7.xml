@@ -1,0 +1,94 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+  <path>Cockpit-PC7.ac</path>
+  <offsets>
+    <x-m>0.15</x-m>
+    <y-m>0.00</y-m>
+    <z-m>-0.185</z-m>
+  </offsets>
+
+  <!-- Instruments -->
+  <!-- Student -->
+  <model>
+    <path>Aircraft/PC-9M/Models/Cockpit/Controls.xml</path>
+    <offsets>
+      <x-m>-0.97</x-m>
+      <y-m> 0.00 </y-m>
+      <z-m> 0.00</z-m>
+    </offsets>
+  </model>
+  <model>
+    <path>Aircraft/PC-9M/Models/Cockpit/Analog1.xml</path>
+    <offsets>
+      <x-m>-0.97</x-m>
+      <y-m> 0.00 </y-m>
+      <z-m> 0.015</z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <name>Clock</name>
+    <path>Aircraft/PC-9M/Models/Cockpit/Instruments/Clock/Clock.xml</path>
+    <offsets>
+      <x-m>-0.97</x-m>
+      <y-m>-0.283</y-m>
+      <z-m> 0.970</z-m>
+    </offsets>
+  </model>
+
+  <!-- Instructor -->
+  <model>
+    <path>Aircraft/PC-9M/Models/Cockpit/Controls.xml</path>
+    <offsets>
+      <x-m> 0.39</x-m>
+      <y-m> 0.00 </y-m>
+      <z-m> 0.04</z-m>
+    </offsets>
+  </model>
+  <model>
+    <path>Aircraft/PC-9M/Models/Cockpit/Ananlog1.xml</path>
+    <offsets>
+      <x-m> 0.39</x-m>
+      <y-m> 0.00 </y-m>
+      <z-m> 0.075</z-m>
+    </offsets>
+  </model>
+
+  
+  <!-- Pilots -->
+  <!-- Student -->
+  <model>
+    <path>Aircraft/PC-9M/Models/Pilots/Pilot.xml</path>
+    <offsets>
+      <x-m>-0.32</x-m>
+      <y-m> 0.00 </y-m>
+      <z-m> 0.92</z-m>
+      <pitch-deg>0.0</pitch-deg>
+    </offsets>
+    <condition>
+      <not>
+        <property>/sim/current-view/internal</property>
+      </not>
+    </condition>
+  </model>
+
+  <!-- Instructor -->
+  <model>
+    <path>Aircraft/PC-9M/Models/Pilots/Pilot.xml</path>
+    <offsets>
+      <x-m> 1.07</x-m>
+      <y-m> 0.00 </y-m>
+      <z-m> 0.94</z-m>
+      <pitch-deg>0.0</pitch-deg>
+    </offsets>
+    <condition>
+      <not>
+        <property>/sim/current-view/internal</property>
+      </not>
+    </condition>
+  </model>
+
+</PropertyList>
+
