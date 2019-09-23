@@ -1,13 +1,13 @@
 <PropertyList include="PC9-shared.xml">
 
   <sim>
-<!--<variant-of>PC-9M</variant-of>-->
+    <variant-of>PC-9M</variant-of>
 
     <!--Info -->
 
-    <description>Pilatus PC-9M</description>
+    <description>Pilatus PC-9A</description>
     <long-description>
-     The Pilatus PC-9M is a single-engine, low-wing tandem-seat turboprop training aircraft manufactured by Pilatus Aircraft of Switzerland. Designed as a more powerful evolution of the Pilatus PC-7.
+     The Pilatus PC-9A is a single-engine, low-wing tandem-seat turboprop training aircraft manufactured by Pilatus Aircraft of Switzerland. Designed as a more powerful evolution of the Pilatus PC-7.
     </long-description>
     <rating>
       <FDM type="int">4</FDM>
@@ -34,23 +34,23 @@
 
     <model>
       <!--
-       The model is dynamically loaded by setting /model/pc9m/pc-9m to true
+       The model is dynamically loaded by setting /model/pc9m/pc-9a to true
        -->
       <pc9m>
-       <pc-9m type="bool">true</pc-9m>
+       <pc-9a type="bool">true</pc-9a>
       </pc9m>
     </model>
 
     <menubar>
       <default>
         <menu n="100">
-          <label>PC-9M</label>
+          <label>PC-9A</label>
         </menu>
       </default>
     </menubar>
 
     <help>
-      <title>Pilatus PC-9M</title>
+      <title>Pilatus PC-9A</title>
     </help>
   </sim>
 
@@ -58,6 +58,6 @@
     <engines>
       <active-engine type="int">0</active-engine>
     </engines>
-  </controls>
+  </controls> 
 
 </PropertyList>

@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+<sim>
+<model>
+<livery>
+<name type="string">ISR</name>
+<texture>Liveries/T-6/ISR.png</texture>
+</livery>
+<livery-logo>
+<texture>Liveries/T-6/ISR.png</texture>
+</livery-logo>
+</model>
+</sim>
+
+</PropertyList>

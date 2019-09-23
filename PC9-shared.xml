@@ -1,0 +1,360 @@
+<PropertyList>
+
+  <sim>
+
+    <!--Info -->
+
+    <author>Erik Hofman, Petar Jedvaj, Ernest Teuscher, David Culp, Johan G, Gary Brown and FlightGear UK</author>
+    <status>1.4.0</status>
+
+    <flight-model>jsb</flight-model>
+    <aero>PC-9M</aero>
+
+    <startup>
+     <splash-logo-image>gplv3_logo.svg</splash-logo-image>
+     <splash-logo-width>0.2</splash-logo-width>
+     <splash-logo-x-norm>0.1</splash-logo-x-norm>
+     <splash-logo-y-norm>0.1</splash-logo-y-norm>
+    </startup>
+    <previews>
+      <preview>
+        <type>exterior</type>
+        <path>Preview/PC-9M.jpg</path>
+        <splash type="bool">true</splash>
+      </preview>
+      <preview>
+        <type>exterior</type>
+        <path>Preview/Military.jpg</path>
+        <splash type="bool">true</splash>
+      </preview>
+      <preview>
+        <type>exterior</type>
+        <path>Preview/Startup.jpg</path>
+        <splash type="bool">true</splash>
+      </preview>
+    </previews>
+
+    <!--Systems -->
+
+    <systems>
+
+      <autopilot>
+        <path>Aircraft/PC-9M/Systems/autopilot.xml</path>
+      </autopilot>
+      <electrical>
+        <path>Aircraft/PC-9M/Systems/electrical.xml</path>
+      </electrical>
+
+      <pitot>
+        <name>pitot</name>
+        <number>0</number>
+      </pitot>
+
+      <static>
+        <name>static</name>
+        <number>0</number>
+      </static>
+
+      <property-rule n="101">
+        <path>Aircraft/PC-9M/Systems/shadow.xml</path>
+      </property-rule>
+
+    </systems> 
+
+    <sound>
+      <path>Aircraft/PC-9M/Sounds/PC-9M-sound.xml</path>
+    </sound>
+
+    <model>
+      <path archive="y">Aircraft/PC-9M/Models/PC9M.xml</path>
+      <livery>
+        <file type="string"/>
+        <shininess type="float">-0.85</shininess>
+      </livery>
+    </model>
+
+    <virtual-cockpit archive="y">true</virtual-cockpit>
+    <allow-toggle-cockpit archive="y">false</allow-toggle-cockpit>
+
+    <!--Views -->
+
+    <view n="0">
+      <internal archive="y">true</internal>
+      <config>
+        <pitch-offset-deg>-14.0</pitch-offset-deg>
+        <default-field-of-view-deg type="double">89.1</default-field-of-view-deg>
+        <x-offset-m archive="y"> 0.00</x-offset-m>
+        <y-offset-m archive="y"> 0.96</y-offset-m>
+        <z-offset-m archive="y">-0.37</z-offset-m>
+      </config>
+    </view>
+
+    <view n="100">
+      <name>Instructor</name>
+      <enabled type="bool">true</enabled>
+      <type>lookfrom</type>
+      <internal type="bool">true</internal>
+      <internal archive="y">true</internal>
+      <config>
+        <from-model type="bool">true</from-model>
+        <from-model-idx type="int">0</from-model-idx>
+        <default-field-of-view-deg type="double">72.0</default-field-of-view-deg>
+        <default-pitch-deg type="double">0</default-pitch-deg>
+        <default-heading-deg type="double">0</default-heading-deg>
+        <x-offset-m archive="y"> 0.00 </x-offset-m>  
+        <y-offset-m archive="y"> 0.96 </y-offset-m>
+        <z-offset-m archive="y"> 1.12 </z-offset-m>
+        <pitch-offset-deg> -10.0</pitch-offset-deg>
+        <dynamic-view type="bool">true</dynamic-view>
+      </config>
+    </view>
+
+    <view n="101">
+      <name>Pilot cam</name>
+      <internal archive="y">false</internal>
+      <config>
+        <from-model type="bool">true</from-model>
+        <from-model-idx type="int">0</from-model-idx>
+        <x-offset-m archive="y"> 0.00</x-offset-m>
+        <y-offset-m archive="y"> 1.28</y-offset-m>
+        <z-offset-m archive="y">-1.0</z-offset-m>
+        <pitch-offset-deg>0</pitch-offset-deg>
+        <heading-offset-deg>180</heading-offset-deg>
+        <default-field-of-view-deg>95</default-field-of-view-deg>
+      </config>
+    </view>
+
+    <rendering>
+      <redout>
+        <parameters>
+          <blackout-onset-g type="double">4.5</blackout-onset-g>
+          <blackout-complete-g type="double">7.0</blackout-complete-g>
+          <redout-onset-g type="double">-2.25</redout-onset-g>
+          <redout-complete-g type="double">-3.5</redout-complete-g>
+        </parameters>
+      </redout>
+      <als-secondary-lights>
+       <landing-light1-offset-deg type="double"> 5</landing-light1-offset-deg>
+       <landing-light2-offset-deg type="double">-5</landing-light2-offset-deg>
+      </als-secondary-lights>
+    </rendering>
+
+    <chase-distance-m type="double" archive="y">-20.0</chase-distance-m>
+
+    <!-- Menu -->
+
+    <menubar>
+      <default>
+        <menu n="100">
+          <item>
+            <label>Autostart</label>
+            <binding>
+              <command>property-toggle</command>
+              <property>controls/engines/start1</property>  
+            </binding>
+            <binding>
+              <command>property-toggle</command>
+              <property>controls/engines/run1</property>  
+            </binding>
+            <binding>
+              <command>property-toggle</command>
+              <property>controls/engines/abort1</property>
+            </binding>
+            <mod-up>
+              <binding>
+                <command>null</command>
+              </binding>
+            </mod-up>   
+          </item>
+          <enabled type="bool">true</enabled>
+          <item>
+            <label>Select Livery</label>
+            <binding>
+              <command>nasal</command>
+              <script>aircraft.livery.dialog.toggle()</script>
+            </binding>
+          </item>
+        </menu>
+      </default>
+    </menubar>
+
+    <!-- Help -->
+
+    <help>
+      <title>Pilatus PC-9M</title>
+      <key>
+        <name>c</name>
+        <desc>Open/close canopy</desc>
+      </key>
+      <key>
+        <name>Ctrl+b</name>
+        <desc>Toggle speedbrake</desc>
+      </key>
+      <key>
+        <name>m</name>
+        <desc>Nose wheel steering</desc>
+      </key>
+      <line>Click on engine panel to Start/Run/Abort or use Autostart</line>
+    </help>
+
+  </sim>
+
+  <!--Engine -->
+
+  <controls>
+    <engines>
+      <run1 type="bool">true</run1>
+      <start1 type="bool">false</start1>
+      <abort1 type="bool">false</abort1>     
+    </engines>
+  
+    <gear>
+      <brake-parking type="double">1</brake-parking>
+    </gear>
+  </controls>
+
+  <!-- Shortcuts -->
+
+  <input>
+    <keyboard include="keyboard.xml"/>
+  </input>
+
+  <!-- Settings -->
+
+  <fdm>
+    <jsbsim>
+      <systems>
+
+        <canopy>
+          <command type="double">0</command>
+          <position type="double">0</position>
+        </canopy>
+
+      </systems>
+      <propulsion>
+        <engine>
+          <thrust-coefficient type="double">0</thrust-coefficient>
+        </engine>
+      </propulsion>
+    </jsbsim>
+  </fdm>
+
+  <systems>
+    <electrical>
+      <outputs>
+        <comm n="0" type="float">28</comm>
+        <comm n="1" type="float">28</comm>
+      </outputs>
+    </electrical>
+  </systems>
+
+  <consumables>
+    <fuel>
+      <tank n="0">
+        <level-gal_us archive="y">118</level-gal_us>
+      </tank>
+      <tank n="1">
+        <level-gal_us archive="y">118</level-gal_us>
+      </tank>
+    </fuel>
+  </consumables>
+
+  <!--Instruments -->
+
+  <instrumentation>
+    <transponder>
+      <inputs>
+        <serviceable type="bool">true</serviceable>
+      </inputs>
+    </transponder>
+    <nav n="0">
+      <serviceable type="bool">1</serviceable>
+    </nav>
+    <nav n="1">
+      <serviceable type="bool">1</serviceable>
+    </nav>
+    <comm n="0">
+      <serviceable type="bool">1</serviceable>
+    </comm>
+    <comm n="1">
+      <serviceable type="bool">1</serviceable>
+    </comm>
+    
+    <airspeed-indicator>
+      <limit-indicated-speed-kt type="double">280</limit-indicated-speed-kt>  
+      <index n="0" type="double">95</index>
+      <index n="1" type="double">145</index>
+    </airspeed-indicator>
+    
+    <g-meter>
+      <g-max archive="y" type="double">1</g-max>
+      <g-min archive="y" type="double">1</g-min>
+    </g-meter>
+  </instrumentation>
+
+  <!--Effects -->
+
+  <gear>
+    <gear n="0">
+      <tyre-smoke type="int">0</tyre-smoke>
+      <sprayspeed-ms type="double">0</sprayspeed-ms>
+      <spray-density type="double">0</spray-density>
+      <caster-angle-deg-damped type="double">0</caster-angle-deg-damped>
+    </gear>
+    <gear n="1">
+      <tyre-smoke type="int">0</tyre-smoke>
+      <sprayspeed-ms type="double">0</sprayspeed-ms>
+      <spray-density type="double">0</spray-density>
+    </gear>
+    <gear n="2">
+      <tyre-smoke type="int">0</tyre-smoke>
+      <sprayspeed-ms type="double">0</sprayspeed-ms>
+      <spray-density type="double">0</spray-density>
+    </gear>
+  </gear>
+
+  <engines>
+
+    <engine n="0">
+      <fuel-flow_pph type="float">0</fuel-flow_pph>
+      <running>false</running>
+    </engine>
+
+    <engine n="0">
+      <rpm type="double">1000</rpm>
+    </engine>
+
+  </engines>
+
+  <!--Nasal -->
+  <nasal n="0">
+    <PC9M>
+      <file>Aircraft/PC-9M/Nasal/AFDS.nas</file>
+      <file>Aircraft/PC-9M/Nasal/systems.nas</file>
+      <file>Aircraft/PC-9M/Nasal/liveries.nas</file>
+      <file>Aircraft/PC-9M/Nasal/light.nas</file>
+      <file>Aircraft/PC-9M/Nasal/limits.nas</file>
+      <file>Aircraft/PC-9M/Nasal/vhf22.nas</file>
+      <file>Aircraft/PC-9M/Nasal/vir32.nas</file>
+      <file>Aircraft/PC-9M/Nasal/crash.nas</file>
+      <file>Aircraft/PC-9M/Nasal/rain.nas</file>
+    </PC9M>
+    <dialogs>
+      <file>Aircraft/PC-9M/Nasal/dialogs.nas</file>
+    </dialogs>
+    <engeine_panel>
+      <file>Nasal/engines.nas</file>
+    </engeine_panel>
+    <dmesw>
+      <file>Aircraft/PC-9M/Nasal/dmesw.nas</file>
+    </dmesw>
+    <tyresmoke>
+      <file>Aircraft/PC-9M/Nasal/tyresmoke.nas</file>
+    </tyresmoke>
+    <pc-engine>
+      <file>Aircraft/PC-9M/Nasal/pc-engine.nas</file>
+      <module>pc</module>
+    </pc-engine>
+  </nasal>
+
+</PropertyList>

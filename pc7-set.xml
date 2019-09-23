@@ -1,0 +1,112 @@
+<PropertyList include="PC9-shared.xml">
+
+  <sim>
+    <variant-of>PC-9M</variant-of>
+
+    <!--Info -->
+
+    <description>Pilatus PC-7</description>
+    <long-description>
+     he Pilatus PC-7 Turbo Trainer is a low-wing tandem-seat training aircraft, manufactured by Pilatus Aircraft of Switzerland. The aircraft is capable of all basic training functions including aerobatics, instrument, tactical and night flying. It has been selected by more than 20 air forces as their ab initio trainer.
+    </long-description>
+    <rating>
+      <FDM type="int">4</FDM>
+      <systems type="int">3</systems>
+      <cockpit type="int">3</cockpit>
+      <model type="int">5</model>
+    </rating>
+    <tags>
+      <tag>ga</tag>
+      <tag>pilatus</tag>
+      <tag>low-wing</tag>
+      <tag>tricycle</tag>
+      <tag>retractable-gear</tag>
+      <tag>single-engine</tag>
+      <tag>turboprop</tag>
+      <tag>variable-pitch</tag>
+      <tag>trainer</tag>
+      <tag>ifr</tag>
+      <tag>1980s</tag>
+      <tag>1990s</tag>
+      <tag>2000s</tag>
+      <tag>2010s</tag>
+    </tags>
+
+    <flight-model>jsb</flight-model>
+    <aero>PC-9M</aero>
+
+    <model>
+      <!--
+       The model is dynamically loaded by setting /model/pc9m/pc-7 to true
+       -->
+      <pc9m>
+       <pc-7 type="bool">true</pc-7>
+      </pc9m>
+    </model>
+
+    <view n="0">
+      <internal archive="y">true</internal>
+      <config>
+        <pitch-offset-deg>-10.0</pitch-offset-deg>
+        <default-field-of-view-deg type="double">89.1</default-field-of-view-deg>
+        <x-offset-m archive="y"> 0.000</x-offset-m>
+        <y-offset-m archive="y"> 0.80</y-offset-m>
+        <z-offset-m archive="y">-0.119</z-offset-m>
+      </config>
+    </view>
+
+    <view n="100">
+      <name>Instructor</name>
+      <enabled type="bool">true</enabled>
+      <type>lookfrom</type>
+      <internal type="bool">true</internal>
+      <internal archive="y">true</internal>
+      <config>
+        <from-model type="bool">true</from-model>
+        <from-model-idx type="int">0</from-model-idx>
+        <default-field-of-view-deg type="double">89.1</default-field-of-view-deg>
+        <default-pitch-deg type="double">0</default-pitch-deg>
+        <default-heading-deg type="double">0</default-heading-deg>
+        <x-offset-m archive="y"> 0.00 </x-offset-m>
+        <y-offset-m archive="y"> 0.80 </y-offset-m>
+        <z-offset-m archive="y"> 1.29 </z-offset-m>
+        <pitch-offset-deg> -10.0</pitch-offset-deg>
+        <dynamic-view type="bool">true</dynamic-view>
+      </config>
+    </view>
+
+    <view n="101">
+      <name>Pilot cam</name>
+      <internal archive="y">false</internal>
+      <config>
+        <from-model type="bool">true</from-model>
+        <from-model-idx type="int">0</from-model-idx>
+        <x-offset-m archive="y">-0.15</x-offset-m>
+        <y-offset-m archive="y"> 0.82</y-offset-m>
+        <z-offset-m archive="y">-0.80</z-offset-m>
+        <pitch-offset-deg>-3</pitch-offset-deg>
+        <heading-offset-deg>185</heading-offset-deg>
+        <default-field-of-view-deg>95</default-field-of-view-deg>
+      </config>
+    </view>
+
+    <menubar>
+      <default>
+        <menu n="100">
+          <label>PC-7</label>
+        </menu>
+      </default>
+    </menubar>
+
+    <help>
+      <title>Pilatus PC-7</title>
+    </help>
+  </sim>
+
+  <controls>
+    <engines>
+      <active-engine type="int">0</active-engine>
+    </engines>
+  </controls>
+
+</PropertyList>

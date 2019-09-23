@@ -45,7 +45,7 @@
     <object-name>rgeargrp</object-name>
   </effect>
 
-  <!-- glass effects -->
+    <!-- glass effects -->
   <effect>
     <inherits-from>Aircraft/PC-9M/Models/Effects/glass/glass</inherits-from>
     <object-name>canopy_inner</object-name>
@@ -59,7 +59,7 @@
   <animation>
     <type>noshadow</type>
     <object-name>canopy</object-name>
-  </animation> 
+  </animation>
 
   <effect>
     <inherits-from>Effects/model-transparent</inherits-from>

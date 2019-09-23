@@ -1,0 +1,92 @@
+<PropertyList include="PC9-shared.xml">
+
+  <sim>
+    <variant-of>PC-9M</variant-of>
+
+    <!--Info -->
+
+    <description>Pilatus PC-7 mk2</description>
+    <long-description>
+     The Pilatus PC-7 mk2 is a single-engine, low-wing tandem-seat turboprop training aircraft manufactured by Pilatus Aircraft of Switzerland.
+    </long-description>
+    <rating>
+      <FDM type="int">4</FDM>
+      <systems type="int">3</systems>
+      <cockpit type="int">3</cockpit>
+      <model type="int">5</model>
+    </rating>
+    <tags>
+      <tag>ga</tag>
+      <tag>pilatus</tag>
+      <tag>low-wing</tag>
+      <tag>tricycle</tag>
+      <tag>retractable-gear</tag>
+      <tag>single-engine</tag>
+      <tag>turboprop</tag>
+      <tag>variable-pitch</tag>
+      <tag>trainer</tag>
+      <tag>ifr</tag>
+      <tag>1980s</tag>
+      <tag>1990s</tag>
+      <tag>2000s</tag>
+      <tag>2010s</tag>
+    </tags>
+
+    <model>
+      <!--
+       The model is dynamically loaded by setting /model/pc9m/pc-7mk2 to true
+       -->
+      <pc9m>
+       <pc-7mk2 type="bool">true</pc-7mk2>
+      </pc9m>
+    </model>
+
+    <menubar>
+      <default>
+        <menu n="100">
+          <item>
+            <label>Autostart</label>
+            <binding>
+              <command>property-toggle</command>
+              <property>controls/engines/start1</property>
+            </binding>
+            <binding>
+              <command>property-toggle</command>
+              <property>controls/engines/run1</property>
+            </binding>
+            <binding>
+              <command>property-toggle</command>
+              <property>controls/engines/abort1</property>
+            </binding>
+            <mod-up>
+              <binding>
+                <command>null</command>
+              </binding>
+            </mod-up>
+          </item>
+          <label>PC-7mk2</label>
+          <enabled type="bool">true</enabled>
+          <item>
+            <label>Select Livery</label>
+            <binding>
+              <command>nasal</command>
+              <script>aircraft.livery.dialog.toggle()</script>
+            </binding>
+          </item>
+        </menu>
+      </default>
+    </menubar>
+
+    <help>
+      <title>Pilatus PC-7mk2</title>
+    </help>
+
+  </sim>
+
+  <controls>
+    <engines>
+      <active-engine type="int">0</active-engine>
+    </engines>
+  </controls>
+
+</PropertyList>
